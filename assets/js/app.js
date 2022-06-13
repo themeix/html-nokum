@@ -11,10 +11,24 @@
     var scroll = $(window).scrollTop();
     if (scroll >= 150) {
       $(".body-scroll").addClass("body-sticky");
+      if ($(".close-button")){
+        $(".header-area").addClass("header-sticky");
+      }
     } else {
       $(".body-scroll").removeClass("body-sticky");
+      $(".header-area").removeClass("header-sticky");
     }
   });
+
+
+
+
+    /*  Active Class*/
+    $('.nokum-menu-icon').on('click', function () {
+      $(this).toggleClass("close-button")
+      $(".header-area ").toggleClass('header-sticky');
+     
+    });
 
 
 
