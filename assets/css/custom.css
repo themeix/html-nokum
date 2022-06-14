@@ -2,6 +2,7 @@
     --primary-100:#363062; 
     --white:#ffff; 
     --black-100:#2C2828; 
+    --green-100:#4D4C7D; 
   }
 html {
     scroll-behavior: smooth;}
@@ -251,4 +252,11 @@ Keyframes Animation
 
 .link-list li:nth-last-child(1){
     margin-bottom: 0;
+}
+.social-link li a:hover path {
+    fill: var(--green-100);
+}
+
+.social-link li:nth-last-child(1){
+    margin-right: 0;
 }
