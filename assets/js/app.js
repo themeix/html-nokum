@@ -51,6 +51,27 @@
 
 
 
+
+
+    /*
+  ------------------------  
+  Load More
+  --------------------------
+  */
+  $('.explore-container').infiniteScroll({
+    path: function () {
+      if (this.loadCount < 4) {
+        let nextIndex = this.loadCount + 2;
+        return `explore/explore-${nextIndex}.html`;
+      }
+    },
+    append: '.explore-box',
+    button: '.load-more-btn',
+    checkLastPage: false,
+    scrollThreshold: false,
+    status: '.page-load-status',
+    history: false,
+  });
   /*
   ------------------------  
   Current Date

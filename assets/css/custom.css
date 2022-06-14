@@ -244,3 +244,11 @@ Keyframes Animation
     
 }
 
+.blog-post-box:nth-last-child(1) {
+    border-color: transparent;
+}
+
+
+.link-list li:nth-last-child(1){
+    margin-bottom: 0;
+}

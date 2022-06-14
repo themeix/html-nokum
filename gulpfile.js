@@ -20,6 +20,7 @@
     var JS_Files = [
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/jquery.easing/jquery.easing.min.js',
+    './node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js', 
     './assets/js/app.js' 
     ];
 /*
