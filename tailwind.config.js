@@ -30,11 +30,15 @@ module.exports = {
     } 
   ],
   theme: {
+
+
+    
     extend: {
       container: { 
         center: true,
         padding: '1rem',
        }, 
+       
       colors: {
         primary:{
           100: '#363062',
@@ -52,7 +56,21 @@ module.exports = {
           100: '#2C2828',
          
         },
+        
       },
+
+      screens: {
+        'md-max': {'max': '800px'},
+        'lg-max': {'max': '125px'},
+
+        'md-min': '801px',
+        'lg-min': '1025px',
+        
+      },
+
+
+
+
       backgroundImage: {
         "curved-blue-gradient": "url(/imagenes/precios/curved-blue-gradient-bg.svg)",
         "blue-cyan-gradient": "linear-gradient(90deg, #C84E89 0%, #F15F79 100%);",
@@ -127,6 +145,7 @@ module.exports = {
         '75': '300px',
         '1800': '1800px',
         '143.75': '575px',
+        '21.25': '80px',
       },
       maxHeight: {
         '80': '320px',
@@ -141,6 +160,7 @@ module.exports = {
         '12.5': '50px',
         '75': '300px',
         '15%': '15%',
+        '46.25': '185px',
         
       },
       height: {

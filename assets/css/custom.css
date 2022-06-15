@@ -211,39 +211,45 @@ Keyframes Animation
     transform: translateY(-100px);
     transition: .5s;
 }
-.nokum-menu-icon{
-    transform: translateY(100px);
-    transition: .5s;
-
-}
-.body-sticky .nokum-menu-icon{
-    transform: translateY(0px);  
-    transition: .5s;
-}
-
-.body-sticky .nokum-menu-icon {
-    opacity: 1;
-}
-.transition{
-    transition: .5s;
-}
 
 
 
-.close-button:before {
-    background: white;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    content: "";
-    background-image: url(/assets/images/close-icon.svg);
-    z-index: 99999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+
+
+    .close-button:before {
+        background: white;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        content: "";
+        background-image: url(/assets/images/close-icon.svg);
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+    .nokum-menu-icon{
+        transform: translateY(100px);
+        transition: .5s;
     
-}
+    }
+    .body-sticky .nokum-menu-icon{
+        transform: translateY(0px);  
+        transition: .5s;
+    }
+    
+    .body-sticky .nokum-menu-icon {
+        opacity: 1;
+    }
+
+    
+
+ 
+    
+    
+
 
 .blog-post-box:nth-last-child(1) {
     border-color: transparent;
@@ -259,4 +265,12 @@ Keyframes Animation
 
 .social-link li:nth-last-child(1){
     margin-right: 0;
+}
+
+@media screen and (max-width:1024px){
+    
+    .nokum-left{
+        max-width: 80px;
+
+    }
 }
