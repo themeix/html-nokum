@@ -1595,6 +1595,11 @@ video {
     max-width: 180px;
   }
 
+  .xl\:px-15 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .xl\:text-7xl {
     font-size: 64px;
   }
