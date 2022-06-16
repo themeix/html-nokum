@@ -1052,6 +1052,11 @@ video {
   font-size: .875rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1381,6 +1386,10 @@ video {
     font-size: 32px;
   }
 
+  .md\:text-5xl {
+    font-size: 40px;
+  }
+
   .md\:before\:rounded-tr-4::before {
     content: var(--tw-content);
     border-top-right-radius: 16px;
@@ -1496,8 +1505,16 @@ video {
 
 @media (min-width: 800px) {
 
+  .md-min\:grid {
+    display: grid;
+  }
+
   .md-min\:hidden {
     display: none;
+  }
+
+  .md-min\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md-min\:pt-12 {
