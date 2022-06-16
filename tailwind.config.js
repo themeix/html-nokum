@@ -9,30 +9,13 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         '.container': {
-          maxWidth: '100%',
-          '@screen sm': {
-            maxWidth: '100%',
-          },
-          '@screen md': {
-            maxWidth: '100%',
-          },
-          '@screen lg': {
-            maxWidth: '100%',
-          },
-          '@screen xl': {
-            maxWidth: '100%',
-          },
-          '@screen 2xl': {
-            maxWidth: '100%', 
-          },
+         
         }
       })
     } 
   ],
   theme: {
 
-
-    
     extend: {
       container: { 
         center: true,
@@ -59,28 +42,12 @@ module.exports = {
         
       },
 
-      screens: {
-        'md-max': {'max': '800px'},
-        'md-max-767': {'max': '767px'},
-
-
-        'xl-min': '1281px',
-        'lg-min': '1025px',
-        'md-min': '801px',
-        'md-min-768': '768px',
-        
-      },
-
-
-
-
       backgroundImage: {
         "curved-blue-gradient": "url(/imagenes/precios/curved-blue-gradient-bg.svg)",
         "blue-cyan-gradient": "linear-gradient(90deg, #C84E89 0%, #F15F79 100%);",
         "border-gradient": "linear-gradient(90deg, #C84E89 0%, #F15F79 100%);",
       
           },
-
 
       placeholderColor: theme => theme('colors'),
       placeholderColor: {
@@ -115,7 +82,6 @@ module.exports = {
 
       },
       
-      
       fontFamily: {
         Inter: [
           '"Inter",sans-serif',
@@ -125,31 +91,22 @@ module.exports = {
           
         ],
       },
-      fontSize: {
-        'xs': '0.75rem',
-        'sm': '.875rem',
-        'tiny': '.875rem',
-         'base': '1rem',
-         '4xl': '32px',
-         '5xl': '40px',
-         '6xl': '48px',
-         '7xl': '64px',
+
+      fontSize: {  
+        '3xl': '2rem',
+        '4xl': '2.5rem',
+        '6xl': '4rem',
        },
       boxShadow: {
         base:' 0px 1px 3px 0px #0000001A',
         none: 'none',
 
-       
-
       },
-      maxWidth: {
-        '62.2': '200px',
-        '75': '300px',
+      maxWidth: {      
+      
         '1800': '1800px',
-        '143.75': '575px',
-        '21.25': '80px',
-        '307.5': '1590px',
-        '218': '180px',
+        '143.75': '575px',    
+        '307.5': '1590px',       
         '20': '80px',
       },
       maxHeight: {
@@ -162,23 +119,19 @@ module.exports = {
         
       },
       width: {
-        '113': '452px',
-        '12.5': '50px',
-        '75': '300px',
-        '15%': '15%',
+        '12.5': '3.125em',      
         '51.25': '205px',
-        '19': '76px',
-        '218': '180px',
-        
+      
+        '113': '452px',
+       
       },
       height: {
-        '15': '3.75rem',
-        '12.5': '50px',
-        '50.75': '203px',
-        '143.75': '575px',
-        '79': '316px',
-        
-        
+        '12.5': '3.125em',
+        '15': '3.75em',
+        '50.5': '12.625em',     
+        '79': '19.75em',
+        '142': '35.5em'
+     
        },
        scale: {
        '25': '.25',
@@ -192,7 +145,6 @@ module.exports = {
       inset: {
         '45': "180px",
        
-
       },
       spacing: {
         '5.5': '22px',
@@ -203,10 +155,7 @@ module.exports = {
         '50': '200px',
         '75': '300px',
         '32.5': '130px',
-        '38': '152px',
-        '16%': '16%',
-        '21%': '21%',
-        '5%': '5%',
+        '38': '152px',     
         '67.5': '270px',
         '23.5': '94px',
       },
@@ -222,10 +171,6 @@ module.exports = {
         '160': '160%',
         '13': '13px',
         
-
-
-        
- 
        }
     },
   },
