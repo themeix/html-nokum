@@ -62,11 +62,11 @@ module.exports = {
       screens: {
         'md-max': {'max': '800px'},
         'lg-max': {'max': '125px'},
+        'md-max': {'max': '800px'},
 
-        'md-min': '801px',
         'xl-min': '1281px',
         'lg-min': '1025px',
-        'md-min': '800px',
+        'md-min': '801px',
         
       },
 
