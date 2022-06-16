@@ -330,7 +330,7 @@ Keyframes Animation
     }
 
     .test-2 {
-        padding-left: 94px;
+        padding-left: 94px!important;
     }
 
 
