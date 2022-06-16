@@ -228,6 +228,9 @@ Keyframes Animation
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        top: -12px;
+        right: 60px;
+
         
     }
     .nokum-menu-icon{
@@ -274,3 +277,83 @@ Keyframes Animation
 
     }
 }
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    .main-area{
+
+        display: grid;
+        grid-auto-columns: 1fr;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width:1279px){
+
+   
+    .nokum-left {
+        max-width: 80px;
+    }
+
+    .main-area{
+
+        grid-template-columns: 80px 1.9fr;
+        grid-template-rows: 1fr;
+        gap: 0 0;
+        grid-template-areas: ". .";
+    }
+
+}
+
+
+
+
+    @media screen and (min-width: 1280px) {
+
+
+        .main-area{
+
+
+    grid-template-columns: 180px 1.9fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas: ". .";
+
+
+    }
+
+    .test-2 {
+        padding-left: 94px;
+    }
+
+
+
+    }
+        
+
+ 
+
+    @media screen and (max-width:800px){
+        .test-1 {
+            display: none;
+        }
+
+        .main-width{
+            display: unset!important;
+        }
+    }
+
+   
+
+    @media only screen and (min-width : 800px) {
+        .test-2 {
+            padding-left: 50px;
+        }
+        }

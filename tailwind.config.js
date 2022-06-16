@@ -11,19 +11,19 @@ module.exports = {
         '.container': {
           maxWidth: '100%',
           '@screen sm': {
-            maxWidth: '610px',
+            maxWidth: '100%',
           },
           '@screen md': {
-            maxWidth: '750px',
+            maxWidth: '100%',
           },
           '@screen lg': {
-            maxWidth: '1000px',
+            maxWidth: '100%',
           },
           '@screen xl': {
-            maxWidth: '1230px',
+            maxWidth: '100%',
           },
           '@screen 2xl': {
-            maxWidth: '1700px', 
+            maxWidth: '100%', 
           },
         }
       })
@@ -64,7 +64,9 @@ module.exports = {
         'lg-max': {'max': '125px'},
 
         'md-min': '801px',
+        'xl-min': '1281px',
         'lg-min': '1025px',
+        'md-min': '800px',
         
       },
 
@@ -141,11 +143,13 @@ module.exports = {
       },
       maxWidth: {
         '62.2': '200px',
-        '1230': '1230px',
         '75': '300px',
         '1800': '1800px',
         '143.75': '575px',
         '21.25': '80px',
+        '307.5': '1590px',
+        '218': '180px',
+        '20': '80px',
       },
       maxHeight: {
         '80': '320px',
@@ -154,13 +158,16 @@ module.exports = {
       },
       minWidth: {
         '82': '595px',
+        
       },
       width: {
         '113': '452px',
         '12.5': '50px',
         '75': '300px',
         '15%': '15%',
-        '46.25': '185px',
+        '51.25': '205px',
+        '19': '76px',
+        '218': '180px',
         
       },
       height: {
@@ -199,6 +206,7 @@ module.exports = {
         '21%': '21%',
         '5%': '5%',
         '67.5': '270px',
+        '23.5': '94px',
       },
       opacity: {
         '10': '10%',
