@@ -213,7 +213,7 @@
          <div class=" container">
             <div class="blog-post-all  explore-container">
             <div class=" blog-post-box lg:grid lg:grid-cols-12 gap-6 border-b border-green-200 lg:mb-15 mb-10 ">
-               <div class="col-span-2 ">
+               <div class="col-span-2 hidden lg:block">
                   <div class="publish-date lg:mb-8">
                      <p class="font-semibold xl:text-5xl lg:text-4xl  text-green-300">22 <span
                            class="text-sm">Jul, 2022</span></p>
@@ -223,8 +223,11 @@
                   <div class="post-right xl:px-15 lg:pb-15  mb-10 lg:mb-0">
 
                      <div class="post-top">
-                        <div class="member-badge">
-                           <p class="font-medium flex items-center text-green-300"><span class="mr-2"><svg
+                        <div class="member-badge flex">
+                           <div class="badge-lock mr-8 lg:mr-0">
+
+                           
+                           <p class="font-medium flex items-center text-green-300 "><span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full"><svg
                                     class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -232,9 +235,21 @@
                                        fill="#827397" />
                                  </svg>
                               </span>Member Only</p>
+                           </div>
+                              <div class="badge-date lg:hidden">
+                                 <p class=" font-medium flex items-center text-green-300"><span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
+                                    </svg>
+                                    
+                              </span>Jun, 2022</p>
+                              </div>
+                             
+                        </div>
+                        <div class="post-title">
                            <h2 class="lg:text-6xl md:5xl  text-4xl font-semibold lg:pt-2 pt-4 text-black-100 "><a class="hover:text-green-300 transition duration-500  " href="single.html">Ten reasons why you are a rookie in
                               podcast</a></h2>
-                        </div>
+                           </div>
+                      
                      </div>
                      <div class="post-bottom flex items-center lg:mt-8 mt-5">
                         <div class="post-author-images mr-4">
@@ -251,6 +266,95 @@
                   </div>
                </div>
             </div>
+
+
+            <div class=" blog-post-box lg:grid lg:grid-cols-12 gap-6 border-b border-green-200 lg:mb-15 mb-10">
+
+
+               <div class="lg:col-span-2   mb-8 md:mb-0 lg:order-last">
+                  <div class="blog-post-images">
+
+                        <a href="single.html"><img class=" h-79 lg:h-50.75 object-cover rounded-md " src="assets/images/blog-post-images.webp" alt="images"></a>
+                  </div>
+                  <div class="badge-lock mr-8 lg:mr-0">
+
+                           
+                     <p class="font-medium flex items-center text-green-300 "><span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full"><svg
+                              class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                 fill="#827397" />
+                           </svg>
+                        
+                     </div>
+               </div>
+
+
+               <div class="col-span-2 hidden lg:block">
+                  <div class="publish-date lg:mb-8">
+                     <p class="font-semibold xl:text-5xl lg:text-4xl  text-green-300">22 <span
+                           class="text-sm">Jul, 2022</span></p>
+                  </div>
+               </div>
+               <div class="col-span-8 ">
+                  <div class="post-right xl:px-15 lg:pb-15  mb-10 lg:mb-0">
+
+                     <div class="post-top">
+                        <div class="member-badge flex">
+                           <div class="badge-lock mr-8 lg:mr-0">
+
+                           
+                           <p class="font-medium flex items-center text-green-300 "><span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full"><svg
+                                    class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                       fill="#827397" />
+                                 </svg>
+                              </span>Member Only</p>
+                           </div>
+                              <div class="badge-date lg:hidden">
+                                 <p class=" font-medium flex items-center text-green-300"><span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
+                                    </svg>
+                                    
+                              </span>Jun, 2022</p>
+                              </div>
+                             
+                        </div>
+                        <div class="post-title">
+                           <h2 class="lg:text-6xl md:5xl  text-4xl font-semibold lg:pt-2 pt-4 text-black-100 "><a class="hover:text-green-300 transition duration-500  " href="single.html">Ten reasons why you are a rookie in
+                              podcast</a></h2>
+                           </div>
+                      
+                     </div>
+                     <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                        <div class="post-author-images mr-4">
+                           <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
+                              alt="images"></a>
+                           
+                        </div>
+                        <div class="post-author-bio">
+                           <p class="text-lg font-semibold  text-black-100 text-sm"><a class=" hover:text-green-300 transition duration-500" href="author.html">Bianca Howe</a> </p>
+                           <p>UK, London</p>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+               
+
+              
+
+            </div>
+
+
+
+
+
+
 
             <div class=" blog-post-box lg:grid lg:grid-cols-12 flex flex-wrap gap-6 border-b border-green-200 lg:mb-15 mb-10 group ">
               
