@@ -1494,6 +1494,10 @@ video {
   .xl\:max-w-218 {
     max-width: 180px;
   }
+
+  .xl\:text-7xl {
+    font-size: 64px;
+  }
 }
 
 @media (max-width: 800px) {

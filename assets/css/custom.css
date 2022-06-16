@@ -282,16 +282,7 @@ Keyframes Animation
 
 
 
-@media screen and (min-width: 801px) {
 
-    .main-area{
-
-        display: grid;
-        grid-auto-columns: 1fr;
-    }
-    
-
-}
 
 
 
@@ -352,8 +343,18 @@ Keyframes Animation
 
    
 
-    @media only screen and (min-width : 800px) {
+    @media only screen and (min-width : 801px) {
         .test-2 {
             padding-left: 50px;
         }
+        }
+        @media screen and (min-width: 801px) {
+
+            .main-area{
+        
+                display: grid;
+                grid-auto-columns: 1fr;
+            }
+            
+        
         }
