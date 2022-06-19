@@ -58,14 +58,14 @@
   Load More
   --------------------------
   */
-  $('.explore-container').infiniteScroll({
+  $('.blog-post-all').infiniteScroll({
     path: function () {
       if (this.loadCount < 4) {
         let nextIndex = this.loadCount + 2;
         return `explore/explore-${nextIndex}.html`;
       }
     },
-    append: '.explore-box',
+    append: '.blog-post-box',
     button: '.load-more-btn',
     checkLastPage: false,
     scrollThreshold: false,
