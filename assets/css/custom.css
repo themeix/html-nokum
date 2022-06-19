@@ -190,13 +190,17 @@ Keyframes Animation
     background-color: #fff;
     position: fixed;
     top: 0!important;
+    -webkit-animation: headerSlideDown .95s ease!important;
     animation: headerSlideDown .95s ease!important;
     right: 0!important;
     left: 0!important;
     z-index: 99;
     opacity: 9999!important;
+    max-width: 1504px;
+    margin: auto;
+    padding-left: 235px;
+}
    
-   }
     .header-area{
         animation: headerSlideDown .95s ease;
     }
@@ -218,9 +222,7 @@ Keyframes Animation
 
 
     .close-button:before {
-        background: white;
-        width: 40px;
-        height: 40px;
+        background: #fff;
         position: absolute;
         content: "";
         background-image: url(/assets/images/close-icon.svg);
@@ -229,11 +231,14 @@ Keyframes Animation
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        top: -12px;
-        right: 60px;
-
-        
+        top: 16px;
+        right: -15px;
+        background-size: cover;
+        max-width: 200px;
+        width: 20px;
+        height: 20px;
     }
+        
     .nokum-menu-icon{
         transform: translateY(100px);
         transition: .5s;

@@ -633,6 +633,10 @@ video {
   z-index: 1;
 }
 
+.z-100 {
+  z-index: 100;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -873,20 +877,16 @@ video {
   overflow: hidden;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-md {
   border-radius: 8px;
 }
 
-.rounded-4 {
-  border-radius: 16px;
+.rounded-full {
+  border-radius: 9999px;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-4 {
+  border-radius: 16px;
 }
 
 .border-2 {
@@ -988,6 +988,16 @@ video {
   padding-right: 2rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1018,14 +1028,9 @@ video {
   padding-right: 3rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .pt-20 {
@@ -1124,9 +1129,9 @@ video {
   color: rgb(92 92 92 / var(--tw-text-opacity));
 }
 
-.text-purple-300 {
+.text-stone-900 {
   --tw-text-opacity: 1;
-  color: rgb(130 115 151 / var(--tw-text-opacity));
+  color: rgb(44 40 40 / var(--tw-text-opacity));
 }
 
 .text-gray-100 {
@@ -1149,9 +1154,9 @@ video {
   color: rgb(54 48 98 / var(--tw-text-opacity));
 }
 
-.text-stone-900 {
+.text-purple-300 {
   --tw-text-opacity: 1;
-  color: rgb(44 40 40 / var(--tw-text-opacity));
+  color: rgb(130 115 151 / var(--tw-text-opacity));
 }
 
 .text-gray-700 {
@@ -1173,16 +1178,8 @@ video {
   outline-style: solid;
 }
 
-.outline-1 {
-  outline-width: 1px;
-}
-
 .outline-2 {
   outline-width: 2px;
-}
-
-.outline-offset-2 {
-  outline-offset: 2px;
 }
 
 .outline-orange-300 {
@@ -1356,10 +1353,6 @@ video {
     margin-top: 0px;
   }
 
-  .sm\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -1447,14 +1440,6 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:justify-end {
-    justify-content: flex-end;
-  }
-
   .md\:rounded-none {
     border-radius: 0;
   }
@@ -1470,10 +1455,6 @@ video {
 
   .md\:pl-12 {
     padding-left: 3rem;
-  }
-
-  .md\:text-start {
-    text-align: start;
   }
 
   .md\:text-4xl {
