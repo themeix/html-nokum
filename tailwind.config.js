@@ -162,6 +162,8 @@ module.exports = {
         '2': 2,
         '100': 100,
         'auto': 'auto',
+        '999': 999,
+        'auto': 'auto',
       },
 
       spacing: {
