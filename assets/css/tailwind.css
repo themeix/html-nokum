@@ -1455,6 +1455,10 @@ video {
     padding-left: 3rem;
   }
 
+  .md\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
   .md\:text-right {
     text-align: right;
   }
@@ -1603,6 +1607,10 @@ video {
     padding-left: 4rem;
   }
 
+  .lg\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.5rem;
   }
@@ -1625,8 +1633,20 @@ video {
 
 @media (min-width: 1280px) {
 
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .xl\:mr-20 {
     margin-right: 5rem;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
   }
 
   .xl\:w-45 {
@@ -1639,6 +1659,10 @@ video {
 
   .xl\:max-w-screen-xl {
     max-width: 1280px;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
   }
 
   .xl\:px-15 {

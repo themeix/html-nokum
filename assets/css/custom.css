@@ -274,7 +274,7 @@ Keyframes Animation
 
         .underline-hover {
             display: inline;
-            background-image: linear-gradient(rgba(0, 0, 0, 0) calc(99% - 1px), #827397 1px);
+            background-image: linear-gradient(rgba(0, 0, 0, 0) calc(99% - 1px), #363062 1px);
             background-repeat: no-repeat;
             background-size: 0% 100%;
             -webkit-transition: background-size 0.5s;
