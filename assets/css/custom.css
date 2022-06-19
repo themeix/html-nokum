@@ -1,8 +1,8 @@
 :root{
-    --primary-100:#363062; 
+    --blue-900:#363062; 
     --white:#ffff; 
     --black-100:#2C2828; 
-    --green-100:#4D4C7D; 
+    --blue-800:#4D4C7D; 
   }
 html {
     scroll-behavior: smooth;}
@@ -263,101 +263,13 @@ Keyframes Animation
     margin-bottom: 0;
 }
 .social-link li a:hover path {
-    fill: var(--green-100);
+    fill: var(--blue-800);
 }
 
 .social-link li:nth-last-child(1){
     margin-right: 0;
 }
 
-@media screen and (max-width:1024px){
-    
-    .nokum-left{
-        max-width: 80px;
-
-    }
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:1279px){
-
-   
-    .nokum-left {
-        max-width: 80px;
-    }
-
-    .main-area{
-
-        grid-template-columns: 80px 1.9fr;
-        grid-template-rows: 1fr;
-        gap: 0 0;
-        grid-template-areas: ". .";
-    }
-
-}
-
-
-
-
-    @media screen and (min-width: 1280px) {
-
-
-        .main-area{
-
-
-    grid-template-columns: 180px 1.9fr;
-    grid-template-rows: 1fr;
-    gap: 0 0;
-    grid-template-areas: ". .";
-
-
-    }
-
-    .test-2 {
-        padding-left: 94px!important;
-    }
-
-
-
-    }
-        
-
- 
-
-    @media screen and (max-width:800px){
-        .test-1 {
-            display: none;
-        }
-
-        .main-width{
-            display: unset!important;
-        }
-    }
-
-   
-
-    @media only screen and (min-width : 801px) {
-        .test-2 {
-            padding-left: 50px;
-        }
-        }
-        @media screen and (min-width: 801px) {
-
-            .main-area{
-        
-                display: grid;
-                grid-auto-columns: 1fr;
-            }
-            
-        
-        }
 
 
         .underline-hover {
@@ -372,3 +284,9 @@ Keyframes Animation
         .underline-hover:hover {
             background-size: 100% 100%;
         }
+
+
+
+
+
+   

@@ -8,9 +8,28 @@ module.exports = {
     plugins: [
     function ({ addComponents }) {
       addComponents({
+       
         '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '640px',
+          },
+          '@screen md': {
+            maxWidth: '768px',
+          },
+          '@screen lg': {
+            maxWidth: '1024px',
+          },
+          '@screen xl': {
+            maxWidth: '1280px',
+          },
+          '@screen 2xl': {
+            maxWidth: '1600px',
+          },
+          
          
         }
+
       })
     } 
   ],
@@ -23,23 +42,32 @@ module.exports = {
        }, 
        
       colors: {
-        primary:{
-          100: '#363062',
-        },
+        blue:{
+          800: '#4D4C7D',
+          900: '#363062',
+          100: 'rgba(77, 76, 125, 0.1)',
+        },     
+        
+        purple:{
+          300: '#827397',
+          
+        },  
+        orange:{
+          300: '#E9D5CA',
+          
+        }, 
+        stone:{
+          900: '#2C2828',
+          800: '#5C5C5C',
+          
+        },    
+        
+
         gray:{
           100: '#5C5C5C',
           200: '#ededf2',
         },
-        green:{
-          100: '#4D4C7D',
-          200: '#E9D5CA',
-          300: '#827397',
-        },
-        black:{
-          100: '#2C2828',
-         
-        },
-        
+
       },
 
       backgroundImage: {
@@ -56,21 +84,13 @@ module.exports = {
       borderColor: theme => ({
         ...theme('colors'),
          DEFAULT: theme('colors.gray.300', 'currentColor'),
-        'yellow-400': '#FACC15',
-        'yellow-300': '#FDE047',
        
        }),
        borderWidth: {
         DEFAULT: '1px',
         '0': '0',
         '2': '2px',
-       '3': '3px',
-        '4': '4px',
-       '5': '5px',
-       '6': '6px',
-       '8': '8px',
-       '12': '12px',
-       '30': '30px',
+
       },
      
       borderRadius: {
@@ -103,11 +123,10 @@ module.exports = {
 
       },
       maxWidth: {      
-      
-        '1800': '1800px',
-        '143.75': '575px',    
-        '307.5': '1590px',       
+        'screen-2xl': '1600px', 
+        'screen-3xl': '1800px',    
         '20': '80px',
+        '45': '180px',
       },
       maxHeight: {
         '80': '320px',
@@ -115,13 +134,13 @@ module.exports = {
         '143.75': '575px',
       },
       minWidth: {
-        '82': '595px',
+
         
       },
       width: {
         '12.5': '3.125em',      
         '51.25': '205px',
-      
+        '45': '180px',
         '113': '452px',
        
       },
@@ -142,22 +161,17 @@ module.exports = {
         '2': 2,
         'auto': 'auto',
       },
-      inset: {
-        '45': "180px",
-       
-      },
+
       spacing: {
         '5.5': '22px',
         '10.5': '42px',
         '27.5': '110px',
-        '30': '110px',
         '15': '60px',
         '50': '200px',
         '75': '300px',
         '32.5': '130px',
-        '38': '152px',     
+        '38': '152px', 
         '67.5': '270px',
-        '23.5': '94px',
       },
       opacity: {
         '10': '10%',
@@ -169,7 +183,7 @@ module.exports = {
                 },
        lineHeight: {
         '160': '160%',
-        '13': '13px',
+        
         
        }
     },
