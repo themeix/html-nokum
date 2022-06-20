@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Crimson Text', serif;
     line-height:130%!important;
     color: var(--black-100);
 }
@@ -401,3 +401,46 @@ Keyframes Animation
     right: 8%;
 }
 
+
+
+
+
+.head-main {
+    position: fixed;
+    right: 31px;
+    z-index: 999;
+    width: 100%;
+    max-width: 1600px;
+    padding-left: 72px;
+    
+}
+.body-sticky .head-main {
+    top: 66px;
+    transition: .5s;
+    
+}
+
+
+
+
+
+
+.nav-button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding-top: 8px;
+
+}
+
+.body-sticky .navbar-brand {
+    opacity: 0;
+   visibility: hidden;
+}
+.navbar-brand {
+    transition: .5s;
+}

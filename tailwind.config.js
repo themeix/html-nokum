@@ -103,11 +103,11 @@ module.exports = {
       },
       
       fontFamily: {
-        Inter: [
-          '"Inter",sans-serif',
+        Worksans: [
+          '"Work Sans",sans-serif',
         ],
-        Manrope: [
-          '"Manrope",sans-serif',
+        Crimson: [
+          '"Crimson Text",serif',
           
         ],
       },
