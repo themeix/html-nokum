@@ -3,6 +3,7 @@
     --white:#ffff; 
     --black-100:#2C2828; 
     --blue-800:#4D4C7D; 
+    --stone-900:#2C2828; 
 
   }
 html {
@@ -220,7 +221,7 @@ Keyframes Animation
 }
 
 .search-icon:hover path {
-    stroke:var(--white);
+    stroke:var(--stone-900);
 }
 
 .body-sticky .nokum-logo {

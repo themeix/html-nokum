@@ -1402,6 +1402,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-stone-900 {
+  --tw-text-opacity: 1;
+  color: rgb(44 40 40 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
 
   .sm\:right-10 {
