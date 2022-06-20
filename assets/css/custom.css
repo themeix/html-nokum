@@ -273,10 +273,10 @@ Keyframes Animation
     }
 
     .nokum-logo {
-        transition: .3s;
+        transition: .5s;
     }
    .body-sticky .nokum-logo {
-        transition: .3s;
+        transition: .5s;
     }
 
  
