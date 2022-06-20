@@ -186,25 +186,38 @@ Keyframes Animation
 
 
 
-.header-sticky {
-    background-color: #fff;
-    position: fixed;
-    top: 0!important;
-    -webkit-animation: headerSlideDown .95s ease!important;
-    animation: headerSlideDown .95s ease!important;
-    right: 0!important;
-    left: 0!important;
-    z-index: 99;
-    opacity: 9999!important;
-    max-width: 1504px;
-    margin: auto;
-    padding-left: 235px;
+.header-area {
+
+    padding-right: 49px;
+    
+}
+
+.body-sticky .header-area {
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+}
+
+
+
+.body-sticky .header-sticky {
+    opacity: 1;
+    background-color: white;
+    transition: .3s;
+    z-index: 1;
+    visibility: visible;
 }
    
-    .header-area{
-        animation: headerSlideDown .95s ease;
-    }
+   
+.body-sticky .header-nav {
+    margin-top: -60px;
+    transition: .3s;
+}
 
+.header-sticky .header-nav {
+    margin-top: 0;
+   
+}
 
 .search-icon:hover path {
     stroke:var(--white);
@@ -240,25 +253,40 @@ Keyframes Animation
         margin-right: 85px;
     }
         
-    .nokum-menu-icon{
+      .nokum-menu-icon{
         transform: translateY(100px);
-        transition: .5s;
+        transition: .3s;
+        
+    
+    }
+  .body-sticky  .nokum-menu-icon{
+        visibility: visible!important;
     
     }
     .body-sticky .nokum-menu-icon{
         transform: translateY(0px);  
-        transition: .5s;
+        transition: .3s;
     }
     
     .body-sticky .nokum-menu-icon {
         opacity: 1;
     }
 
-    
+    .nokum-logo {
+        transition: .3s;
+    }
+   .body-sticky .nokum-logo {
+        transition: .3s;
+    }
 
  
     
+    @media screen and (max-width:1500px){
+        header.header-area {
+            padding-left: 20%;
+        }
     
+    }
 
 
 .blog-post-box:nth-last-child(1) {
@@ -305,7 +333,7 @@ Keyframes Animation
 
 
         
-/* Menu CSS */
+/* Mobile Menu CSS */
 
 .nav-open .main-menu {
     opacity: 1;
@@ -373,4 +401,3 @@ Keyframes Animation
     right: 8%;
 }
 
-    

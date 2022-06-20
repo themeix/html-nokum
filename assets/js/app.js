@@ -61,41 +61,6 @@ $('.nav-button').on('click', function(){
 
 
 
-  /*=============================================
-     	 Scroll to Top
-  ===============================================*/
-
-     function scrolltop() {
-
-
-      var wind = $(window);
-  
-      wind.on("scroll", function () {
-  
-        var scrollTop = $(window).scrollTop();
-  
-        if (scrollTop >= 500) {
-  
-          $(".scroll-top").fadeIn("slow");
-  
-        } else {
-  
-          $(".scroll-top").fadeOut("slow");
-        }
-  
-      });
-  
-      $(".scroll-top").on("click", function () {
-  
-        var bodyTop = $("html, body");
-  
-        bodyTop.animate({
-          scrollTop: 0
-        }, 800, "easeOutCubic");
-      });
-  
-    }
-    scrolltop();
 
 
 
@@ -127,5 +92,40 @@ $('.nav-button').on('click', function(){
   $('#spanYear').html(new Date().getFullYear());
 
 
+  /*=============================================
+     	 Scroll to Top
+  ===============================================*/
+
+  function scrolltop() {
+
+
+    var wind = $(window);
+
+    wind.on("scroll", function () {
+
+      var scrollTop = $(window).scrollTop();
+
+      if (scrollTop >= 500) {
+
+        $(".scroll-top").fadeIn("slow");
+
+      } else {
+
+        $(".scroll-top").fadeOut("slow");
+      }
+
+    });
+
+    $(".scroll-top").on("click", function () {
+
+      var bodyTop = $("html, body");
+
+      bodyTop.animate({
+        scrollTop: 0
+      }, 800, "easeOutCubic");
+    });
+
+  }
+  scrolltop();
 
 }(jQuery));
