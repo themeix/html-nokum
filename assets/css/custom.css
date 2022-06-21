@@ -222,9 +222,12 @@ Keyframes Animation
 }
 
 .search-icon:hover path {
-    stroke:var(--stone-900);
+    stroke:var(--blue-800);
 }
 
+.search-icon path {
+    stroke:var(--stone-900);
+}
 .body-sticky .nokum-logo {
     opacity: 0;
     pointer-events: none;
