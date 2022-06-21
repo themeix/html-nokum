@@ -11,10 +11,10 @@
         Let's see all CSS/JS Plugin into [package.json]
     =============================
     */
-    var File_Name = 'html-goldma.zip';
+    var File_Name = 'html-nokum.zip';
     var CSS_Files = [
     
- 
+    './node_modules/typography-fix/css/typofix.css',
     './assets/css/custom.css'
     ];
     var JS_Files = [
