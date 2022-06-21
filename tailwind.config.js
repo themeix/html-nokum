@@ -127,6 +127,7 @@ module.exports = {
         'screen-3xl': '1800px',    
         '20': '80px',
         '45': '180px',
+        '387.5': '1550px',
       },
       maxHeight: {
         '80': '320px',
