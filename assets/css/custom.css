@@ -250,11 +250,10 @@ Keyframes Animation
         justify-content: center;
         cursor: pointer;
         top: 16px;
-        right: 0;
+        right: -4px;
         background-size: cover;
-        /* max-width: 200px; */
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
         margin-right: 85px;
     }
         
