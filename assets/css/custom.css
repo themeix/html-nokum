@@ -324,16 +324,6 @@ Keyframes Animation
 
 
 
-
-
-   
-
-
-
-
-
-
-
         
 /* Mobile Menu CSS */
 
@@ -445,4 +435,13 @@ Keyframes Animation
 }
 .navbar-brand {
     transition: .5s;
+}
+
+
+@media (min-width:1500px) and (max-width:1536px){
+
+    .header-area-inner {
+        padding-left: 272px;
+    }
+      
 }
