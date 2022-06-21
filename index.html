@@ -1,834 +1,959 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>HTML Nokum</title>
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="images/x-icon" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-      <!-- gulp:css -->
-      <link rel="stylesheet" href="assets/css/app.min.css">
-      <!-- endgulp -->
-   </head>
-   <body class=" font-Worksans font-base leading-160 font-normal text-stone-800 body-scroll transition relative">
-      <div class="main-area md-min:pt-12 max-w-screen-2xl xl:px-12 px-8 m-auto overflow-hidden  md:grid md:grid-cols-12">
-         <div class="nokum-left-area col-span-1 hidden md:block ">
-            <div class="nokum-left  border-r  border-orange-300 fixed h-screen top-0  pt-8  w-20 xl:w-45  z-100">
-               <div class="nokum-menu-icon opacity-0 !invisible relative hidden xl:block">
-                  <button class=" cursor-pointer right-16 flex text-lg items-center text-stone-900 font-medium   outline  outline-2 py-3 px-6 rounded-md outline-orange-300">
-                     Menu
-                     <svg class="ml-2" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12.5H0V10.5H12V12.5ZM18 7.5H0V5.5H18V7.5ZM12 2.5H0V0.5H12V2.5Z" fill="#2C2828"/>
-                        </svg>
 
-                  </button>
-               </div>
-               <div class="nokum-logo   text-center ">
-                  <a href="index.html">
-                     <svg class="inline-block" width="25" height="130" viewBox="0 0 25 130" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                           d="M24 129.76H0.959999V126.88L18.96 114.864H0.959999V111.984H24V114.864L5.984 126.88H24V129.76ZM24.48 93.238C24.48 95.5313 23.9733 97.478 22.96 99.078C21.9467 100.678 20.5387 101.899 18.736 102.742C16.9333 103.574 14.848 103.99 12.48 103.99C10.112 103.99 8.02667 103.574 6.224 102.742C4.42133 101.899 3.01333 100.678 2 99.078C0.986666 97.478 0.48 95.5313 0.48 93.238C0.48 90.934 0.986666 88.982 2 87.382C3.01333 85.782 4.42133 84.566 6.224 83.734C8.02667 82.902 10.112 82.486 12.48 82.486C14.848 82.486 16.9333 82.902 18.736 83.734C20.5387 84.566 21.9467 85.782 22.96 87.382C23.9733 88.982 24.48 90.934 24.48 93.238ZM21.76 93.238C21.7707 91.5207 21.3867 90.0913 20.608 88.95C19.8187 87.798 18.7253 86.9393 17.328 86.374C15.9307 85.798 14.3147 85.51 12.48 85.51C10.6347 85.51 9.01867 85.798 7.632 86.374C6.24533 86.9393 5.16267 87.798 4.384 88.95C3.60533 90.0913 3.21067 91.5207 3.2 93.238C3.18933 94.9553 3.57333 96.3847 4.352 97.526C5.13067 98.6567 6.21867 99.51 7.616 100.086C9.01333 100.662 10.6347 100.955 12.48 100.966C14.3147 100.977 15.9253 100.694 17.312 100.118C18.6987 99.542 19.7867 98.6833 20.576 97.542C21.3547 96.39 21.7493 94.9553 21.76 93.238Z"
-                           fill="#827397" />
-                        <path
-                           d="M24 74.4725H0.959999V71.6245H11.776L0.959999 61.5445V57.9605L12.144 68.4245L24 57.1445V60.8245L12.736 71.6245H24V74.4725ZM24.48 41.022C24.48 42.8033 24.112 44.3767 23.376 45.742C22.64 47.1073 21.6107 48.1793 20.288 48.958C18.9547 49.726 17.392 50.11 15.6 50.11H0.976L0.959999 47.23H15.36C16.448 47.23 17.3973 47.0487 18.208 46.686C19.008 46.3127 19.6747 45.822 20.208 45.214C20.7413 44.606 21.1413 43.9393 21.408 43.214C21.664 42.478 21.792 41.7473 21.792 41.022C21.792 40.286 21.6587 39.55 21.392 38.814C21.1253 38.078 20.7307 37.4113 20.208 36.814C19.6747 36.206 19.0027 35.7207 18.192 35.358C17.3813 34.9953 16.4373 34.814 15.36 34.814H0.959999V31.934H15.6C17.3813 31.934 18.9387 32.3233 20.272 33.102C21.6053 33.87 22.64 34.9367 23.376 36.302C24.112 37.6673 24.48 39.2407 24.48 41.022ZM24 22.6538H0.959999V20.0618L19.312 11.3578L0.959999 2.70175L0.959999 0.0777512H23.984V2.78175H7.216L24 10.6058V12.1258L7.216 19.9498H24V22.6538Z"
-                           fill="#5C5C5C" />
-                     </svg>
-                  </a>
-               </div>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>HTML Nokum</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="images/x-icon" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+   <!-- gulp:css -->
+   <link rel="stylesheet" href="assets/css/app.min.css">
+   <!-- endgulp -->
+</head>
+
+<body class=" font-Worksans font-base leading-160 font-normal text-stone-800 body-scroll transition relative">
+   <div class="main-area md-min:pt-12 max-w-screen-2xl xl:px-12 px-8 m-auto overflow-hidden  md:grid md:grid-cols-12">
+      <div class="nokum-left-area col-span-1 hidden md:block ">
+         <div class="nokum-left  border-r  border-orange-300 fixed h-screen top-0  pt-8  w-20 xl:w-45  z-100">
+            <div class="nokum-menu-icon opacity-0 !invisible relative hidden xl:block">
+               <button
+                  class=" cursor-pointer right-16 flex text-lg items-center text-stone-900 font-medium   outline  outline-2 py-3 px-6 rounded-md outline-orange-300">
+                  Menu
+                  <svg class="ml-2" width="18" height="13" viewBox="0 0 18 13" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path d="M12 12.5H0V10.5H12V12.5ZM18 7.5H0V5.5H18V7.5ZM12 2.5H0V0.5H12V2.5Z" fill="#2C2828" />
+                  </svg>
+
+               </button>
+            </div>
+            <div class="nokum-logo   text-center ">
+               <a href="index.html">
+                  <svg class="inline-block" width="25" height="130" viewBox="0 0 25 130" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M24 129.76H0.959999V126.88L18.96 114.864H0.959999V111.984H24V114.864L5.984 126.88H24V129.76ZM24.48 93.238C24.48 95.5313 23.9733 97.478 22.96 99.078C21.9467 100.678 20.5387 101.899 18.736 102.742C16.9333 103.574 14.848 103.99 12.48 103.99C10.112 103.99 8.02667 103.574 6.224 102.742C4.42133 101.899 3.01333 100.678 2 99.078C0.986666 97.478 0.48 95.5313 0.48 93.238C0.48 90.934 0.986666 88.982 2 87.382C3.01333 85.782 4.42133 84.566 6.224 83.734C8.02667 82.902 10.112 82.486 12.48 82.486C14.848 82.486 16.9333 82.902 18.736 83.734C20.5387 84.566 21.9467 85.782 22.96 87.382C23.9733 88.982 24.48 90.934 24.48 93.238ZM21.76 93.238C21.7707 91.5207 21.3867 90.0913 20.608 88.95C19.8187 87.798 18.7253 86.9393 17.328 86.374C15.9307 85.798 14.3147 85.51 12.48 85.51C10.6347 85.51 9.01867 85.798 7.632 86.374C6.24533 86.9393 5.16267 87.798 4.384 88.95C3.60533 90.0913 3.21067 91.5207 3.2 93.238C3.18933 94.9553 3.57333 96.3847 4.352 97.526C5.13067 98.6567 6.21867 99.51 7.616 100.086C9.01333 100.662 10.6347 100.955 12.48 100.966C14.3147 100.977 15.9253 100.694 17.312 100.118C18.6987 99.542 19.7867 98.6833 20.576 97.542C21.3547 96.39 21.7493 94.9553 21.76 93.238Z"
+                        fill="#827397" />
+                     <path
+                        d="M24 74.4725H0.959999V71.6245H11.776L0.959999 61.5445V57.9605L12.144 68.4245L24 57.1445V60.8245L12.736 71.6245H24V74.4725ZM24.48 41.022C24.48 42.8033 24.112 44.3767 23.376 45.742C22.64 47.1073 21.6107 48.1793 20.288 48.958C18.9547 49.726 17.392 50.11 15.6 50.11H0.976L0.959999 47.23H15.36C16.448 47.23 17.3973 47.0487 18.208 46.686C19.008 46.3127 19.6747 45.822 20.208 45.214C20.7413 44.606 21.1413 43.9393 21.408 43.214C21.664 42.478 21.792 41.7473 21.792 41.022C21.792 40.286 21.6587 39.55 21.392 38.814C21.1253 38.078 20.7307 37.4113 20.208 36.814C19.6747 36.206 19.0027 35.7207 18.192 35.358C17.3813 34.9953 16.4373 34.814 15.36 34.814H0.959999V31.934H15.6C17.3813 31.934 18.9387 32.3233 20.272 33.102C21.6053 33.87 22.64 34.9367 23.376 36.302C24.112 37.6673 24.48 39.2407 24.48 41.022ZM24 22.6538H0.959999V20.0618L19.312 11.3578L0.959999 2.70175L0.959999 0.0777512H23.984V2.78175H7.216L24 10.6058V12.1258L7.216 19.9498H24V22.6538Z"
+                        fill="#5C5C5C" />
+                  </svg>
+               </a>
             </div>
          </div>
-         <div class="nokum-right xl:pl-27.5 md:pl-12 col-span-11">
-            <!--  ====================== Header Area Start =============================  -->
+      </div>
+      <div class="nokum-right xl:pl-27.5 md:pl-12 col-span-11">
+         <!--  ====================== Header Area Start =============================  -->
 
-            <header class="header-area fixed    header-scroll  left-0 right-0  py-10 hidden xl:block bg-white">
-               <div class="header-area-inner  relative  z-20  max-w-387.5 m-auto 2xl:pl-72">
-                  <nav class="header-nav flex items-center justify-between relative">
-                     <div class="header-logo md:hidden">
-                        <a href="index.html" class="flex items-center flex-shrink-0 mr-6">
-                           <svg width="130" height="25" viewBox="0 0 130 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0.24 24L0.24 0.959999H3.12L15.136 18.96V0.959999H18.016V24H15.136L3.12 5.984L3.12 24H0.24ZM36.762 24.48C34.4687 24.48 32.522 23.9733 30.922 22.96C29.322 21.9467 28.1007 20.5387 27.258 18.736C26.426 16.9333 26.01 14.848 26.01 12.48C26.01 10.112 26.426 8.02667 27.258 6.224C28.1007 4.42133 29.322 3.01333 30.922 2C32.522 0.986666 34.4687 0.48 36.762 0.48C39.066 0.48 41.018 0.986666 42.618 2C44.218 3.01333 45.434 4.42133 46.266 6.224C47.098 8.02667 47.514 10.112 47.514 12.48C47.514 14.848 47.098 16.9333 46.266 18.736C45.434 20.5387 44.218 21.9467 42.618 22.96C41.018 23.9733 39.066 24.48 36.762 24.48ZM36.762 21.76C38.4793 21.7707 39.9087 21.3867 41.05 20.608C42.202 19.8187 43.0607 18.7253 43.626 17.328C44.202 15.9307 44.49 14.3147 44.49 12.48C44.49 10.6347 44.202 9.01867 43.626 7.632C43.0607 6.24533 42.202 5.16267 41.05 4.384C39.9087 3.60533 38.4793 3.21067 36.762 3.2C35.0447 3.18933 33.6153 3.57333 32.474 4.352C31.3433 5.13067 30.49 6.21867 29.914 7.616C29.338 9.01333 29.0447 10.6347 29.034 12.48C29.0233 14.3147 29.306 15.9253 29.882 17.312C30.458 18.6987 31.3167 19.7867 32.458 20.576C33.61 21.3547 35.0447 21.7493 36.762 21.76Z" fill="#827397"/>
-                              <path d="M55.5275 24V0.959999H58.3755V11.776L68.4555 0.959999H72.0395L61.5755 12.144L72.8555 24H69.1755L58.3755 12.736V24H55.5275ZM88.978 24.48C87.1967 24.48 85.6233 24.112 84.258 23.376C82.8927 22.64 81.8207 21.6107 81.042 20.288C80.274 18.9547 79.89 17.392 79.89 15.6V0.976L82.77 0.959999V15.36C82.77 16.448 82.9513 17.3973 83.314 18.208C83.6873 19.008 84.178 19.6747 84.786 20.208C85.394 20.7413 86.0607 21.1413 86.786 21.408C87.522 21.664 88.2527 21.792 88.978 21.792C89.714 21.792 90.45 21.6587 91.186 21.392C91.922 21.1253 92.5887 20.7307 93.186 20.208C93.794 19.6747 94.2793 19.0027 94.642 18.192C95.0047 17.3813 95.186 16.4373 95.186 15.36V0.959999H98.066V15.6C98.066 17.3813 97.6767 18.9387 96.898 20.272C96.13 21.6053 95.0633 22.64 93.698 23.376C92.3327 24.112 90.7593 24.48 88.978 24.48ZM107.346 24V0.959999H109.938L118.642 19.312L127.298 0.959999H129.922V23.984H127.218V7.216L119.394 24H117.874L110.05 7.216V24H107.346Z" fill="#5C5C5C"/>
-                           </svg>
-                        </a>
-                     </div>
-                     <div class="flex-grow xl:flex lg:items-center lg:w-auto">
-                        <ul
-                           class="toggle-menu-class dropdown-menu justify-start bg-white lg:bg-transparent  shadow lg:shadow-none absolute xl:relative inset-x-0 hidden xl:flex xl:flex-grow items-center mt-10 xl:mt-0 mobile-hover">
-                           <li class="relative  lg:mr-10">
-                              <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                 href="#">
+         <header class="header-area fixed    header-scroll  left-0 right-0  py-10 hidden xl:block bg-white">
+            <div class="header-area-inner  relative  z-20  max-w-387.5 m-auto 2xl:pl-72">
+               <nav class="header-nav flex items-center justify-between relative">
+                  <div class="header-logo md:hidden">
+                     <a href="index.html" class="flex items-center flex-shrink-0 mr-6">
+                        <svg width="130" height="25" viewBox="0 0 130 25" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M0.24 24L0.24 0.959999H3.12L15.136 18.96V0.959999H18.016V24H15.136L3.12 5.984L3.12 24H0.24ZM36.762 24.48C34.4687 24.48 32.522 23.9733 30.922 22.96C29.322 21.9467 28.1007 20.5387 27.258 18.736C26.426 16.9333 26.01 14.848 26.01 12.48C26.01 10.112 26.426 8.02667 27.258 6.224C28.1007 4.42133 29.322 3.01333 30.922 2C32.522 0.986666 34.4687 0.48 36.762 0.48C39.066 0.48 41.018 0.986666 42.618 2C44.218 3.01333 45.434 4.42133 46.266 6.224C47.098 8.02667 47.514 10.112 47.514 12.48C47.514 14.848 47.098 16.9333 46.266 18.736C45.434 20.5387 44.218 21.9467 42.618 22.96C41.018 23.9733 39.066 24.48 36.762 24.48ZM36.762 21.76C38.4793 21.7707 39.9087 21.3867 41.05 20.608C42.202 19.8187 43.0607 18.7253 43.626 17.328C44.202 15.9307 44.49 14.3147 44.49 12.48C44.49 10.6347 44.202 9.01867 43.626 7.632C43.0607 6.24533 42.202 5.16267 41.05 4.384C39.9087 3.60533 38.4793 3.21067 36.762 3.2C35.0447 3.18933 33.6153 3.57333 32.474 4.352C31.3433 5.13067 30.49 6.21867 29.914 7.616C29.338 9.01333 29.0447 10.6347 29.034 12.48C29.0233 14.3147 29.306 15.9253 29.882 17.312C30.458 18.6987 31.3167 19.7867 32.458 20.576C33.61 21.3547 35.0447 21.7493 36.762 21.76Z"
+                              fill="#827397" />
+                           <path
+                              d="M55.5275 24V0.959999H58.3755V11.776L68.4555 0.959999H72.0395L61.5755 12.144L72.8555 24H69.1755L58.3755 12.736V24H55.5275ZM88.978 24.48C87.1967 24.48 85.6233 24.112 84.258 23.376C82.8927 22.64 81.8207 21.6107 81.042 20.288C80.274 18.9547 79.89 17.392 79.89 15.6V0.976L82.77 0.959999V15.36C82.77 16.448 82.9513 17.3973 83.314 18.208C83.6873 19.008 84.178 19.6747 84.786 20.208C85.394 20.7413 86.0607 21.1413 86.786 21.408C87.522 21.664 88.2527 21.792 88.978 21.792C89.714 21.792 90.45 21.6587 91.186 21.392C91.922 21.1253 92.5887 20.7307 93.186 20.208C93.794 19.6747 94.2793 19.0027 94.642 18.192C95.0047 17.3813 95.186 16.4373 95.186 15.36V0.959999H98.066V15.6C98.066 17.3813 97.6767 18.9387 96.898 20.272C96.13 21.6053 95.0633 22.64 93.698 23.376C92.3327 24.112 90.7593 24.48 88.978 24.48ZM107.346 24V0.959999H109.938L118.642 19.312L127.298 0.959999H129.922V23.984H127.218V7.216L119.394 24H117.874L110.05 7.216V24H107.346Z"
+                              fill="#5C5C5C" />
+                        </svg>
+                     </a>
+                  </div>
+                  <div class="flex-grow xl:flex lg:items-center lg:w-auto">
+                     <ul
+                        class="toggle-menu-class dropdown-menu justify-start bg-white lg:bg-transparent  shadow lg:shadow-none absolute xl:relative inset-x-0 hidden xl:flex xl:flex-grow items-center mt-10 xl:mt-0 mobile-hover">
+                        <li class="relative  lg:mr-10">
+                           <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                              href="#">
                               Home
-                              </a>
-                           </li>
-                           <li class="relative  lg:mr-10">
-                              <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                 href="#">
+                           </a>
+                        </li>
+                        <li class="relative  lg:mr-10">
+                           <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                              href="#">
                               About
-                              </a>
-                           </li>
-                           <li class="relative  lg:mr-10">
-                              <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                 href="#">
+                           </a>
+                        </li>
+                        <li class="relative  lg:mr-10">
+                           <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                              href="#">
                               Authors
-                              </a>
-                           </li>
-                           <li class="relative  lg:mr-10">
-                              <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                 href="#">
+                           </a>
+                        </li>
+                        <li class="relative  lg:mr-10">
+                           <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                              href="#">
                               Tags
+                           </a>
+                        </li>
+                        <li class="relative  ">
+                           <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                              href="#">
+                              Contact
+                           </a>
+                        </li>
+                     </ul>
+                     <div class="right-siden-menu-box hidden xl:block">
+                        <ul class=" right-side-menu flex">
+                           <li class="search-bar  flex ">
+                              <a class=" search-icon  py-3 px-6 rounded-full  transition duration-500 group" href="#">
+                                 <span>
+                                    <svg class="inline-block h-5 w-5" width="21" height="21" viewBox="0 0 21 21"
+                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5Z"
+                                          stroke="#4D4C7D" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                 </span>
+                                 <span
+                                    class="ml-3   text-stone-900 font-medium group-hover:text-blue-800 ">Search</span>
                               </a>
                            </li>
-                           <li class="relative  ">
-                              <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                           <li class="  flex ml-10.5 ">
+                              <a class=" header-button bg-blue-800 hover:bg-blue-100 py-3 px-6 rounded-full text-white transition duration-500 hover:text-blue-800 font-medium"
                                  href="#">
-                              Contact
+                                 Subscribe
                               </a>
                            </li>
                         </ul>
-                        <div class="right-siden-menu-box hidden xl:block">
-                           <ul class=" right-side-menu flex">
-                              <li class="search-bar  flex ">
-                                 <a class=" search-icon  py-3 px-6 rounded-full  transition duration-500 group"
-                                    href="#">
-                                    <span>
-                                       <svg class="inline-block h-5 w-5" width="21" height="21" viewBox="0 0 21 21"
-                                          fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path
-                                             d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5Z"
-                                             stroke="#4D4C7D" stroke-width="2" stroke-linecap="round" />
-                                       </svg>
-                                    </span>
-                                    <span class="ml-3   text-stone-900 font-medium group-hover:text-blue-800 ">Search</span>
-                                 </a>
-                              </li>
-                              <li class="  flex ml-10.5 ">
-                                 <a class=" header-button bg-blue-800 hover:bg-blue-100 py-3 px-6 rounded-full text-white transition duration-500 hover:text-blue-800 font-medium"
-                                    href="#">
-                                 Subscribe
-                                 </a>
-                              </li>
-                           </ul>
-                        </div>
                      </div>
-                     <button class="bg-coolGray-50 mobile-toggle block xl:hidden">
+                  </div>
+                  <button class="bg-coolGray-50 mobile-toggle block xl:hidden">
                      <span class="bg-blue-800"></span>
                      <span class="bg-blue-800"></span>
                      <span class="bg-blue-800"></span>
-                     </button>
-                  </nav>
-               </div>
-            </header>
+                  </button>
+               </nav>
+            </div>
+         </header>
 
-            <!--  ====================== Mobile Header Area Start =============================  -->
+         <!--  ====================== Mobile Header Area Start =============================  -->
 
-            <header class="head-main pt-8 xl:hidden">
-               <div class="header-nav relative">
-                   <div class="main-nav flex  justify-between">
-                       <a  href="index.html" class="navbar-brand">
-                        <svg class="md:hidden" width="130" height="25" viewBox="0 0 130 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M0.24 24L0.24 0.959999H3.12L15.136 18.96V0.959999H18.016V24H15.136L3.12 5.984L3.12 24H0.24ZM36.762 24.48C34.4687 24.48 32.522 23.9733 30.922 22.96C29.322 21.9467 28.1007 20.5387 27.258 18.736C26.426 16.9333 26.01 14.848 26.01 12.48C26.01 10.112 26.426 8.02667 27.258 6.224C28.1007 4.42133 29.322 3.01333 30.922 2C32.522 0.986666 34.4687 0.48 36.762 0.48C39.066 0.48 41.018 0.986666 42.618 2C44.218 3.01333 45.434 4.42133 46.266 6.224C47.098 8.02667 47.514 10.112 47.514 12.48C47.514 14.848 47.098 16.9333 46.266 18.736C45.434 20.5387 44.218 21.9467 42.618 22.96C41.018 23.9733 39.066 24.48 36.762 24.48ZM36.762 21.76C38.4793 21.7707 39.9087 21.3867 41.05 20.608C42.202 19.8187 43.0607 18.7253 43.626 17.328C44.202 15.9307 44.49 14.3147 44.49 12.48C44.49 10.6347 44.202 9.01867 43.626 7.632C43.0607 6.24533 42.202 5.16267 41.05 4.384C39.9087 3.60533 38.4793 3.21067 36.762 3.2C35.0447 3.18933 33.6153 3.57333 32.474 4.352C31.3433 5.13067 30.49 6.21867 29.914 7.616C29.338 9.01333 29.0447 10.6347 29.034 12.48C29.0233 14.3147 29.306 15.9253 29.882 17.312C30.458 18.6987 31.3167 19.7867 32.458 20.576C33.61 21.3547 35.0447 21.7493 36.762 21.76Z" fill="#827397"/>
-                           <path d="M55.5275 24V0.959999H58.3755V11.776L68.4555 0.959999H72.0395L61.5755 12.144L72.8555 24H69.1755L58.3755 12.736V24H55.5275ZM88.978 24.48C87.1967 24.48 85.6233 24.112 84.258 23.376C82.8927 22.64 81.8207 21.6107 81.042 20.288C80.274 18.9547 79.89 17.392 79.89 15.6V0.976L82.77 0.959999V15.36C82.77 16.448 82.9513 17.3973 83.314 18.208C83.6873 19.008 84.178 19.6747 84.786 20.208C85.394 20.7413 86.0607 21.1413 86.786 21.408C87.522 21.664 88.2527 21.792 88.978 21.792C89.714 21.792 90.45 21.6587 91.186 21.392C91.922 21.1253 92.5887 20.7307 93.186 20.208C93.794 19.6747 94.2793 19.0027 94.642 18.192C95.0047 17.3813 95.186 16.4373 95.186 15.36V0.959999H98.066V15.6C98.066 17.3813 97.6767 18.9387 96.898 20.272C96.13 21.6053 95.0633 22.64 93.698 23.376C92.3327 24.112 90.7593 24.48 88.978 24.48ZM107.346 24V0.959999H109.938L118.642 19.312L127.298 0.959999H129.922V23.984H127.218V7.216L119.394 24H117.874L110.05 7.216V24H107.346Z" fill="#5C5C5C"/>
-                        </svg>
-                       </a>
-                       <div class="mobile-menu-icon">
-                       <div class="nav-button ml-auto relative  h-11 bg-gray-200">
+         <header class="head-main pt-8 xl:hidden">
+            <div class="header-nav relative">
+               <div class="main-nav flex  justify-between">
+                  <a href="index.html" class="navbar-brand">
+                     <svg class="md:hidden" width="130" height="25" viewBox="0 0 130 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M0.24 24L0.24 0.959999H3.12L15.136 18.96V0.959999H18.016V24H15.136L3.12 5.984L3.12 24H0.24ZM36.762 24.48C34.4687 24.48 32.522 23.9733 30.922 22.96C29.322 21.9467 28.1007 20.5387 27.258 18.736C26.426 16.9333 26.01 14.848 26.01 12.48C26.01 10.112 26.426 8.02667 27.258 6.224C28.1007 4.42133 29.322 3.01333 30.922 2C32.522 0.986666 34.4687 0.48 36.762 0.48C39.066 0.48 41.018 0.986666 42.618 2C44.218 3.01333 45.434 4.42133 46.266 6.224C47.098 8.02667 47.514 10.112 47.514 12.48C47.514 14.848 47.098 16.9333 46.266 18.736C45.434 20.5387 44.218 21.9467 42.618 22.96C41.018 23.9733 39.066 24.48 36.762 24.48ZM36.762 21.76C38.4793 21.7707 39.9087 21.3867 41.05 20.608C42.202 19.8187 43.0607 18.7253 43.626 17.328C44.202 15.9307 44.49 14.3147 44.49 12.48C44.49 10.6347 44.202 9.01867 43.626 7.632C43.0607 6.24533 42.202 5.16267 41.05 4.384C39.9087 3.60533 38.4793 3.21067 36.762 3.2C35.0447 3.18933 33.6153 3.57333 32.474 4.352C31.3433 5.13067 30.49 6.21867 29.914 7.616C29.338 9.01333 29.0447 10.6347 29.034 12.48C29.0233 14.3147 29.306 15.9253 29.882 17.312C30.458 18.6987 31.3167 19.7867 32.458 20.576C33.61 21.3547 35.0447 21.7493 36.762 21.76Z"
+                           fill="#827397" />
+                        <path
+                           d="M55.5275 24V0.959999H58.3755V11.776L68.4555 0.959999H72.0395L61.5755 12.144L72.8555 24H69.1755L58.3755 12.736V24H55.5275ZM88.978 24.48C87.1967 24.48 85.6233 24.112 84.258 23.376C82.8927 22.64 81.8207 21.6107 81.042 20.288C80.274 18.9547 79.89 17.392 79.89 15.6V0.976L82.77 0.959999V15.36C82.77 16.448 82.9513 17.3973 83.314 18.208C83.6873 19.008 84.178 19.6747 84.786 20.208C85.394 20.7413 86.0607 21.1413 86.786 21.408C87.522 21.664 88.2527 21.792 88.978 21.792C89.714 21.792 90.45 21.6587 91.186 21.392C91.922 21.1253 92.5887 20.7307 93.186 20.208C93.794 19.6747 94.2793 19.0027 94.642 18.192C95.0047 17.3813 95.186 16.4373 95.186 15.36V0.959999H98.066V15.6C98.066 17.3813 97.6767 18.9387 96.898 20.272C96.13 21.6053 95.0633 22.64 93.698 23.376C92.3327 24.112 90.7593 24.48 88.978 24.48ZM107.346 24V0.959999H109.938L118.642 19.312L127.298 0.959999H129.922V23.984H127.218V7.216L119.394 24H117.874L110.05 7.216V24H107.346Z"
+                           fill="#5C5C5C" />
+                     </svg>
+                  </a>
+                  <div class="mobile-menu-icon">
+                     <div class="nav-button ml-auto relative  h-11 bg-gray-200">
 
-                         <span
-                               class="w-6 h-6 inline-block relative cursor-pointer transition duration-150 z-999"
-                               id="nav-icon3">
-                               <span class="bg-stone-900"></span>
-                               <span class="bg-stone-900"></span>
-                               <span class="bg-stone-900"></span>
-                               <span class="bg-stone-900"></span>
+                        <span class="w-6 h-6 inline-block relative cursor-pointer transition duration-150 z-999"
+                           id="nav-icon3">
+                           <span class="bg-stone-900"></span>
+                           <span class="bg-stone-900"></span>
+                           <span class="bg-stone-900"></span>
+                           <span class="bg-stone-900"></span>
 
-                              </span>
-                           </div>
-                        </div>
-
-                   </div>
-               </div>
-
-   <!--navbar end-->
-
-   <div class="fixed-top fixed top-0 right-0 left-0 z-999 main-menu w-full h-full  opacity-0 invisible">
-       <div class="flex  h-full p-5 items-center">
-
-           <ul class="nav">
-            <li class="relative nav-item ">
-               <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                  href="#">
-               Home
-               </a>
-            </li>
-            <li class="relative nav-item mt-5">
-               <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                  href="#">
-                  About
-               </a>
-            </li>
-            <li class="relative nav-item mt-5">
-               <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                  href="#">
-                  Authors
-               </a>
-            </li>
-            <li class="relative nav-item mt-5">
-               <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                  href="#">
-                  Tags
-               </a>
-            </li>
-            <li class="relative nav-item mt-5">
-               <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                  href="#">
-                  Contact
-               </a>
-            </li>
-
-           </ul>
-
-       </div>
-   </div>
-   <!--main-menu end-->
-              </header>
-
-            <!--  ====================== Mobile Header Area End =============================  -->
-
-            <!--  ====================== Banner Area Start =============================  -->
-            <section class="banner-area xl:pt-48 pt-40 xl:pb-20 pb-10">
-
-                  <div class="lg:grid lg:grid-cols-12 items-center">
-                     <div class="md:col-span-4 lg:order-last">
-                        <div class="banner-right mb-6 lg-min:mb-0">
-                           <img class="max-h-80 rounded-md" src="assets/images/banner-area.webp" alt="images">
-                        </div>
-                     </div>
-                     <div class="col-span-8">
-                        <div class="md:banner-left xl:mr-20 lg:mr-10 ">
-                           <h1 class="banner-heading font-medium leading-snug xl:text-6xl lg:text-4xl md:text-4xl text-3xl mb-2  w-10/12 lg-min:w-full">Meet furnished he material shown
-                              little
-                           </h1>
-                           <p class="text-lg ">Didn't now was cold no based what ask no to errors had years; The for until
-                              play Is a more his of for contrast.
-                           </p>
-                        </div>
+                        </span>
                      </div>
                   </div>
 
-            </section>
-            <!--  ====================== Banner Area End =============================  -->
-            <!--  ====================== Tags Area Start =============================  -->
-            <section class="tags-area lg-min:pt-15 pt-10">
+               </div>
+            </div>
 
-                  <ul class="tags-list flex flex-wrap gap-4">
-                     <li class=" inline-block"><a
-                        class="font-medium block transition duration-500 py-3 px-8 bg-blue-900 rounded-full text-white border-2 border-blue-900 hover:bg-white hover:border-orange-300 hover:text-stone-800  "
-                        href="#">All</a></li>
-                     <li class=" inline-block"><a
-                        class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full "
-                        href="#">Travel</a></li>
-                     <li class=" inline-block"><a
-                        class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full"
-                        href="#">Business</a></li>
-                     <li class=" inline-block"><a
-                        class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full"
-                        href="#">Lifestyle</a></li>
-                     <li class=" inline-block"><a
-                        class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full"
-                        href="#">Technology</a></li>
+            <!--navbar end-->
+
+            <div class="fixed-top fixed top-0 right-0 left-0 z-999 main-menu w-full h-full  opacity-0 invisible">
+               <div class="flex  h-full p-5 items-center">
+
+                  <ul class="nav">
+                     <li class="relative nav-item ">
+                        <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                           href="#">
+                           Home
+                        </a>
+                     </li>
+                     <li class="relative nav-item mt-5">
+                        <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                           href="#">
+                           About
+                        </a>
+                     </li>
+                     <li class="relative nav-item mt-5">
+                        <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                           href="#">
+                           Authors
+                        </a>
+                     </li>
+                     <li class="relative nav-item mt-5">
+                        <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                           href="#">
+                           Tags
+                        </a>
+                     </li>
+                     <li class="relative nav-item mt-5">
+                        <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                           href="#">
+                           Contact
+                        </a>
+                     </li>
+
                   </ul>
 
-            </section>
-            <!--  ====================== Tags Area End =============================  -->
-            <!--  ====================== Blog Post Area Start =============================  -->
-            <section class="blog-post-area lg:pt-30 pt-20">
+               </div>
+            </div>
+            <!--main-menu end-->
+         </header>
 
-                  <div class="blog-post-all  explore-nokum-container">
-                     <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md">
-                        <div class="col-span-2 hidden xl:block">
-                           <div class="publish-date lg:mb-8">
-                              <p class="font-medium text-sm  text-purple-300">22 <span
-                                 class="text-sm">Jul, 2022</span></p>
-                           </div>
-                        </div>
-                        <div class="col-span-10">
-                           <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
-                              <div class="  md:col-span-10 ">
-                                 <div class="post-right ">
-                                    <div class="post-top">
-                                       <div class="member-badge flex ">
-                                          <div class="badge-lock    mr-8">
-                                             <p class="font-medium flex items-center text-purple-300 ">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg
-                                                      class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg">
-                                                      <path
-                                                         d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                         fill="#827397" />
-                                                   </svg>
-                                                </span>
-                                                Member Only
-                                             </p>
-                                          </div>
-                                          <div class="badge-date xl:hidden">
-                                             <p class=" font-medium flex items-center text-purple-300">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
-                                                   </svg>
-                                                </span>
-                                                Jun, 2022
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="post-title">
-                                          <h2 class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "><a class="underline-hover" href="single.html">Ten reasons why you are a rookie in podcast</a></h2>
-                                       </div>
-                                    </div>
-                                    <div class="post-bottom flex items-center lg:mt-8 mt-5">
-                                       <div class="post-author-images mr-4">
-                                          <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
-                                             alt="images"></a>
-                                       </div>
-                                       <div class="post-author-bio">
-                                          <p class=" font-medium  text-stone-900 "><a class="underline-hover" href="author.html">Bianca Howe</a> </p>
-                                          <p>UK, London</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
-                        <div class="col-span-2 hidden xl:block">
-                           <div class="publish-date lg:mb-8">
-                              <p class="font-medium text-sm  text-purple-300">22 <span
-                                 class="text-sm">Jul, 2022</span></p>
-                           </div>
-                        </div>
-                        <div class="col-span-10">
-                           <div class=" blog-post-box md:grid md:grid-cols-12 gap-6  group items-center ">
-                              <div class="  md:col-span-3  mb-8 md:mb-0 md:order-last">
-                                 <div class="blog-post-images-box relative overflow-hidden rounded-md lg:inline-block w-full">
-                                    <a href="single.html"><img class=" w-full h-79  md:h-50.5 object-cover rounded-md transition duration-500  group-hover:scale-125" src="assets/images/blog-post-images.webp" alt="images"></a>
-                                    <div class="badge-lock arif-test absolute bottom-0 p-8 md-min-768:hidden ">
-                                       <p class="font-medium flex items-center text-purple-300 md:hidden">
-                                          <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                          <svg
-                                             class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <path
-                                                d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                fill="#827397" />
-                                          </svg>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="  md:col-span-9  ">
-                                 <div class="post-right ">
-                                    <div class="post-top">
-                                       <div class="member-badge flex ">
-                                          <div class="badge-lock  hidden md:block mr-8">
-                                             <p class="font-medium flex items-center text-purple-300 ">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg
-                                                      class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg">
-                                                      <path
-                                                         d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                         fill="#827397" />
-                                                   </svg>
-                                                </span>
-                                                Member Only
-                                             </p>
-                                          </div>
-                                          <div class="badge-date xl:hidden">
-                                             <p class=" font-medium flex items-center text-purple-300">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
-                                                   </svg>
-                                                </span>
-                                                Jun, 2022
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="post-title">
-                                          <h2 class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "><a class="underline-hover" href="single.html">Ten reasons why you are a rookie in
-                                             podcast</a>
-                                          </h2>
-                                       </div>
-                                    </div>
-                                    <div class="post-bottom flex items-center lg:mt-8 mt-5">
-                                       <div class="post-author-images mr-4">
-                                          <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
-                                             alt="images"></a>
-                                       </div>
-                                       <div class="post-author-bio">
-                                          <p class=" font-medium  text-stone-900 "><a class="underline-hover" href="author.html">Bianca Howe</a> </p>
-                                          <p>UK, London</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
-                        <div class="col-span-2 hidden xl:block">
-                           <div class="publish-date lg:mb-8">
-                              <p class="font-medium text-sm  text-purple-300">16 <span
-                                 class="text-sm">Jul, 2022</span></p>
-                           </div>
-                        </div>
-                        <div class="col-span-10">
-                           <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
-                              <div class="  md:col-span-10 ">
-                                 <div class="post-right ">
-                                    <div class="post-top">
-                                       <div class="member-badge flex ">
-                                          <div class="badge-lock    mr-8">
-                                             <p class="font-medium flex items-center text-purple-300 ">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg
-                                                      class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg">
-                                                      <path
-                                                         d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                         fill="#827397" />
-                                                   </svg>
-                                                </span>
-                                                Member Only
-                                             </p>
-                                          </div>
-                                          <div class="badge-date xl:hidden">
-                                             <p class=" font-medium flex items-center text-purple-300">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
-                                                   </svg>
-                                                </span>
-                                                Jun, 2022
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="post-title">
-                                          <h2 class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "><a class="underline-hover" href="single.html">Why podcast had been so popular till now?</a></h2>
-                                       </div>
-                                    </div>
-                                    <div class="post-bottom flex items-center lg:mt-8 mt-5">
-                                       <div class="post-author-images mr-4">
-                                          <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
-                                             alt="images"></a>
-                                       </div>
-                                       <div class="post-author-bio">
-                                          <p class=" font-medium  text-stone-900 "><a class="underline-hover" href="author.html">Bianca Howe</a> </p>
-                                          <p>UK, London</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
-                        <div class="col-span-2 hidden xl:block">
-                           <div class="publish-date lg:mb-8">
-                              <p class="font-medium text-sm  text-purple-300">11<span
-                                 class="text-sm">Jul, 2022</span></p>
-                           </div>
-                        </div>
-                        <div class="col-span-10">
-                           <div class=" blog-post-box md:grid md:grid-cols-12 gap-6  group items-center ">
-                              <div class="  md:col-span-3  mb-8 md:mb-0 md:order-last">
-                                 <div class="blog-post-images-box relative overflow-hidden rounded-md lg:inline-block w-full">
-                                    <a href="single.html"><img class=" w-full h-79  md:h-50.5 object-cover rounded-md transition duration-500  group-hover:scale-125" src="assets/images/blog-post-images.webp" alt="images"></a>
-                                    <div class="badge-lock arif-test absolute bottom-0 p-8 md-min-768:hidden ">
-                                       <p class="font-medium flex items-center text-purple-300 md:hidden">
-                                          <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                          <svg
-                                             class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <path
-                                                d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                fill="#827397" />
-                                          </svg>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="  md:col-span-9  ">
-                                 <div class="post-right ">
-                                    <div class="post-top">
-                                       <div class="member-badge flex ">
-                                          <div class="badge-lock  hidden md:block mr-8">
-                                             <p class="font-medium flex items-center text-purple-300 ">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg
-                                                      class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg">
-                                                      <path
-                                                         d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                         fill="#827397" />
-                                                   </svg>
-                                                </span>
-                                                Member Only
-                                             </p>
-                                          </div>
-                                          <div class="badge-date xl:hidden">
-                                             <p class=" font-medium flex items-center text-purple-300">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
-                                                   </svg>
-                                                </span>
-                                                Jun, 2022
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="post-title">
-                                          <h2 class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "><a class="underline-hover" href="single.html">Why podcast had been so popular till now?</a></h2>
-                                       </div>
-                                    </div>
-                                    <div class="post-bottom flex items-center lg:mt-8 mt-5">
-                                       <div class="post-author-images mr-4">
-                                          <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
-                                             alt="images"></a>
-                                       </div>
-                                       <div class="post-author-bio">
-                                          <p class=" font-medium  text-stone-900 "><a class="underline-hover" href="author.html">Bianca Howe</a> </p>
-                                          <p>UK, London</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
-                        <div class="col-span-2 hidden xl:block">
-                           <div class="publish-date lg:mb-8">
-                              <p class="font-medium text-sm  text-purple-300">29 <span
-                                 class="text-sm">May, 2022</span></p>
-                           </div>
-                        </div>
-                        <div class="col-span-10">
-                           <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
-                              <div class="  md:col-span-10 ">
-                                 <div class="post-right ">
-                                    <div class="post-top">
-                                       <div class="member-badge flex ">
-                                          <div class="badge-lock    mr-8">
-                                             <p class="font-medium flex items-center text-purple-300 ">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg
-                                                      class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg">
-                                                      <path
-                                                         d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                         fill="#827397" />
-                                                   </svg>
-                                                </span>
-                                                Member Only
-                                             </p>
-                                          </div>
-                                          <div class="badge-date xl:hidden">
-                                             <p class=" font-medium flex items-center text-purple-300">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
-                                                   </svg>
-                                                </span>
-                                                Jun, 2022
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="post-title">
-                                          <h2 class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "><a class="underline-hover" href="single.html">At I who best to where line much safely</a></h2>
-                                       </div>
-                                    </div>
-                                    <div class="post-bottom flex items-center lg:mt-8 mt-5">
-                                       <div class="post-author-images mr-4">
-                                          <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
-                                             alt="images"></a>
-                                       </div>
-                                       <div class="post-author-bio">
-                                          <p class=" font-medium  text-stone-900 "><a class="underline-hover" href="author.html">Bianca Howe</a> </p>
-                                          <p>UK, London</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md">
-                        <div class="col-span-2 hidden xl:block">
-                           <div class="publish-date lg:mb-8">
-                              <p class="font-medium text-sm  text-purple-300">28 <span
-                                 class="text-sm">May, 2022</span></p>
-                           </div>
-                        </div>
-                        <div class="col-span-10">
-                           <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
-                              <div class="  md:col-span-10 ">
-                                 <div class="post-right ">
-                                    <div class="post-top">
-                                       <div class="member-badge flex ">
-                                          <div class="badge-lock    mr-8">
-                                             <p class="font-medium flex items-center text-purple-300 ">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg
-                                                      class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg">
-                                                      <path
-                                                         d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                         fill="#827397" />
-                                                   </svg>
-                                                </span>
-                                                Member Only
-                                             </p>
-                                          </div>
-                                          <div class="badge-date xl:hidden">
-                                             <p class=" font-medium flex items-center text-purple-300">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
-                                                   </svg>
-                                                </span>
-                                                Jun, 2022
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="post-title">
-                                          <h2 class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "><a class="underline-hover" href="single.html">7 places that you can find travel</a></h2>
-                                       </div>
-                                    </div>
-                                    <div class="post-bottom flex items-center lg:mt-8 mt-5">
-                                       <div class="post-author-images mr-4">
-                                          <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
-                                             alt="images"></a>
-                                       </div>
-                                       <div class="post-author-bio">
-                                          <p class=" font-medium  text-stone-900 "><a class="underline-hover" href="author.html">Bianca Howe</a> </p>
-                                          <p>UK, London</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
-                        <div class="col-span-2 hidden xl:block">
-                           <div class="publish-date lg:mb-8">
-                              <p class="font-medium text-sm  text-purple-300">27<span
-                                 class="text-sm">May, 2022</span></p>
-                           </div>
-                        </div>
-                        <div class="col-span-10">
-                           <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
-                              <div class="  md:col-span-10 ">
-                                 <div class="post-right ">
-                                    <div class="post-top">
-                                       <div class="member-badge flex ">
-                                          <div class="badge-lock    mr-8">
-                                             <p class="font-medium flex items-center text-purple-300 ">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg
-                                                      class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
-                                                      xmlns="http://www.w3.org/2000/svg">
-                                                      <path
-                                                         d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
-                                                         fill="#827397" />
-                                                   </svg>
-                                                </span>
-                                                Member Only
-                                             </p>
-                                          </div>
-                                          <div class="badge-date xl:hidden">
-                                             <p class=" font-medium flex items-center text-purple-300">
-                                                <span class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
-                                                   <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                      <path d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z" fill="#827397"/>
-                                                   </svg>
-                                                </span>
-                                                Jun, 2022
-                                             </p>
-                                          </div>
-                                       </div>
-                                       <div class="post-title">
-                                          <h2 class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "><a class="underline-hover" href="single.html">15 tips to avoid failure in travel</a></h2>
-                                       </div>
-                                    </div>
-                                    <div class="post-bottom flex items-center lg:mt-8 mt-5">
-                                       <div class="post-author-images mr-4">
-                                          <a href="author.html"><img class="h-12.5 w-12.5 rounded-full" src="assets/images/post-author-images.webp"
-                                             alt="images"></a>
-                                       </div>
-                                       <div class="post-author-bio">
-                                          <p class=" font-medium  text-stone-900 "><a class="underline-hover" href="author.html">Bianca Howe</a> </p>
-                                          <p>UK, London</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+         <!--  ====================== Mobile Header Area End =============================  -->
 
-               </div>
-               <div class="blog-post-button text-center">
-                  <a class=" load-more-btn transition font-medium duration-500 inline-block py-4 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full " href="#">Load More</a>
-               </div>
-            </section>
-            <!--  ====================== Blog Post Area End =============================  -->
-            <!--  ====================== Newsletter Area Start =============================  -->
-            <section class="newsletter-area lg:pt-30 pt-20 ">
-                  <div class="md:grid md:grid-cols-12 gap-6">
-                     <div class="col-span-5 md:order-last">
-                        <div class="newsletter-right h-full">
-                           <div class="newsletter-images relative -z-2 h-full mb-4 md:mb-4">
-                              <img class=" rounded-4 md:rounded-none md:rounded-t-4  md:h-142 object-cover md:max-h-142 !h-full" src="assets/images/blog-forms-images.webp" alt="images">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-span-7">
-                        <div class="newsletter-left relative lg:mt-38">
-                           <div class="newsletter-left-box  lg:p-20 md:before:rounded-tr-4  before:absolute before:bg-white before:h-full before:w-full before:top-0 left-0 before:-z-1">
-                              <h2 class="xl:text-5xl md:text-4xl  text-3xl  font-medium pt-2 text-black-10 mb-8">Join Our Newsletter</h2>
-                              <p >Project look tickets him wanted in graduate. The behavioural been five desk learn what's supposedly compute.</p>
-                              <form class="w-full pt-8">
-                                 <div class="sm:flex items-center py-2">
-                                    <input class=" border-2 border-orange-300 rounded-full sm:rounded-tr-none sm:rounded-br-none pr-12 py-3 px-4  w-full text-gray-700  focus:outline-blue-800" type="text" placeholder="Your email" aria-label="Full name">
-                                    <button class="w-full sm:w-auto mt-4 sm:mt-0 flex-shrink-0 py-3 border-2 px-8 rounded-full relative sm:right-10 bg-blue-800 hover:bg-gray-200  border-blue-800 hover:border-gray-200   text-white hover:text-blue-800 font-medium transition duration-500" type="button">
-                                    Subscribe
-                                    </button>
-                                 </div>
-                              </form>
-                           </div>
-                        </div>
-                     </div>
-               </div>
-            </section>
-            <!--  ====================== Newsletter Area End =============================  -->
-            <!--  ====================== Call to  Area Start =============================  -->
-            <section class="call-to-action">
-               <div class="md:grid md:grid-cols-12 gap-6 bg-blue-800 md:p-20 p-10 relative z-1 border-b border-white border-opacity-10">
-                  <div class="col-span-8">
-                     <div class="newsletter-bottom">
-                        <h2 class="call-to-action-title xl:text-5xl md:text-4xl  text-3xl  font-medium text-white">Trusted the planswork the go. </h2>
-                     </div>
-                  </div>
-                  <div class="col-span-4 text-right mt-4">
-                     <div class="subscribe-button"></div>
-                     <a class=" block md:inline-block text-center py-4 border-2 px-12 rounded-full  bg-purple-300 hover:bg-gray-200  border-purple-300 hover:border-gray-300  text-white hover:text-blue-800 font-medium transition duration-500" href="#">Subscribe</a>
+         <!--  ====================== Banner Area Start =============================  -->
+         <section class="banner-area xl:pt-48 pt-40 xl:pb-20 pb-10">
+
+            <div class="lg:grid lg:grid-cols-12 items-center">
+               <div class="md:col-span-4 lg:order-last">
+                  <div class="banner-right mb-6 lg:mb-0">
+                     <img class="max-h-80 rounded-md" src="assets/images/banner-area.webp" alt="images">
                   </div>
                </div>
-            </section>
-             <!--  ====================== Call to  Area End =============================  -->
-              <!--  ====================== Footer   Area Start =============================  -->
-            <footer class="bg-blue-900 before:bg-blue-900 before:h-97.5 before:w-full before:left-0 before:right-0  before:bottom-0 before:absolute">
-               <div class="footer-links-wrapper grid lg:grid-cols-4 md:grid-cols-3 gap-6 sm:grid-cols-2 bg-blue-800  p-20  relative z-1">
-                  <div class="column-1">
-                     <ul class="link-list">
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Work</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Style</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Services</a></li>
-                     </ul>
+               <div class="col-span-8">
+                  <div class="banner-left xl:mr-20 lg:mr-10 ">
+                     <h1
+                        class="banner-heading font-medium leading-snug xl:text-6xl lg:text-4xl md:text-4xl text-3xl mb-2  w-10/12 ">
+                        Meet furnished he material shown
+                        little
+                     </h1>
+                     <p class="text-lg ">Didn't now was cold no based what ask no to errors had years; The for until
+                        play Is a more his of for contrast.
+                     </p>
                   </div>
-                  <div class="column-1">
-                     <ul class="link-list">
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Graphic</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Resources</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">UI/UX Design</a></li>
-                     </ul>
+               </div>
+            </div>
+
+         </section>
+         <!--  ====================== Banner Area End =============================  -->
+         <!--  ====================== Tags Area Start =============================  -->
+         <section class="tags-area lg-min:pt-15 pt-10">
+
+            <ul class="tags-list flex flex-wrap gap-4">
+               <li class=" inline-block"><a
+                     class="font-medium block transition duration-500 py-3 px-8 bg-blue-900 rounded-full text-white border-2 border-blue-900 hover:bg-white hover:border-orange-300 hover:text-stone-800  "
+                     href="#">All</a></li>
+               <li class=" inline-block"><a
+                     class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full "
+                     href="#">Travel</a></li>
+               <li class=" inline-block"><a
+                     class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full"
+                     href="#">Business</a></li>
+               <li class=" inline-block"><a
+                     class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full"
+                     href="#">Lifestyle</a></li>
+               <li class=" inline-block"><a
+                     class="font-medium block transition duration-500 py-3 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full"
+                     href="#">Technology</a></li>
+            </ul>
+
+         </section>
+         <!--  ====================== Tags Area End =============================  -->
+         <!--  ====================== Blog Post Area Start =============================  -->
+         <section class="blog-post-area lg:pt-30 pt-20">
+
+            <div class="blog-post-all  explore-nokum-container">
+               <div
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md">
+                  <div class="col-span-2 hidden xl:block">
+                     <div class="publish-date lg:mb-8">
+                        <p class="font-medium text-sm  text-purple-300">22 <span class="text-sm">Jul, 2022</span></p>
+                     </div>
                   </div>
-                  <div class="column-1">
-                     <ul class="link-list">
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Contact</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Online Courses</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Account Loging</a></li>
-                     </ul>
-                  </div>
-                  <div class="column-1">
-                     <ul class="link-list">
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">About us</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Data & privacy</a></li>
-                        <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Terms & conditions</a></li>
-                     </ul>
-                  </div>
-               </div> <!--.footer-links-wrapper  -->
-               <div class="copyright-box pt-12 relative z-1 bg-blue-900 pb-8">
-                  <div class="lg:grid lg:grid-cols-2 gap-6">
-                     <div class="footer-social-link md:order-last mb-8 lg:mb-0">
-                        <div class="social-link flex items-center  justify-center lg:justify-end  gap-4 ">
-                           <p class=" text-white  w-20">Follow - </p>
-                           <ul class="flex flex-wrap gap-4">
-                              <li>
-                                 <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300" href="#">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M5.2003 4.8783H7.8001V6.1733C8.1746 5.4285 9.135 4.7593 10.5777 4.7593C13.3434 4.7593 14 6.2419 14 8.9621V14H11.2V9.5816C11.2 8.0325 10.8255 7.1589 9.8721 7.1589C8.5498 7.1589 8.0003 8.1004 8.0003 9.5809V14H5.2003V4.8783ZM0.399 13.881H3.199V4.7593H0.399V13.881ZM3.6001 1.785C3.6002 2.01969 3.55366 2.25206 3.46317 2.46861C3.37268 2.68516 3.24006 2.88156 3.073 3.0464C2.73448 3.38284 2.27627 3.57116 1.799 3.57C1.32257 3.56968 0.865418 3.38184 0.5264 3.0471C0.359948 2.8817 0.22777 2.68508 0.137441 2.4685C0.047111 2.25193 0.000405392 2.01966 0 1.785C0 1.3111 0.189 0.8575 0.5271 0.5229C0.86582 0.187711 1.32317 -0.000209448 1.7997 1.75185e-07C2.2771 1.75185e-07 2.7349 0.1883 3.073 0.5229C3.4104 0.8575 3.6001 1.3111 3.6001 1.785Z" fill="white"/>
-                                    </svg>
-                                 </a>
-                              </li>
-                              <li >
-                                 <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300" href="#">
-                                    <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M9.27638 0.393359C9.27638 0.290253 9.23542 0.19137 9.16251 0.118463C9.08961 0.0455561 8.99072 0.00459735 8.88762 0.00459735H6.94381C5.96501 -0.0441604 5.00669 0.296473 4.27825 0.95207C3.54981 1.60767 3.11046 2.52493 3.0562 3.50345V5.60276H1.11239C1.00929 5.60276 0.910405 5.64372 0.837498 5.71662C0.764592 5.78953 0.723633 5.88841 0.723633 5.99152V8.01308C0.723633 8.11618 0.764592 8.21507 0.837498 8.28797C0.910405 8.36088 1.00929 8.40184 1.11239 8.40184H3.0562V13.6112C3.0562 13.7143 3.09716 13.8132 3.17006 13.8861C3.24297 13.959 3.34186 14 3.44496 14H5.77753C5.88063 14 5.97952 13.959 6.05242 13.8861C6.12533 13.8132 6.16629 13.7143 6.16629 13.6112V8.40184H8.2034C8.28985 8.40308 8.37425 8.37547 8.44325 8.32337C8.51225 8.27126 8.56191 8.19765 8.58438 8.11416L9.1442 6.0926C9.15967 6.03516 9.16175 5.97493 9.15028 5.91656C9.13881 5.85819 9.11409 5.80323 9.07804 5.75591C9.04199 5.70859 8.99556 5.67018 8.94233 5.64362C8.88909 5.61707 8.83048 5.60309 8.77099 5.60276H6.16629V3.50345C6.18563 3.31099 6.27601 3.13266 6.41978 3.00326C6.56355 2.87387 6.75039 2.80271 6.94381 2.80368H8.88762C8.99072 2.80368 9.08961 2.76272 9.16251 2.68981C9.23542 2.61691 9.27638 2.51802 9.27638 2.41492V0.393359Z" fill="white"/>
-                                    </svg>
-                                 </a>
-                              </li>
-                              <li >
-                                 <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300" href="#">
-                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M17.6108 1.66066C16.9775 1.94128 16.2972 2.1309 15.5819 2.2166C16.3199 1.77503 16.872 1.08003 17.1353 0.261302C16.4419 0.673137 15.6831 0.963023 14.8917 1.11836C14.3596 0.550172 13.6547 0.173569 12.8866 0.0470186C12.1185 -0.0795316 11.3301 0.0510517 10.6438 0.418495C9.95751 0.785938 9.41172 1.36968 9.09118 2.0791C8.77064 2.78852 8.69328 3.58391 8.87111 4.3418C7.46621 4.27126 6.09184 3.90611 4.8372 3.27003C3.58255 2.63395 2.47568 1.74117 1.5884 0.649633C1.28502 1.17297 1.11057 1.77973 1.11057 2.42594C1.11024 3.00767 1.25349 3.58049 1.52763 4.09358C1.80178 4.60667 2.19832 5.04416 2.6821 5.36724C2.12105 5.34938 1.57238 5.19778 1.08175 4.92506V4.97056C1.0817 5.78647 1.36392 6.57726 1.88055 7.20877C2.39717 7.84027 3.11637 8.27359 3.91611 8.43519C3.39564 8.57605 2.84997 8.5968 2.32031 8.49587C2.54595 9.19791 2.98548 9.81181 3.57736 10.2516C4.16923 10.6915 4.88384 10.9352 5.62112 10.9487C4.36954 11.9312 2.82384 12.4642 1.23269 12.4618C0.95083 12.4619 0.669211 12.4455 0.389282 12.4125C2.0044 13.451 3.88451 14.0021 5.80467 14C12.3046 14 15.858 8.61647 15.858 3.9474C15.858 3.79571 15.8542 3.6425 15.8474 3.49081C16.5386 2.99097 17.1352 2.37201 17.6093 1.66293L17.6108 1.66066Z" fill="white"/>
-                                    </svg>
-                                 </a>
-                              </li>
-                              <li >
-                                 <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300" href="#">
-                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11409 0.042C4.86055 0.00763635 5.09855 0 7 0C8.90145 0 9.13945 0.00827272 9.88527 0.042C10.6311 0.0757273 11.1402 0.194727 11.5856 0.367182C12.0521 0.543455 12.4753 0.819 12.8253 1.17536C13.1816 1.52473 13.4565 1.94727 13.6322 2.41436C13.8053 2.85982 13.9236 3.36891 13.958 4.11345C13.9924 4.86118 14 5.09918 14 7C14 8.90145 13.9917 9.13945 13.958 9.88591C13.9243 10.6305 13.8053 11.1395 13.6322 11.585C13.4565 12.0522 13.1812 12.4754 12.8253 12.8253C12.4753 13.1816 12.0521 13.4565 11.5856 13.6322C11.1402 13.8053 10.6311 13.9236 9.88655 13.958C9.13945 13.9924 8.90145 14 7 14C5.09855 14 4.86055 13.9917 4.11409 13.958C3.36955 13.9243 2.86045 13.8053 2.415 13.6322C1.94786 13.4565 1.52461 13.1812 1.17473 12.8253C0.818605 12.4757 0.543018 12.0527 0.367182 11.5856C0.194727 11.1402 0.0763636 10.6311 0.042 9.88655C0.00763635 9.13882 0 8.90082 0 7C0 5.09855 0.00827272 4.86055 0.042 4.11473C0.0757273 3.36891 0.194727 2.85982 0.367182 2.41436C0.543278 1.94732 0.819076 1.52429 1.17536 1.17473C1.52475 0.818683 1.94757 0.5431 2.41436 0.367182C2.85982 0.194727 3.36955 0.0763636 4.11409 0.042ZM9.82864 1.302C9.09045 1.26827 8.869 1.26127 7 1.26127C5.131 1.26127 4.90955 1.26827 4.17136 1.302C3.48855 1.33318 3.11818 1.44709 2.87127 1.54318C2.54482 1.67045 2.31127 1.82127 2.06627 2.06627C1.83403 2.29221 1.6553 2.56727 1.54318 2.87127C1.44709 3.11818 1.33318 3.48855 1.302 4.17136C1.26827 4.90955 1.26127 5.131 1.26127 7C1.26127 8.869 1.26827 9.09045 1.302 9.82864C1.33318 10.5115 1.44709 10.8818 1.54318 11.1287C1.65518 11.4323 1.834 11.7078 2.06627 11.9337C2.29218 12.166 2.56773 12.3448 2.87127 12.4568C3.11818 12.5529 3.48855 12.6668 4.17136 12.698C4.90955 12.7317 5.13036 12.7387 7 12.7387C8.86964 12.7387 9.09045 12.7317 9.82864 12.698C10.5115 12.6668 10.8818 12.5529 11.1287 12.4568C11.4552 12.3295 11.6887 12.1787 11.9337 11.9337C12.166 11.7078 12.3448 11.4323 12.4568 11.1287C12.5529 10.8818 12.6668 10.5115 12.698 9.82864C12.7317 9.09045 12.7387 8.869 12.7387 7C12.7387 5.131 12.7317 4.90955 12.698 4.17136C12.6668 3.48855 12.5529 3.11818 12.4568 2.87127C12.3295 2.54482 12.1787 2.31127 11.9337 2.06627C11.7078 1.83405 11.4327 1.65532 11.1287 1.54318C10.8818 1.44709 10.5115 1.33318 9.82864 1.302ZM6.10591 9.15791C6.60524 9.36576 7.16124 9.39382 7.67895 9.23728C8.19667 9.08074 8.64398 8.74931 8.94448 8.29961C9.24498 7.84991 9.38004 7.30983 9.32658 6.77161C9.27312 6.2334 9.03446 5.73044 8.65136 5.34864C8.40715 5.10458 8.11186 4.9177 7.78676 4.80146C7.46165 4.68522 7.11482 4.6425 6.77122 4.67639C6.42763 4.71028 6.09582 4.81993 5.79969 4.99745C5.50356 5.17496 5.25047 5.41593 5.05865 5.703C4.86682 5.99006 4.74103 6.31609 4.69033 6.65761C4.63963 6.99913 4.66528 7.34764 4.76543 7.67806C4.86559 8.00847 5.03776 8.31257 5.26955 8.56846C5.50134 8.82435 5.78698 9.02566 6.10591 9.15791ZM4.45582 4.45582C4.78992 4.12171 5.18657 3.85668 5.6231 3.67587C6.05963 3.49505 6.5275 3.40198 7 3.40198C7.4725 3.40198 7.94037 3.49505 8.3769 3.67587C8.81343 3.85668 9.21008 4.12171 9.54418 4.45582C9.87829 4.78992 10.1433 5.18657 10.3241 5.6231C10.505 6.05963 10.598 6.5275 10.598 7C10.598 7.4725 10.505 7.94037 10.3241 8.3769C10.1433 8.81343 9.87829 9.21008 9.54418 9.54418C8.86942 10.2189 7.95425 10.598 7 10.598C6.04575 10.598 5.13058 10.2189 4.45582 9.54418C3.78106 8.86942 3.40198 7.95425 3.40198 7C3.40198 6.04575 3.78106 5.13058 4.45582 4.45582ZM11.396 3.93782C11.4788 3.85972 11.5451 3.7658 11.5909 3.66162C11.6368 3.55744 11.6612 3.44513 11.6629 3.33132C11.6646 3.21751 11.6434 3.10453 11.6006 2.99906C11.5578 2.89359 11.4943 2.79778 11.4138 2.7173C11.3333 2.63682 11.2375 2.5733 11.132 2.53051C11.0266 2.48772 10.9136 2.46653 10.7998 2.46819C10.686 2.46985 10.5736 2.49433 10.4695 2.54017C10.3653 2.58602 10.2714 2.6523 10.1933 2.73509C10.0414 2.89611 9.95822 3.10999 9.96145 3.33132C9.96467 3.55265 10.054 3.76401 10.2106 3.92054C10.3671 4.07706 10.5784 4.16642 10.7998 4.16964C11.0211 4.17287 11.235 4.08971 11.396 3.93782Z" fill="white"/>
-                                    </svg>
-                                 </a>
-                              </li>
-                           </ul>
+                  <div class="col-span-10">
+                     <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
+                        <div class="  md:col-span-10 ">
+                           <div class="post-right ">
+                              <div class="post-top">
+                                 <div class="member-badge flex ">
+                                    <div class="badge-lock    mr-8">
+                                       <p class="font-medium flex items-center text-purple-300 ">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Member Only
+                                       </p>
+                                    </div>
+                                    <div class="badge-date xl:hidden">
+                                       <p class=" font-medium flex items-center text-purple-300">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Jun, 2022
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="post-title">
+                                    <h2
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       <a class="underline-hover" href="single.html">Ten reasons why you are a rookie in
+                                          podcast</a></h2>
+                                 </div>
+                              </div>
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                                 <div class="post-author-images mr-4">
+                                    <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
+                                          src="assets/images/post-author-images.webp" alt="images"></a>
+                                 </div>
+                                 <div class="post-author-bio">
+                                    <p class=" font-medium  text-stone-900 "><a class="underline-hover"
+                                          href="author.html">Bianca Howe</a> </p>
+                                    <p>UK, London</p>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
-                     <div class="copyright-text text-center lg:text-start">
-                        <p class="text-white">© 2022  <a class="hover:text-gray-300 transition duration-500" href="#">Themeix</a> . All rights reserved by</p>
+                  </div>
+               </div>
+               <div
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                  <div class="col-span-2 hidden xl:block">
+                     <div class="publish-date lg:mb-8">
+                        <p class="font-medium text-sm  text-purple-300">22 <span class="text-sm">Jul, 2022</span></p>
                      </div>
                   </div>
-               </div> <!-- .copyright-box -->
-
-            </footer>
-               <!--  ====================== Footer   Area End =============================  -->
-
-         </div>  <!-- .nokum-right -->
-
-      </div>
-
-      <!--  ====================== Scroll Area Start =============================  -->
-            <div
-            class="scroll-top    h-12 w-12 text-center fixed bottom-10 right-10 z-50 cursor-pointer transition-all rounded-full">
-            <div
-               class="scroll-icon    transition duration-500 bg-blue-800  h-12 w-12 flex items-center justify-center rounded-full">
-               <svg class="inline-block" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 19.3325C5.82321 19.3325 5.65367 19.2623 5.52866 19.1373C5.40366 19.0123 5.33343 18.8427 5.33343 18.6659L5.33343 2.94415L1.13935 7.13956C1.01418 7.26473 0.844425 7.33504 0.667415 7.33504C0.490406 7.33504 0.320646 7.26473 0.195481 7.13956C0.0703166 7.0144 4.17049e-09 6.84464 0 6.66763C-4.17049e-09 6.49062 0.0703166 6.32086 0.195481 6.1957L5.52807 0.86311C5.58998 0.801035 5.66354 0.751785 5.74452 0.718182C5.82551 0.684576 5.91232 0.66728 6 0.66728C6.08768 0.66728 6.17449 0.684576 6.25548 0.718182C6.33646 0.751785 6.41002 0.801035 6.47193 0.86311L11.8045 6.1957C11.9297 6.32086 12 6.49062 12 6.66763C12 6.84464 11.9297 7.0144 11.8045 7.13956C11.6794 7.26473 11.5096 7.33504 11.3326 7.33504C11.1556 7.33504 10.9858 7.26473 10.8607 7.13956L6.66657 2.94415L6.66657 18.6659C6.66657 18.8427 6.59635 19.0123 6.47134 19.1373C6.34633 19.2623 6.17679 19.3325 6 19.3325Z" fill="white"/>
-                  </svg>
+                  <div class="col-span-10">
+                     <div class=" blog-post-box md:grid md:grid-cols-12 gap-6  group items-center ">
+                        <div class="  md:col-span-3  mb-8 md:mb-0 md:order-last">
+                           <div class="blog-post-images-box relative overflow-hidden rounded-md lg:inline-block w-full">
+                              <a href="single.html"><img
+                                    class=" w-full h-79  md:h-50.5 object-cover rounded-md transition duration-500  group-hover:scale-125"
+                                    src="assets/images/blog-post-images.webp" alt="images"></a>
+                              <div class="badge-lock arif-test absolute bottom-0 p-8 md-min-768:hidden ">
+                                 <p class="font-medium flex items-center text-purple-300 md:hidden">
+                                    <span
+                                       class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                       <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                             fill="#827397" />
+                                       </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="  md:col-span-9  ">
+                           <div class="post-right ">
+                              <div class="post-top">
+                                 <div class="member-badge flex ">
+                                    <div class="badge-lock  hidden md:block mr-8">
+                                       <p class="font-medium flex items-center text-purple-300 ">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Member Only
+                                       </p>
+                                    </div>
+                                    <div class="badge-date xl:hidden">
+                                       <p class=" font-medium flex items-center text-purple-300">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Jun, 2022
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="post-title">
+                                    <h2
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       <a class="underline-hover" href="single.html">Ten reasons why you are a rookie in
+                                          podcast</a>
+                                    </h2>
+                                 </div>
+                              </div>
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                                 <div class="post-author-images mr-4">
+                                    <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
+                                          src="assets/images/post-author-images.webp" alt="images"></a>
+                                 </div>
+                                 <div class="post-author-bio">
+                                    <p class=" font-medium  text-stone-900 "><a class="underline-hover"
+                                          href="author.html">Bianca Howe</a> </p>
+                                    <p>UK, London</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                  <div class="col-span-2 hidden xl:block">
+                     <div class="publish-date lg:mb-8">
+                        <p class="font-medium text-sm  text-purple-300">16 <span class="text-sm">Jul, 2022</span></p>
+                     </div>
+                  </div>
+                  <div class="col-span-10">
+                     <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
+                        <div class="  md:col-span-10 ">
+                           <div class="post-right ">
+                              <div class="post-top">
+                                 <div class="member-badge flex ">
+                                    <div class="badge-lock    mr-8">
+                                       <p class="font-medium flex items-center text-purple-300 ">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Member Only
+                                       </p>
+                                    </div>
+                                    <div class="badge-date xl:hidden">
+                                       <p class=" font-medium flex items-center text-purple-300">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Jun, 2022
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="post-title">
+                                    <h2
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       <a class="underline-hover" href="single.html">Why podcast had been so popular
+                                          till now?</a></h2>
+                                 </div>
+                              </div>
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                                 <div class="post-author-images mr-4">
+                                    <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
+                                          src="assets/images/post-author-images.webp" alt="images"></a>
+                                 </div>
+                                 <div class="post-author-bio">
+                                    <p class=" font-medium  text-stone-900 "><a class="underline-hover"
+                                          href="author.html">Bianca Howe</a> </p>
+                                    <p>UK, London</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                  <div class="col-span-2 hidden xl:block">
+                     <div class="publish-date lg:mb-8">
+                        <p class="font-medium text-sm  text-purple-300">11<span class="text-sm">Jul, 2022</span></p>
+                     </div>
+                  </div>
+                  <div class="col-span-10">
+                     <div class=" blog-post-box md:grid md:grid-cols-12 gap-6  group items-center ">
+                        <div class="  md:col-span-3  mb-8 md:mb-0 md:order-last">
+                           <div class="blog-post-images-box relative overflow-hidden rounded-md lg:inline-block w-full">
+                              <a href="single.html"><img
+                                    class=" w-full h-79  md:h-50.5 object-cover rounded-md transition duration-500  group-hover:scale-125"
+                                    src="assets/images/blog-post-images.webp" alt="images"></a>
+                              <div class="badge-lock arif-test absolute bottom-0 p-8 md-min-768:hidden ">
+                                 <p class="font-medium flex items-center text-purple-300 md:hidden">
+                                    <span
+                                       class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                       <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                             fill="#827397" />
+                                       </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="  md:col-span-9  ">
+                           <div class="post-right ">
+                              <div class="post-top">
+                                 <div class="member-badge flex ">
+                                    <div class="badge-lock  hidden md:block mr-8">
+                                       <p class="font-medium flex items-center text-purple-300 ">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Member Only
+                                       </p>
+                                    </div>
+                                    <div class="badge-date xl:hidden">
+                                       <p class=" font-medium flex items-center text-purple-300">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Jun, 2022
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="post-title">
+                                    <h2
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       <a class="underline-hover" href="single.html">Why podcast had been so popular
+                                          till now?</a></h2>
+                                 </div>
+                              </div>
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                                 <div class="post-author-images mr-4">
+                                    <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
+                                          src="assets/images/post-author-images.webp" alt="images"></a>
+                                 </div>
+                                 <div class="post-author-bio">
+                                    <p class=" font-medium  text-stone-900 "><a class="underline-hover"
+                                          href="author.html">Bianca Howe</a> </p>
+                                    <p>UK, London</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                  <div class="col-span-2 hidden xl:block">
+                     <div class="publish-date lg:mb-8">
+                        <p class="font-medium text-sm  text-purple-300">29 <span class="text-sm">May, 2022</span></p>
+                     </div>
+                  </div>
+                  <div class="col-span-10">
+                     <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
+                        <div class="  md:col-span-10 ">
+                           <div class="post-right ">
+                              <div class="post-top">
+                                 <div class="member-badge flex ">
+                                    <div class="badge-lock    mr-8">
+                                       <p class="font-medium flex items-center text-purple-300 ">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Member Only
+                                       </p>
+                                    </div>
+                                    <div class="badge-date xl:hidden">
+                                       <p class=" font-medium flex items-center text-purple-300">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Jun, 2022
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="post-title">
+                                    <h2
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       <a class="underline-hover" href="single.html">At I who best to where line much
+                                          safely</a></h2>
+                                 </div>
+                              </div>
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                                 <div class="post-author-images mr-4">
+                                    <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
+                                          src="assets/images/post-author-images.webp" alt="images"></a>
+                                 </div>
+                                 <div class="post-author-bio">
+                                    <p class=" font-medium  text-stone-900 "><a class="underline-hover"
+                                          href="author.html">Bianca Howe</a> </p>
+                                    <p>UK, London</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md">
+                  <div class="col-span-2 hidden xl:block">
+                     <div class="publish-date lg:mb-8">
+                        <p class="font-medium text-sm  text-purple-300">28 <span class="text-sm">May, 2022</span></p>
+                     </div>
+                  </div>
+                  <div class="col-span-10">
+                     <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
+                        <div class="  md:col-span-10 ">
+                           <div class="post-right ">
+                              <div class="post-top">
+                                 <div class="member-badge flex ">
+                                    <div class="badge-lock    mr-8">
+                                       <p class="font-medium flex items-center text-purple-300 ">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Member Only
+                                       </p>
+                                    </div>
+                                    <div class="badge-date xl:hidden">
+                                       <p class=" font-medium flex items-center text-purple-300">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Jun, 2022
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="post-title">
+                                    <h2
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       <a class="underline-hover" href="single.html">7 places that you can find
+                                          travel</a></h2>
+                                 </div>
+                              </div>
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                                 <div class="post-author-images mr-4">
+                                    <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
+                                          src="assets/images/post-author-images.webp" alt="images"></a>
+                                 </div>
+                                 <div class="post-author-bio">
+                                    <p class=" font-medium  text-stone-900 "><a class="underline-hover"
+                                          href="author.html">Bianca Howe</a> </p>
+                                    <p>UK, London</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                  <div class="col-span-2 hidden xl:block">
+                     <div class="publish-date lg:mb-8">
+                        <p class="font-medium text-sm  text-purple-300">27<span class="text-sm">May, 2022</span></p>
+                     </div>
+                  </div>
+                  <div class="col-span-10">
+                     <div class=" blog-post-box md:grid md:grid-cols-12 gap-6   group items-center ">
+                        <div class="  md:col-span-10 ">
+                           <div class="post-right ">
+                              <div class="post-top">
+                                 <div class="member-badge flex ">
+                                    <div class="badge-lock    mr-8">
+                                       <p class="font-medium flex items-center text-purple-300 ">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg class="inline-block" width="15" height="19" viewBox="0 0 15 19"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M0 9.5L1.5 8H13.5L15 9.5V17L13.5 18.5H1.5L0 17V9.5ZM1.5 9.5V17H13.5V9.5H1.5ZM12 8V5C12 3.80653 11.5259 2.66193 10.682 1.81802C9.83807 0.974106 8.69347 0.5 7.5 0.5C6.30653 0.5 5.16193 0.974106 4.31802 1.81802C3.47411 2.66193 3 3.80653 3 5V8H4.5V5C4.5 4.20435 4.81607 3.44129 5.37868 2.87868C5.94129 2.31607 6.70435 2 7.5 2C8.29565 2 9.05871 2.31607 9.62132 2.87868C10.1839 3.44129 10.5 4.20435 10.5 5V8H12Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Member Only
+                                       </p>
+                                    </div>
+                                    <div class="badge-date xl:hidden">
+                                       <p class=" font-medium flex items-center text-purple-300">
+                                          <span
+                                             class="mr-2 bg-gray-200 w-9 h-9 flex items-center justify-center rounded-full">
+                                             <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                   d="M4.5 10.8C4.245 10.8 4.0311 10.7136 3.8583 10.5408C3.6861 10.3686 3.6 10.155 3.6 9.9C3.6 9.645 3.6861 9.4311 3.8583 9.2583C4.0311 9.0861 4.245 9 4.5 9C4.755 9 4.9689 9.0861 5.1417 9.2583C5.3139 9.4311 5.4 9.645 5.4 9.9C5.4 10.155 5.3139 10.3686 5.1417 10.5408C4.9689 10.7136 4.755 10.8 4.5 10.8ZM8.1 10.8C7.845 10.8 7.6314 10.7136 7.4592 10.5408C7.2864 10.3686 7.2 10.155 7.2 9.9C7.2 9.645 7.2864 9.4311 7.4592 9.2583C7.6314 9.0861 7.845 9 8.1 9C8.355 9 8.5689 9.0861 8.7417 9.2583C8.9139 9.4311 9 9.645 9 9.9C9 10.155 8.9139 10.3686 8.7417 10.5408C8.5689 10.7136 8.355 10.8 8.1 10.8ZM11.7 10.8C11.445 10.8 11.2314 10.7136 11.0592 10.5408C10.8864 10.3686 10.8 10.155 10.8 9.9C10.8 9.645 10.8864 9.4311 11.0592 9.2583C11.2314 9.0861 11.445 9 11.7 9C11.955 9 12.1686 9.0861 12.3408 9.2583C12.5136 9.4311 12.6 9.645 12.6 9.9C12.6 10.155 12.5136 10.3686 12.3408 10.5408C12.1686 10.7136 11.955 10.8 11.7 10.8ZM1.8 18C1.305 18 0.8811 17.8239 0.5283 17.4717C0.1761 17.1189 0 16.695 0 16.2V3.6C0 3.105 0.1761 2.6814 0.5283 2.3292C0.8811 1.9764 1.305 1.8 1.8 1.8H2.7V0H4.5V1.8H11.7V0H13.5V1.8H14.4C14.895 1.8 15.3189 1.9764 15.6717 2.3292C16.0239 2.6814 16.2 3.105 16.2 3.6V16.2C16.2 16.695 16.0239 17.1189 15.6717 17.4717C15.3189 17.8239 14.895 18 14.4 18H1.8ZM1.8 16.2H14.4V7.2H1.8V16.2ZM1.8 5.4H14.4V3.6H1.8V5.4Z"
+                                                   fill="#827397" />
+                                             </svg>
+                                          </span>
+                                          Jun, 2022
+                                       </p>
+                                    </div>
+                                 </div>
+                                 <div class="post-title">
+                                    <h2
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       <a class="underline-hover" href="single.html">15 tips to avoid failure in
+                                          travel</a></h2>
+                                 </div>
+                              </div>
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                                 <div class="post-author-images mr-4">
+                                    <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
+                                          src="assets/images/post-author-images.webp" alt="images"></a>
+                                 </div>
+                                 <div class="post-author-bio">
+                                    <p class=" font-medium  text-stone-900 "><a class="underline-hover"
+                                          href="author.html">Bianca Howe</a> </p>
+                                    <p>UK, London</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
 
             </div>
-         </div>
-      <!--  ====================== Scroll Area End =============================  -->
-      <!-- gulp:js -->
-      <script src="assets/js/build.min.js"></script>
-      <!-- endgulp -->
-   </body>
+            <div class="blog-post-button text-center">
+               <a class=" load-more-btn transition font-medium duration-500 inline-block py-4 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border-2 border-orange-300 hover:border-blue-900 rounded-full "
+                  href="#">Load More</a>
+            </div>
+         </section>
+         <!--  ====================== Blog Post Area End =============================  -->
+         <!--  ====================== Newsletter Area Start =============================  -->
+         <section class="newsletter-area lg:pt-30 pt-20 ">
+            <div class="md:grid md:grid-cols-12 gap-6">
+               <div class="col-span-5 md:order-last">
+                  <div class="newsletter-right h-full">
+                     <div class="newsletter-images relative -z-2 h-full mb-4 md:mb-4">
+                        <img
+                           class=" rounded-4 md:rounded-none md:rounded-t-4  md:h-142 object-cover md:max-h-142 !h-full"
+                           src="assets/images/blog-forms-images.webp" alt="images">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-span-7">
+                  <div class="newsletter-left relative lg:mt-38">
+                     <div
+                        class="newsletter-left-box  lg:p-20 md:before:rounded-tr-4  before:absolute before:bg-white before:h-full before:w-full before:top-0 left-0 before:-z-1">
+                        <h2 class="xl:text-5xl md:text-4xl  text-3xl  font-medium pt-2 text-black-10 mb-8">Join Our
+                           Newsletter</h2>
+                        <p>Project look tickets him wanted in graduate. The behavioural been five desk learn what's
+                           supposedly compute.</p>
+                        <form class="w-full pt-8">
+                           <div class="sm:flex items-center py-2">
+                              <input
+                                 class=" border-2 border-orange-300 rounded-full sm:rounded-tr-none sm:rounded-br-none pr-12 py-3 px-4  w-full text-gray-700  focus:outline-blue-800"
+                                 type="text" placeholder="Your email" aria-label="Full name">
+                              <button
+                                 class="w-full sm:w-auto mt-4 sm:mt-0 flex-shrink-0 py-3 border-2 px-8 rounded-full relative sm:right-10 bg-blue-800 hover:bg-gray-200  border-blue-800 hover:border-gray-200   text-white hover:text-blue-800 font-medium transition duration-500"
+                                 type="button">
+                                 Subscribe
+                              </button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--  ====================== Newsletter Area End =============================  -->
+         <!--  ====================== Call to  Area Start =============================  -->
+         <section class="call-to-action">
+            <div
+               class="md:grid md:grid-cols-12 gap-6 bg-blue-800 md:p-20 p-10 relative z-1 border-b border-white border-opacity-10">
+               <div class="col-span-8">
+                  <div class="newsletter-bottom">
+                     <h2 class="call-to-action-title xl:text-5xl md:text-4xl  text-3xl  font-medium text-white">Trusted
+                        the planswork the go. </h2>
+                  </div>
+               </div>
+               <div class="col-span-4 text-right mt-4">
+                  <div class="subscribe-button"></div>
+                  <a class=" block md:inline-block text-center py-4 border-2 px-12 rounded-full  bg-purple-300 hover:bg-gray-200  border-purple-300 hover:border-gray-300  text-white hover:text-blue-800 font-medium transition duration-500"
+                     href="#">Subscribe</a>
+               </div>
+            </div>
+         </section>
+         <!--  ====================== Call to  Area End =============================  -->
+         <!--  ====================== Footer   Area Start =============================  -->
+         <footer
+            class="bg-blue-900 before:bg-blue-900 before:h-97.5 before:w-full before:left-0 before:right-0  before:bottom-0 before:absolute">
+            <div
+               class="footer-links-wrapper grid lg:grid-cols-4 md:grid-cols-3 gap-6 sm:grid-cols-2 bg-blue-800  p-20  relative z-1">
+               <div class="column-1">
+                  <ul class="link-list">
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 "
+                           href="#">Work</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 "
+                           href="#">Style</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 "
+                           href="#">Services</a></li>
+                  </ul>
+               </div>
+               <div class="column-1">
+                  <ul class="link-list">
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 "
+                           href="#">Graphic</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 "
+                           href="#">Resources</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">UI/UX
+                           Design</a></li>
+                  </ul>
+               </div>
+               <div class="column-1">
+                  <ul class="link-list">
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 "
+                           href="#">Contact</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Online
+                           Courses</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 "
+                           href="#">Account Loging</a></li>
+                  </ul>
+               </div>
+               <div class="column-1">
+                  <ul class="link-list">
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">About
+                           us</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Data &
+                           privacy</a></li>
+                     <li class="mb-4"><a class="text-white hover:text-gray-300 transition duration-500 " href="#">Terms
+                           & conditions</a></li>
+                  </ul>
+               </div>
+            </div>
+            <!--.footer-links-wrapper  -->
+            <div class="copyright-box pt-12 relative z-1 bg-blue-900 pb-8">
+               <div class="lg:grid lg:grid-cols-2 gap-6">
+                  <div class="footer-social-link md:order-last mb-8 lg:mb-0">
+                     <div class="social-link flex items-center  justify-center lg:justify-end  gap-4 ">
+                        <p class=" text-white  w-20">Follow - </p>
+                        <ul class="flex flex-wrap gap-4">
+                           <li>
+                              <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300"
+                                 href="#">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M5.2003 4.8783H7.8001V6.1733C8.1746 5.4285 9.135 4.7593 10.5777 4.7593C13.3434 4.7593 14 6.2419 14 8.9621V14H11.2V9.5816C11.2 8.0325 10.8255 7.1589 9.8721 7.1589C8.5498 7.1589 8.0003 8.1004 8.0003 9.5809V14H5.2003V4.8783ZM0.399 13.881H3.199V4.7593H0.399V13.881ZM3.6001 1.785C3.6002 2.01969 3.55366 2.25206 3.46317 2.46861C3.37268 2.68516 3.24006 2.88156 3.073 3.0464C2.73448 3.38284 2.27627 3.57116 1.799 3.57C1.32257 3.56968 0.865418 3.38184 0.5264 3.0471C0.359948 2.8817 0.22777 2.68508 0.137441 2.4685C0.047111 2.25193 0.000405392 2.01966 0 1.785C0 1.3111 0.189 0.8575 0.5271 0.5229C0.86582 0.187711 1.32317 -0.000209448 1.7997 1.75185e-07C2.2771 1.75185e-07 2.7349 0.1883 3.073 0.5229C3.4104 0.8575 3.6001 1.3111 3.6001 1.785Z"
+                                       fill="white" />
+                                 </svg>
+                              </a>
+                           </li>
+                           <li>
+                              <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300"
+                                 href="#">
+                                 <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M9.27638 0.393359C9.27638 0.290253 9.23542 0.19137 9.16251 0.118463C9.08961 0.0455561 8.99072 0.00459735 8.88762 0.00459735H6.94381C5.96501 -0.0441604 5.00669 0.296473 4.27825 0.95207C3.54981 1.60767 3.11046 2.52493 3.0562 3.50345V5.60276H1.11239C1.00929 5.60276 0.910405 5.64372 0.837498 5.71662C0.764592 5.78953 0.723633 5.88841 0.723633 5.99152V8.01308C0.723633 8.11618 0.764592 8.21507 0.837498 8.28797C0.910405 8.36088 1.00929 8.40184 1.11239 8.40184H3.0562V13.6112C3.0562 13.7143 3.09716 13.8132 3.17006 13.8861C3.24297 13.959 3.34186 14 3.44496 14H5.77753C5.88063 14 5.97952 13.959 6.05242 13.8861C6.12533 13.8132 6.16629 13.7143 6.16629 13.6112V8.40184H8.2034C8.28985 8.40308 8.37425 8.37547 8.44325 8.32337C8.51225 8.27126 8.56191 8.19765 8.58438 8.11416L9.1442 6.0926C9.15967 6.03516 9.16175 5.97493 9.15028 5.91656C9.13881 5.85819 9.11409 5.80323 9.07804 5.75591C9.04199 5.70859 8.99556 5.67018 8.94233 5.64362C8.88909 5.61707 8.83048 5.60309 8.77099 5.60276H6.16629V3.50345C6.18563 3.31099 6.27601 3.13266 6.41978 3.00326C6.56355 2.87387 6.75039 2.80271 6.94381 2.80368H8.88762C8.99072 2.80368 9.08961 2.76272 9.16251 2.68981C9.23542 2.61691 9.27638 2.51802 9.27638 2.41492V0.393359Z"
+                                       fill="white" />
+                                 </svg>
+                              </a>
+                           </li>
+                           <li>
+                              <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300"
+                                 href="#">
+                                 <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="M17.6108 1.66066C16.9775 1.94128 16.2972 2.1309 15.5819 2.2166C16.3199 1.77503 16.872 1.08003 17.1353 0.261302C16.4419 0.673137 15.6831 0.963023 14.8917 1.11836C14.3596 0.550172 13.6547 0.173569 12.8866 0.0470186C12.1185 -0.0795316 11.3301 0.0510517 10.6438 0.418495C9.95751 0.785938 9.41172 1.36968 9.09118 2.0791C8.77064 2.78852 8.69328 3.58391 8.87111 4.3418C7.46621 4.27126 6.09184 3.90611 4.8372 3.27003C3.58255 2.63395 2.47568 1.74117 1.5884 0.649633C1.28502 1.17297 1.11057 1.77973 1.11057 2.42594C1.11024 3.00767 1.25349 3.58049 1.52763 4.09358C1.80178 4.60667 2.19832 5.04416 2.6821 5.36724C2.12105 5.34938 1.57238 5.19778 1.08175 4.92506V4.97056C1.0817 5.78647 1.36392 6.57726 1.88055 7.20877C2.39717 7.84027 3.11637 8.27359 3.91611 8.43519C3.39564 8.57605 2.84997 8.5968 2.32031 8.49587C2.54595 9.19791 2.98548 9.81181 3.57736 10.2516C4.16923 10.6915 4.88384 10.9352 5.62112 10.9487C4.36954 11.9312 2.82384 12.4642 1.23269 12.4618C0.95083 12.4619 0.669211 12.4455 0.389282 12.4125C2.0044 13.451 3.88451 14.0021 5.80467 14C12.3046 14 15.858 8.61647 15.858 3.9474C15.858 3.79571 15.8542 3.6425 15.8474 3.49081C16.5386 2.99097 17.1352 2.37201 17.6093 1.66293L17.6108 1.66066Z"
+                                       fill="white" />
+                                 </svg>
+                              </a>
+                           </li>
+                           <li>
+                              <a class=" h-10 w-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full hover:bg-gray-300 transition duration-300"
+                                 href="#">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                       d="M4.11409 0.042C4.86055 0.00763635 5.09855 0 7 0C8.90145 0 9.13945 0.00827272 9.88527 0.042C10.6311 0.0757273 11.1402 0.194727 11.5856 0.367182C12.0521 0.543455 12.4753 0.819 12.8253 1.17536C13.1816 1.52473 13.4565 1.94727 13.6322 2.41436C13.8053 2.85982 13.9236 3.36891 13.958 4.11345C13.9924 4.86118 14 5.09918 14 7C14 8.90145 13.9917 9.13945 13.958 9.88591C13.9243 10.6305 13.8053 11.1395 13.6322 11.585C13.4565 12.0522 13.1812 12.4754 12.8253 12.8253C12.4753 13.1816 12.0521 13.4565 11.5856 13.6322C11.1402 13.8053 10.6311 13.9236 9.88655 13.958C9.13945 13.9924 8.90145 14 7 14C5.09855 14 4.86055 13.9917 4.11409 13.958C3.36955 13.9243 2.86045 13.8053 2.415 13.6322C1.94786 13.4565 1.52461 13.1812 1.17473 12.8253C0.818605 12.4757 0.543018 12.0527 0.367182 11.5856C0.194727 11.1402 0.0763636 10.6311 0.042 9.88655C0.00763635 9.13882 0 8.90082 0 7C0 5.09855 0.00827272 4.86055 0.042 4.11473C0.0757273 3.36891 0.194727 2.85982 0.367182 2.41436C0.543278 1.94732 0.819076 1.52429 1.17536 1.17473C1.52475 0.818683 1.94757 0.5431 2.41436 0.367182C2.85982 0.194727 3.36955 0.0763636 4.11409 0.042ZM9.82864 1.302C9.09045 1.26827 8.869 1.26127 7 1.26127C5.131 1.26127 4.90955 1.26827 4.17136 1.302C3.48855 1.33318 3.11818 1.44709 2.87127 1.54318C2.54482 1.67045 2.31127 1.82127 2.06627 2.06627C1.83403 2.29221 1.6553 2.56727 1.54318 2.87127C1.44709 3.11818 1.33318 3.48855 1.302 4.17136C1.26827 4.90955 1.26127 5.131 1.26127 7C1.26127 8.869 1.26827 9.09045 1.302 9.82864C1.33318 10.5115 1.44709 10.8818 1.54318 11.1287C1.65518 11.4323 1.834 11.7078 2.06627 11.9337C2.29218 12.166 2.56773 12.3448 2.87127 12.4568C3.11818 12.5529 3.48855 12.6668 4.17136 12.698C4.90955 12.7317 5.13036 12.7387 7 12.7387C8.86964 12.7387 9.09045 12.7317 9.82864 12.698C10.5115 12.6668 10.8818 12.5529 11.1287 12.4568C11.4552 12.3295 11.6887 12.1787 11.9337 11.9337C12.166 11.7078 12.3448 11.4323 12.4568 11.1287C12.5529 10.8818 12.6668 10.5115 12.698 9.82864C12.7317 9.09045 12.7387 8.869 12.7387 7C12.7387 5.131 12.7317 4.90955 12.698 4.17136C12.6668 3.48855 12.5529 3.11818 12.4568 2.87127C12.3295 2.54482 12.1787 2.31127 11.9337 2.06627C11.7078 1.83405 11.4327 1.65532 11.1287 1.54318C10.8818 1.44709 10.5115 1.33318 9.82864 1.302ZM6.10591 9.15791C6.60524 9.36576 7.16124 9.39382 7.67895 9.23728C8.19667 9.08074 8.64398 8.74931 8.94448 8.29961C9.24498 7.84991 9.38004 7.30983 9.32658 6.77161C9.27312 6.2334 9.03446 5.73044 8.65136 5.34864C8.40715 5.10458 8.11186 4.9177 7.78676 4.80146C7.46165 4.68522 7.11482 4.6425 6.77122 4.67639C6.42763 4.71028 6.09582 4.81993 5.79969 4.99745C5.50356 5.17496 5.25047 5.41593 5.05865 5.703C4.86682 5.99006 4.74103 6.31609 4.69033 6.65761C4.63963 6.99913 4.66528 7.34764 4.76543 7.67806C4.86559 8.00847 5.03776 8.31257 5.26955 8.56846C5.50134 8.82435 5.78698 9.02566 6.10591 9.15791ZM4.45582 4.45582C4.78992 4.12171 5.18657 3.85668 5.6231 3.67587C6.05963 3.49505 6.5275 3.40198 7 3.40198C7.4725 3.40198 7.94037 3.49505 8.3769 3.67587C8.81343 3.85668 9.21008 4.12171 9.54418 4.45582C9.87829 4.78992 10.1433 5.18657 10.3241 5.6231C10.505 6.05963 10.598 6.5275 10.598 7C10.598 7.4725 10.505 7.94037 10.3241 8.3769C10.1433 8.81343 9.87829 9.21008 9.54418 9.54418C8.86942 10.2189 7.95425 10.598 7 10.598C6.04575 10.598 5.13058 10.2189 4.45582 9.54418C3.78106 8.86942 3.40198 7.95425 3.40198 7C3.40198 6.04575 3.78106 5.13058 4.45582 4.45582ZM11.396 3.93782C11.4788 3.85972 11.5451 3.7658 11.5909 3.66162C11.6368 3.55744 11.6612 3.44513 11.6629 3.33132C11.6646 3.21751 11.6434 3.10453 11.6006 2.99906C11.5578 2.89359 11.4943 2.79778 11.4138 2.7173C11.3333 2.63682 11.2375 2.5733 11.132 2.53051C11.0266 2.48772 10.9136 2.46653 10.7998 2.46819C10.686 2.46985 10.5736 2.49433 10.4695 2.54017C10.3653 2.58602 10.2714 2.6523 10.1933 2.73509C10.0414 2.89611 9.95822 3.10999 9.96145 3.33132C9.96467 3.55265 10.054 3.76401 10.2106 3.92054C10.3671 4.07706 10.5784 4.16642 10.7998 4.16964C11.0211 4.17287 11.235 4.08971 11.396 3.93782Z"
+                                       fill="white" />
+                                 </svg>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="copyright-text text-center lg:text-start">
+                     <p class="text-white">© 2022 <a class="hover:text-gray-300 transition duration-500"
+                           href="#">Themeix</a> . All rights reserved by</p>
+                  </div>
+               </div>
+            </div> <!-- .copyright-box -->
+
+         </footer>
+         <!--  ====================== Footer   Area End =============================  -->
+
+      </div> <!-- .nokum-right -->
+
+   </div>
+
+   <!--  ====================== Scroll Area Start =============================  -->
+   <div
+      class="scroll-top    h-12 w-12 text-center fixed bottom-10 right-10 z-50 cursor-pointer transition-all rounded-full">
+      <div
+         class="scroll-icon    transition duration-500 bg-blue-800  h-12 w-12 flex items-center justify-center rounded-full">
+         <svg class="inline-block" width="12" height="20" viewBox="0 0 12 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M6 19.3325C5.82321 19.3325 5.65367 19.2623 5.52866 19.1373C5.40366 19.0123 5.33343 18.8427 5.33343 18.6659L5.33343 2.94415L1.13935 7.13956C1.01418 7.26473 0.844425 7.33504 0.667415 7.33504C0.490406 7.33504 0.320646 7.26473 0.195481 7.13956C0.0703166 7.0144 4.17049e-09 6.84464 0 6.66763C-4.17049e-09 6.49062 0.0703166 6.32086 0.195481 6.1957L5.52807 0.86311C5.58998 0.801035 5.66354 0.751785 5.74452 0.718182C5.82551 0.684576 5.91232 0.66728 6 0.66728C6.08768 0.66728 6.17449 0.684576 6.25548 0.718182C6.33646 0.751785 6.41002 0.801035 6.47193 0.86311L11.8045 6.1957C11.9297 6.32086 12 6.49062 12 6.66763C12 6.84464 11.9297 7.0144 11.8045 7.13956C11.6794 7.26473 11.5096 7.33504 11.3326 7.33504C11.1556 7.33504 10.9858 7.26473 10.8607 7.13956L6.66657 2.94415L6.66657 18.6659C6.66657 18.8427 6.59635 19.0123 6.47134 19.1373C6.34633 19.2623 6.17679 19.3325 6 19.3325Z"
+               fill="white" />
+         </svg>
+
+      </div>
+   </div>
+   <!--  ====================== Scroll Area End =============================  -->
+   <!-- gulp:js -->
+   <script src="assets/js/build.min.js"></script>
+   <!-- endgulp -->
+</body>
+
 </html>

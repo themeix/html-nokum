@@ -1,9 +1,9 @@
 :root{
-    --blue-900:#363062; 
-    --white:#ffff; 
-    --black-100:#2C2828; 
-    --blue-800:#4D4C7D; 
-    --stone-900:#2C2828; 
+    --blue-900:#363062;
+    --white:#ffff;
+    --black-100:#2C2828;
+    --blue-800:#4D4C7D;
+    --stone-900:#2C2828;
 
   }
 html {
@@ -31,8 +31,8 @@ body {
     animation: fadein 2s;
 }
 /*
-------------------------  
-Keyframes Animation 
+------------------------
+Keyframes Animation
 --------------------------
 */
 @keyframes fadein {
@@ -81,9 +81,151 @@ Keyframes Animation
 }
 
 
+
+
 /*
 ------------------------  
- 01.  Menu Css
+01. Entry Content Css
+--------------------------
+*/
+.entry-content hr {
+    padding-bottom: 16px;
+}
+.entry-content blockquote {
+    font-size: 18px;
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 32px;
+    background-color: #F1F5F9;
+    font-style: italic;
+    color: #475569;
+    font-weight: 400;
+    line-height: 52px
+}
+.entry-content blockquote::before {
+    content: "";
+    background-color: #007fb3;
+    width: 4px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.entry-content pre {
+    background-color: #fafdfe;
+}
+.entry-content a {
+    color: #ef4444;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    font-weight: 500;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content ul,
+.entry-content ol {
+    margin-bottom: 32px;
+   
+}
+.entry-content h1 {
+    font-size: 3rem;
+}
+.entry-content h2 {
+    font-size: 48px;
+}
+.entry-content h3 {
+    font-size: 24px;
+}
+.entry-content h4 {
+    font-size: 1.5rem;
+}
+.entry-content h5 {
+    font-size: 1.2rem;
+}
+.entry-content ul li {
+    position: relative;
+    padding-left: 16px;
+}
+.entry-content ul li::before {
+    content: "\2022";
+    color: #475569;
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    position: absolute;
+    left: 0;
+}
+.entry-content ol li {
+    position: relative;
+    padding: 24px 24px 24px 88px;
+    background-color: #fafdfe;
+    margin-bottom: 16px;
+}
+.entry-content ol li h1,
+.entry-content ol li h2,
+.entry-content ol li h3,
+.entry-content ol li h4,
+.entry-content ol li h5,
+.entry-content ol li h6 {
+    margin-bottom: 16px;
+    color: #1e1e1e;
+}
+.entry-content ol li::before {
+    content: "";
+    background-image: url(../images/about/checked-list.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 24px;
+}
+.entry-content p {
+    margin-bottom: 24px;
+}
+.entry-content figure {
+    margin-bottom: 60px;
+}
+.entry-content figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+.entry-content figure figcaption {
+    font-size: 15px;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 10px;
+}
+.entry-content .grid-list p {
+    margin: 0 !important;
+}
+.entry-content .grid-list h1,
+.entry-content .grid-list h2,
+.entry-content .grid-list h3,
+.entry-content .grid-list h4,
+.entry-content .grid-list h5,
+.entry-content .grid-list h6 {
+    margin-bottom: 16px !important;
+}
+
+
+
+
+/*
+------------------------
+ 02. Menu Css
 --------------------------
 */
 .mobile-toggle {
@@ -156,15 +298,13 @@ Keyframes Animation
 .submenu li:last-child {
     padding-bottom: 20px;}
 
-
-
 @-webkit-keyframes headerSlideDown {
 
     0% {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%);
     }
-    
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
@@ -176,21 +316,17 @@ Keyframes Animation
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%);
     }
-    
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
 
-
-
-
-
 .header-area {
 
     padding-right: 49px;
-    
+
 }
 
 .body-sticky .header-area {
@@ -198,8 +334,6 @@ Keyframes Animation
     transition: .3s;
     visibility: hidden;
 }
-
-
 
 .body-sticky .header-sticky {
     opacity: 1;
@@ -209,8 +343,7 @@ Keyframes Animation
     visibility: visible;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-   
-   
+
 .body-sticky .header-nav {
     margin-top: -60px;
     transition: .3s;
@@ -218,7 +351,7 @@ Keyframes Animation
 
 .header-sticky .header-nav {
     margin-top: 0;
-   
+
 }
 
 .search-icon:hover path {
@@ -234,10 +367,6 @@ Keyframes Animation
     transform: translateY(-100px);
     transition: .5s;
 }
-
-
-
-
 
     .close-button:before {
         background: #fff;
@@ -256,22 +385,21 @@ Keyframes Animation
         height: 18px;
         margin-right: 85px;
     }
-        
+
       .nokum-menu-icon{
         transform: translateY(100px);
         transition: .3s;
-        
-    
+
     }
   .body-sticky  .nokum-menu-icon{
         visibility: visible!important;
-    
+
     }
     .body-sticky .nokum-menu-icon{
-        transform: translateY(0px);  
+        transform: translateY(0px);
         transition: .3s;
     }
-    
+
     .body-sticky .nokum-menu-icon {
         opacity: 1;
     }
@@ -283,20 +411,16 @@ Keyframes Animation
         transition: .5s;
     }
 
- 
-    
     @media screen and (max-width:1500px){
         header.header-area {
             padding-left: 20%;
         }
-    
-    }
 
+    }
 
 .blog-post-box:nth-last-child(1) {
     border-color: transparent;
 }
-
 
 .link-list li:nth-last-child(1){
     margin-bottom: 0;
@@ -309,8 +433,6 @@ Keyframes Animation
     margin-right: 0;
 }
 
-
-
         .underline-hover {
             display: inline;
             background-image: linear-gradient(rgba(0, 0, 0, 0) calc(99% - 24px), #E9D5CA 22px);
@@ -319,14 +441,11 @@ Keyframes Animation
             -webkit-transition: background-size 0.5s;
             transition: background-size 0.5s;
         }
-        
+
         .underline-hover:hover {
             background-size: 100% 100%;
         }
 
-
-
-        
 /* Mobile Menu CSS */
 
 .nav-open .main-menu {
@@ -395,10 +514,6 @@ Keyframes Animation
     right: 8%;
 }
 
-
-
-
-
 .head-main {
     position: fixed;
     right: 31px;
@@ -406,18 +521,13 @@ Keyframes Animation
     width: 100%;
     max-width: 1600px;
     padding-left: 72px;
-    
+
 }
 .body-sticky .head-main {
     top: 66px;
     transition: .5s;
-    
+
 }
-
-
-
-
-
 
 .nav-button{
 
@@ -439,11 +549,10 @@ Keyframes Animation
     transition: .5s;
 }
 
-
 @media (min-width:1500px) and (max-width:1536px){
 
     .header-area-inner {
         padding-left: 272px;
     }
-      
+
 }
