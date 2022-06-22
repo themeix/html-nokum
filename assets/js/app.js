@@ -72,7 +72,7 @@ Load More
   $('.post-carousel').slick({
     infinite: true,
     slidesToShow: 4,
-    autoplay:false,
+    autoplay:true,
     speed: 300,
 
 
