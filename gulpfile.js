@@ -15,12 +15,15 @@
     var CSS_Files = [
     
     './node_modules/typography-fix/css/typofix.css',
+    './node_modules/slick-carousel/slick/slick.css',
+    './node_modules/slick-carousel/slick/slick-theme.css',
     './assets/css/custom.css'
     ];
     var JS_Files = [
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/jquery.easing/jquery.easing.min.js',
-    './node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js', 
+    './node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js',
+    './node_modules/slick-carousel/slick/slick.js',
     './assets/js/app.js' 
     ];
 /*

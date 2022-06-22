@@ -1,7 +1,6 @@
 (function ($) {
   "use strict";
 
-
   /*
    ------------------------  
    Body Sticky 
@@ -20,16 +19,11 @@
     }
   });
 
-
-
-
   /*  Active Class*/
   $('.nokum-menu-icon').on('click', function () {
     $(this).toggleClass("close-button")
     $(".header-area ").toggleClass('header-sticky');
   })
-
-
 
   /*
   ------------------------  
@@ -49,27 +43,16 @@
     $(this).parent().siblings(".submenu").slideToggle();
   });
 
-
-
-
-
   /* Mobile-menu	 */
-$('.nav-button').on('click', function(){
-  $('body').toggleClass('nav-open');
-});
+  $('.nav-button').on('click', function () {
+    $('body').toggleClass('nav-open');
+  });
 
-
-
-
-
-
-
-
-    /*
-  ------------------------  
-  Load More
-  --------------------------
-  */
+  /*
+------------------------  
+Load More
+--------------------------
+*/
   $('.blog-post-all').infiniteScroll({
     path: function () {
       if (this.loadCount < 4) {
@@ -84,6 +67,44 @@ $('.nav-button').on('click', function(){
     status: '.page-load-status',
     history: false,
   });
+
+
+  $('.post-carousel').slick({
+    infinite: true,
+    slidesToShow: 4,
+    autoplay:false,
+    speed: 300,
+
+
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+
+    ]
+
+  });
+
   /*
   ------------------------  
   Current Date
@@ -91,13 +112,11 @@ $('.nav-button').on('click', function(){
   */
   $('#spanYear').html(new Date().getFullYear());
 
-
   /*=============================================
-     	 Scroll to Top
+         Scroll to Top
   ===============================================*/
 
   function scrolltop() {
-
 
     var wind = $(window);
 

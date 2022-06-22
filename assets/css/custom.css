@@ -93,9 +93,6 @@ Keyframes Animation
     }
 }
 
-
-
-
 /*
 ------------------------  
 01. Entry Content Css
@@ -254,9 +251,6 @@ Keyframes Animation
 .entry-content .grid-list h6 {
     margin-bottom: 16px !important;
 }
-
-
-
 
 @media (min-width: 1280px) {
 
@@ -419,9 +413,7 @@ Keyframes Animation
         margin-bottom: 16px !important;
     }
 
-
 }
-
 
 @media (min-width: 1024px) {
 
@@ -584,18 +576,7 @@ Keyframes Animation
     margin-bottom: 16px !important;
 }
 
-
-
-
-
 }
-
-
-
-
-
-
-
 
 /*
 ------------------------
@@ -960,4 +941,14 @@ Keyframes Animation
         padding-left: 272px;
     }
 
+}
+
+
+ .post-box-area .slick-slider {
+    margin:0 -15px;
+}
+ 
+.post-box-area .slick-slide {
+    margin-right:15px;
+    margin-left:15px;
 }
