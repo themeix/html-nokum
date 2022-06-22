@@ -691,10 +691,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-15 {
-  margin-top: 60px;
-}
-
 .block {
   display: block;
 }
@@ -857,10 +853,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-15 {
-  gap: 60px;
 }
 
 .gap-10 {
@@ -1096,16 +1088,8 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
-}
-
 .pt-15 {
   padding-top: 60px;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .text-center {
