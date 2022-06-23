@@ -11,7 +11,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #d1d5db; /* 2 */
+  border-color: #ADADAD; /* 2 */
 }
 
 ::before,
@@ -1129,6 +1129,10 @@ video {
   padding-right: 3rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .pt-9 {
   padding-top: 2.25rem;
 }
@@ -1243,6 +1247,11 @@ video {
 .text-blue-900 {
   --tw-text-opacity: 1;
   color: rgb(54 48 98 / var(--tw-text-opacity));
+}
+
+.placeholder-gray-300::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(173 173 173 / var(--tw-placeholder-opacity));
 }
 
 .opacity-0 {
@@ -1368,7 +1377,7 @@ video {
 
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  border-color: rgb(173 173 173 / var(--tw-border-opacity));
 }
 
 .hover\:border-transparent:hover {
@@ -1401,7 +1410,7 @@ video {
 
 .hover\:bg-gray-300:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(173 173 173 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -1426,7 +1435,7 @@ video {
 
 .hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(173 173 173 / var(--tw-text-opacity));
 }
 
 .hover\:text-stone-800:hover {
@@ -1445,8 +1454,17 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:border-orange-300:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(233 213 202 / var(--tw-border-opacity));
+}
+
 .focus\:outline-blue-800:focus {
   outline-color: #4D4C7D;
+}
+
+.focus\:outline-orange-300:focus {
+  outline-color: #E9D5CA;
 }
 
 .group:hover .group-hover\:scale-150 {
@@ -1571,10 +1589,6 @@ video {
     width: 91.666667%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1591,12 +1605,12 @@ video {
     justify-content: flex-end;
   }
 
-  .md\:gap-24 {
-    gap: 6rem;
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:gap-24 {
+    gap: 6rem;
   }
 
   .md\:rounded-none {
@@ -1634,6 +1648,14 @@ video {
 
   .lg\:order-last {
     order: 9999;
+  }
+
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
   }
 
   .lg\:col-span-8 {
@@ -1743,6 +1765,10 @@ video {
 
   .lg\:gap-15 {
     gap: 60px;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
   }
 
   .lg\:rounded-none {

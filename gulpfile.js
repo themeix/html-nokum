@@ -17,6 +17,7 @@
     './node_modules/typography-fix/css/typofix.css',
     './node_modules/slick-carousel/slick/slick.css',
     './node_modules/slick-carousel/slick/slick-theme.css',
+    './node_modules/aos/dist/aos.css', 
     './assets/css/custom.css'
     ];
     var JS_Files = [
@@ -24,6 +25,7 @@
     './node_modules/jquery.easing/jquery.easing.min.js',
     './node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js',
     './node_modules/slick-carousel/slick/slick.js',
+    './node_modules/aos/dist/aos.js',
     './assets/js/app.js' 
     ];
 /*

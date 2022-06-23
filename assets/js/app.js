@@ -146,5 +146,15 @@ Load More
 
   }
   scrolltop();
+  AOS.init({
+    offset: 50,
+    delay: 200,
+    duration: 2000,
+    easing: 'ease',
+    once: true,
+    mirror: true,
+    anchorPlacement: 'top-center',
+
+  });
 
 }(jQuery));
