@@ -961,53 +961,49 @@ Keyframes Animation
 
 
 
-  
-  .primary-btn .md-button::after,
-  .primary-btn .md-button::before {
-    position: absolute;
+
+
+
+
+
+
+
+
+
+
+.feature-slider .post-box::after,
+.feature-slider .post-box::before {
     content: "";
-    width: 0%;
-    height: 0%;
-    visibility: hidden;
-  }
-  
-  .primary-btn .md-button::after {
-    bottom: -3px;
-    right:0;
-    border-left: 3px solid #222222;
-    border-bottom: 3px solid #222222;
-    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
-  }
-  
-  .primary-btn .md-button::before {
-    top: -3px;
-    left:0;
-    border-top: 3px solid #222222;
-    border-right: 3px solid #222222;
-    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
-  }
-  
-  .primary-btn .md-button1:hover {
-    animation: pulse 1s ease-out .4s;
-    color: #222222;
-  }
-  
-  .primary-btn .md-button:hover::after,
-  .primary-btn .md-button:hover::before {
-    width: calc(100% + 3px);
-    height: calc(100% + 3px);
-    visibility: visible;
-    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
-  }
-  
-  .primary-btn .md-button:hover::after {
-    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
-  }
-  
-  .primary-btn .md-button:hover::before {
-    transition: width .1s ease, height .1s ease .1s;
-  }
+    position: absolute;
+    border-radius: inherit;
+    transition: inherit;
+}
 
-  
+.feature-slider .post-box:before {
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
 
-  
+.feature-slider .post-box:after {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.feature-slider .post-box:hover:before {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-color: inherit;
+    width: 100%;
+}
+
+.feature-slider .post-box:hover:after {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: inherit;
+    height: 100%;
+    width: 100%;
+}
