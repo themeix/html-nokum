@@ -957,3 +957,57 @@ Keyframes Animation
 .blog-post-item:last-child {
     border: transparent;
 }
+
+
+
+
+  
+  .primary-btn .md-button::after,
+  .primary-btn .md-button::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+  }
+  
+  .primary-btn .md-button::after {
+    bottom: -3px;
+    right:0;
+    border-left: 3px solid #222222;
+    border-bottom: 3px solid #222222;
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+  }
+  
+  .primary-btn .md-button::before {
+    top: -3px;
+    left:0;
+    border-top: 3px solid #222222;
+    border-right: 3px solid #222222;
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+  }
+  
+  .primary-btn .md-button1:hover {
+    animation: pulse 1s ease-out .4s;
+    color: #222222;
+  }
+  
+  .primary-btn .md-button:hover::after,
+  .primary-btn .md-button:hover::before {
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+  }
+  
+  .primary-btn .md-button:hover::after {
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+  }
+  
+  .primary-btn .md-button:hover::before {
+    transition: width .1s ease, height .1s ease .1s;
+  }
+
+  
+
+  
