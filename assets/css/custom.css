@@ -834,6 +834,11 @@ Keyframes Animation
     background: white;
     z-index: 100;
 }
+ 
+.nav-open .main-nav .nav-button {
+
+    padding-top: 20px;
+}
 
 .nav-button #nav-icon3 span {
     display: block;

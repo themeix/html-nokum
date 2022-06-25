@@ -8,7 +8,7 @@
    */
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
-    if (scroll >= 150) {
+    if (scroll >= 50) {
       $(".body-scroll").addClass("body-sticky");
       if ($('.nokum-menu-icon').hasClass('close-button')) {
         $('.header-area').addClass('header-sticky');
