@@ -1055,8 +1055,8 @@ html.nav-search-open body::-webkit-scrollbar-thumb {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #1e1e1e;
-    border-color: #1e1e1e;
+background-color: var(--blue-900);
+    border-color: var(--blue-900);
     transform: scaleX(0);
     transform-origin: 100%;
     transition-property: transform;
@@ -1064,12 +1064,6 @@ html.nav-search-open body::-webkit-scrollbar-thumb {
     transition-timing-function: ease-out;
 }
 
-.btn:hover {
-    color: white;
-    background: #1e1e1e;
-    border-color: #1e1e1e;
-    transition: 0.5s;
-}
 
 .btn:hover:before {
     transform: scaleX(1);
