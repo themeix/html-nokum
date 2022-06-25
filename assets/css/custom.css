@@ -1066,6 +1066,9 @@ Fade-move animation for second dialog
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
 } 
+button.mfp-close {
+    font-size: 32px;
+}
 
 
 

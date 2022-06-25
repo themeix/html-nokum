@@ -68,6 +68,9 @@ module.exports = {
           200: '#ededf2',
           300: '#ADADAD',
         },
+        black: {
+          100: '#2C2828',
+        },
 
         
       },
