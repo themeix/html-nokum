@@ -18,6 +18,7 @@
     './node_modules/slick-carousel/slick/slick.css',
     './node_modules/slick-carousel/slick/slick-theme.css',
     './node_modules/aos/dist/aos.css', 
+    './node_modules/magnific-popup/dist/magnific-popup.css',
     './assets/css/custom.css'
     ];
     var JS_Files = [
@@ -26,6 +27,7 @@
     './node_modules/infinite-scroll/dist/infinite-scroll.pkgd.js',
     './node_modules/slick-carousel/slick/slick.js',
     './node_modules/aos/dist/aos.js',
+    './node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',  
     './assets/js/app.js' 
     ];
 /*

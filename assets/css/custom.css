@@ -960,84 +960,7 @@ Keyframes Animation
 
 
 
-
-
-
-
-
-
-
-
-
-
-.feature-slider .post-box::before,
-.feature-slider .post-box::after {
-    content: "";
-    position: absolute;
-    border-radius: inherit;
-    transition: inherit;
-    z-index: -1; 
-}
-.feature-slider .post-box:before {
-    width: 50%;
-    height: 100%;
-    left: -1px; 
-    top: -1px;
-} 
-.feature-slider .post-box:after {
-    width: 50%;
-    height: 100%; 
-    right: -1px; 
-    bottom: -1px;
-} 
-.feature-slider .post-box:hover:before,
-.feature-slider .post-box:hover:after {
-    border-top: 1px solid;
-    border: 1px solid;
-    border-color: inherit; 
-    width: calc(100% + 2px); 
-    height: calc(100% + 2px);
-}
- 
-
-
-@keyframes clipMe {
-    0%, 100% {clip: rect(0px, 100px, 2px, 0px); }
-    25% {clip: rect(0px,2px, 100px, 0px); }
-    50% {clip: rect(100px - 2px, 100px, 100px, 0px); }
-    75% {clip: rect(0px, 100px, 100px, 100px - 2px); }
-  }
-
-
-  .nav-search-open .modal-search {
-    opacity: 1;
-    visibility: visible;
-}
-
-
-
-
-
-
-html.nav-search-open body::-webkit-scrollbar {
-    width: 1rem;
-}
-
-html.nav-search-open body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
-    border-radius: 0;
-}
-
-html.nav-search-open body::-webkit-scrollbar-thumb {
-    background-color: transparent; 
-
-}
-
-
-
-
-
-.btn {
+.btn-md{
     transition: 0.5s;
     display: inline-block;
     vertical-align: right;
@@ -1047,7 +970,7 @@ html.nav-search-open body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
-.btn:before {
+.btn-md:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -1065,86 +988,84 @@ background-color: var(--blue-900);
 }
 
 
-.btn:hover:before {
+.btn-md:hover:before {
     transform: scaleX(1);
 }
 
-.btn:hover svg {
+.btn-md:hover svg {
     fill: white;
     stroke: var(--bs-white);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  .bb, .bb::before, .bb::after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 50px;
-}
-.bb {
-    position: relative;
-    transition: all ease 0.5s;
-   
-
-    color: #69ca62;
-    box-shadow: inset 0 0 0 3px rgba(105, 202, 98, .5);
-}
-.bb:hover:before, .bb:hover:after {
-    content: '';
-    z-index: -1;
-    box-shadow: inset 0 0 0 2px;
-    animation: clipMe 8s linear ;
-   
-}
  
-
-.bb::before {
-    animation-delay: -4s;
+/*
+------------------------
+Fade-move animation for second dialog
+--------------------------
+*/
+ .my-mfp-slide-main{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: auto; 
+    overflow-x: hidden; 
+ } 
+.my-mfp-slide-main main{
+    position: fixed;
+    overflow: hidden;  
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%; 
 }
-.bb::before {
-    animation-delay: -4s;
+.my-mfp-slide-bottom{ 
+    min-height: 100%;  
 }
-
-@keyframes clipMe {
-    0%, 100% {
-        clip: rect(0px, 420px, 2px, 0px);
-   }
-    25% {
-        clip: rect(0px, 2px, 420px, 0px);
-   }
-    50% {
-        clip: rect(218px, 420px, 420px, 0px);
-   }
-    75% {
-        clip: rect(0px, 420px, 420px, 218px);
-   }
+.my-mfp-slide-bottom .mfp-container{
+    padding: 0; 
 }
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
 
-
-
+}
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+} 
 
 
 

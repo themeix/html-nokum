@@ -47,16 +47,28 @@
   $('.nav-button').on('click', function () {
     $('body').toggleClass('nav-open');
   });
-  /*
-  ------------------------  
-  Nav Search
-  --------------------------
-  */
-
-  $('.nav-search, .search-close').on('click', function () {
-    $('html').toggleClass('nav-search-open');
-  });
-
+  $('.popup-with-form').magnificPopup({
+    type: 'inline', 
+    fixedContentPos: false, 
+    alignTop : true, 
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true, 
+		removalDelay: 300, 
+    mainClass: 'my-mfp-slide-bottom', 
+    callbacks: { 
+      open: function() {
+        $('body').addClass('my-mfp-slide-main'); 
+      },
+      close: function() { 
+        setTimeout(function() {
+          $('body').removeClass('my-mfp-slide-main');
+        }, 100) 
+      } 
+    }
+	});
   /*
 ------------------------  
 Load More
