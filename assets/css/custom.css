@@ -815,7 +815,7 @@ Keyframes Animation
 
 .underline-hover {
     display: inline;
-    background-image: linear-gradient(rgba(0, 0, 0, 0) calc(99% - 24px), #E9D5CA 22px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) calc(99% - 1px), #2c2828 22px);
     background-repeat: no-repeat;
     background-size: 0% 100%;
     -webkit-transition: background-size 0.5s;
@@ -1034,6 +1034,43 @@ background-color: var(--white);
 }
 
 .btn-md-2:hover svg {
+    fill: white;
+    stroke: var(--bs-white);
+}
+
+.btn-md-3{
+    transition: 0.5s;
+    display: inline-block;
+    vertical-align: right;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-md-3:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+background-color: var(--blue-900);
+    border-color: var(--blue-900);
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+
+.btn-md-3:hover:before {
+    transform: scaleX(1);
+}
+
+.btn-md-3:hover svg {
     fill: white;
     stroke: var(--bs-white);
 }

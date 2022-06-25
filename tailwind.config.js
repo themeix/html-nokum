@@ -125,7 +125,7 @@ module.exports = {
       },
       boxShadow: {
         base: ' 0px 1px 3px 0px #0000001A',
-        sm: ' rgb(17 17 26 / 10%) 0px 4px 16px, rgb(17 17 26 / 5%) 0px -11px 32px',
+        sm: ' rgb(17 17 26 / 10%) 0px 16px 64px -18px, rgb(17 17 26 / 5%) 0px -11px 32px',
         none: 'none',
 
 
