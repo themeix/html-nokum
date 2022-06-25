@@ -19,7 +19,72 @@
 </head>
 
 <body class=" font-Worksans font-base leading-160 font-normal text-stone-800 body-scroll transition relative">
-    <div class="main-area md-min:pt-12 max-w-screen-2xl xl:px-12 px-8 m-auto overflow-hidden  md:grid md:grid-cols-12">
+    <div id="search-form" class="zoom-anim-dialog search-modal-form bg-white py-14 mfp-hide">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <form>
+                <div class="relative">
+                    <button type="submit"
+                        class="bg-white hover:bg-white absolute right-px top-px bottom-px duration-300 rounded-full outline-none text-base px-8 py-5"><svg
+                            class="w-8 h-8  text-blue-100 hover:text-blue-900 duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg></button>
+                    <input type="search" id="default-search-2"
+                        class="block px-8 py-6 w-full text-2xl text-gray-400 bg-white rounded-full border border-blue-100  focus:text-black-100 focus:border-orange-300 placeholder-gray-600 outline-none duration-300"
+                        placeholder="Search Here" required>
+                </div>
+                <div class="results-box pt-12 ">
+                    <p>Results for your search</p>
+                    <div class="grid grid-cols-2  lg:grid-cols-3  gap-8 mt-5">
+
+                        <article class="flex p-2  items-center">
+                            <img class="w-24 h-24 rounded-md mr-5" src="assets/images/blog-post-images-2.webp"
+                                alt="image">
+                            <div class="search-block-content">
+                                <div class="search-block-meta">
+
+                                </div>
+                                <h4 class="text-3xl font-medium"><a class="underline-hover" href="single.html">Ten
+                                        reasons why
+                                        you are a rookie in podcast</a></h4>
+                            </div>
+                        </article>
+
+                        <article class="flex p-2 items-center">
+                            <img class="w-24 h-24 rounded-md mr-5" src="assets/images/blog-post-images.webp"
+                                alt="image">
+                            <div class="search-block-content">
+                                <div class="search-block-meta">
+
+                                </div>
+                                <h6 class="text-3xl font-medium"><a class="underline-hover" href="single.html">Why
+                                        podcast had
+                                        been so popular till now?</a></h6>
+                            </div>
+                        </article>
+
+                        <article class="flex p-2 items-center">
+                            <img class="w-24 h-24 rounded-md mr-5" src="assets/images/blog-post-images-2.webp"
+                                alt="image">
+                            <div class="search-block-content">
+                                <div class="search-block-meta">
+
+                                </div>
+                                <h6 class="text-3xl font-medium"><a class="underline-hover" href="single.html">At I who
+                                        best to
+                                        where line much safely</a></h6>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <main class="main-area md-min:pt-12 max-w-screen-2xl xl:px-12 px-8 m-auto overflow-hidden  md:grid md:grid-cols-12">
         <div class="nokum-left-area col-span-1 hidden md:block ">
             <div class="nokum-left  border-r  border-orange-300 fixed h-screen top-0  pt-8  w-20 xl:w-45  z-100">
                 <div class="nokum-menu-icon opacity-0 !invisible relative hidden xl:block">
@@ -104,9 +169,9 @@
                             </ul>
                             <div class="right-siden-menu-box hidden xl:block">
                                 <ul class=" right-side-menu flex">
-                                    <li class="search-bar  flex ">
-                                        <a class=" search-icon  py-3 px-6 rounded-full  transition duration-500 group"
-                                            href="#">
+                                    <li class="search-bar  flex nav-search">
+                                        <a class="popup-with-form search-icon  py-3 px-6 rounded-full  transition duration-500 group"
+                                            href="#search-form">
                                             <span>
                                                 <svg class="inline-block h-5 w-5" width="21" height="21"
                                                     viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +185,7 @@
                                         </a>
                                     </li>
                                     <li class="  flex ml-10.5 ">
-                                        <a class=" header-button bg-blue-800 hover:bg-blue-100 py-3 px-6 rounded-full text-white transition duration-500 hover:text-blue-800 font-medium"
+                                        <a class=" header-button btn-md-2 bg-blue-800 hover:border-orange-300 border border-blue-800  inline-block relative  overflow-hidden py-3 px-6 rounded-full text-white transition duration-500 hover:text-blue-800 font-medium"
                                             href="membership.html">
                                             Subscribe
                                         </a>
@@ -135,6 +200,7 @@
                         </button>
                     </nav>
                 </div>
+
             </header>
 
             <!--  ====================== Mobile Header Area Start =============================  -->
@@ -153,7 +219,7 @@
                                     fill="#5C5C5C" />
                             </svg>
                         </a>
-                        <div class="mobile-menu-icon">
+                        <div class="mobile-menu-icon z-999">
                             <div class="nav-button ml-auto relative  h-11 bg-gray-200">
 
                                 <span class="w-6 h-6 inline-block relative cursor-pointer transition duration-150 z-999"
@@ -173,7 +239,7 @@
                 <!--navbar end-->
 
                 <div class="fixed-top fixed top-0 right-0 left-0 z-999 main-menu w-full h-full  opacity-0 invisible">
-                    <div class="flex  h-full p-5 items-center">
+                    <div class="flex  h-full p-5 px-8 items-start pt-28">
 
                         <ul class="nav">
                             <li class="relative nav-item ">
@@ -220,7 +286,7 @@
             <section class="banner-area xl:pt-48 pt-40 xl:pb-20 pb-10">
 
                 <div class="lg:grid lg:grid-cols-12 items-center">
-                    <div class="md:col-span-4 lg:order-last">
+                    <div class="md:col-span-4 lg:order-last" data-aos="fade-up" data-aos-duration="1700">
                         <div class="banner-right mb-6 lg:mb-0">
                             <img class="h-79 lg:h-full lg:max-h-159.5 rounded-md w-full object-cover -z-1 relative"
                                 src="assets/images/single-home-page.webp" alt="images">
@@ -228,18 +294,19 @@
                     </div>
                     <div class="col-span-8">
                         <div class="banner-left-box  relative">
-                            <div
-                                class="banner-left-item  before:absolute before:bg-white before:h-full before:w-110 before:top-0 before:left-0 before:-z-1 lg:p-8 before:rounded-md">
+                            <div class="banner-left-item  before:absolute before:bg-white before:h-full before:w-110 before:top-0 before:left-0 before:-z-1 lg:p-8 before:rounded-md"
+                                data-aos="fade-up" data-aos-duration="1600">
                                 <h1 class="banner-heading font-medium leading-snug xl:text-5xl lg:text-4xl text-3xl  mb-2"
                                     data-aos="fade-up" data-aos-duration="1700">
                                     Ten reasons why you are a rookie in podcast
                                 </h1>
-                                <p class="text-lg" data-aos="fade-up" data-aos-duration="1700">Of the me the failures
+                                <p class="text-lg" data-aos="fade-up" data-aos-duration="1600">Of the me the failures
                                     brown the orthographic to of and so getting
                                     couldn't but though precipitate, named your affects from then but to gloomy it
                                     occasion the alphabet little the it ran the projected
                                 </p>
-                                <div class="banner-info lg:mt-20 mt-10 border-t inline-block border-orange-300 pt-4">
+                                <div class="banner-info lg:mt-20 mt-10 border-t inline-block border-orange-300 pt-4"
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <p>by <a class="underline-hover text-blue-900 font-semibold" href="#">Shamar
                                             Wooten</a> in <a class="underline-hover text-blue-900 font-semibold"
                                             href="#">Travel</a> ,</p>
@@ -258,40 +325,43 @@
             <div class="single-discription">
                 <div class="grid lg:grid-cols-12 lg:gap-15 gap-10">
                     <div class="lg:col-span-8">
-                        <div class="single-demo-main entry-content " data-aos="fade-in" data-aos-duration="500">
+                        <div class="single-demo-main entry-content " data-aos="fade-up" data-aos-duration="1700">
                             <h2>At peacefully reasoning our but the lowest not compared </h2>
-                            <p>Upper relations in the because proposal. Explains if a very involved. It with recently
+                            <p data-aos="fade-up" data-aos-duration="1600">Upper relations in the because proposal.
+                                Explains if a very involved. It with recently
                                 shall note she it the wanted differentiates the catch the volume that mathematically
                                 knowing small now, little a size one totally titled of he the made to weather.
                                 Absolutely the death, that those on would, being. And requests the own place no the
                                 build felt economics way dedicated accordingly who luxury. River and gradually contract,
                                 sofa alone not you far the way, for be of be this their any that would taken proper
                                 stitching one. To refute.</p>
-                            <p>A her of retired, they or it for you rather endeavours, could weather. Interfaces this
+                            <p data-aos="fade-up" data-aos-duration="1700">A her of retired, they or it for you rather
+                                endeavours, could weather. Interfaces this
                                 your to son, a wasn't key by near named social the for the world that especially as
                                 policeman, text for frequency; All and uninitiated he where redesigns. </p>
-                            <p>Would become think there and overgrown laminated its the handwriting both choose parts
+                            <p data-aos="fade-up" data-aos-duration="1600">Would become think there and overgrown
+                                laminated its the handwriting both choose parts
                                 authentic for myself and it eagerly their task. Hadn't to if by a century authentic
                                 purer they the keep semantics, typically practice lobby, the young no creating duties,
                                 employed text behavioural in cognitive was that it of into in a slightly keep story
                                 promptness.</p>
-                            <div class="figure-images pt-9" data-aos="fade-in" data-aos-duration="500">
+                            <div class="figure-images pt-9" data-aos="fade-up" data-aos-duration="1700">
                                 <figure><img src="assets/images/single-blog-post-images-2.webp" alt="images">
                                 </figure>
 
                             </div>
 
-                            <h2 data-aos="fade-in" data-aos-duration="500">Upper relations in the because proposal
+                            <h2 data-aos="fade-up" data-aos-duration="1700">Upper relations in the because proposal
                                 explains if a very involved. </h2>
-                            <p data-aos="fade-in" data-aos-duration="500">Upper relations in the because proposal.
+                            <p data-aos="fade-up" data-aos-duration="1600">Upper relations in the because proposal.
                                 Explains if a very involved. It with recently
                                 shall note she it the wanted differentiates the catch the volume that mathematically
                                 knowing small now, little a size one totally titled of he the made to weather.
                                 Absolutely the death, </p>
-                            <p data-aos="fade-in" data-aos-duration="500">A her of retired, they or it for you rather
+                            <p data-aos="fade-up" data-aos-duration="1700">A her of retired, they or it for you rather
                                 endeavours, could weather. Interfaces this
                                 your to son.</p>
-                            <p data-aos="fade-in" data-aos-duration="500">A her of retired, they or it for you rather
+                            <p data-aos="fade-up" data-aos-duration="1600">A her of retired, they or it for you rather
                                 endeavours, could weather. Interfaces this
                                 your to son. little a size one totally titled of he the made to weather. Absolutely the
                                 death, </p>
@@ -300,48 +370,51 @@
                         <div class="image-content lg:mt-15 mt-8">
                             <div class="md:grid md:grid-cols-12 gap-10">
                                 <div class="md:col-span-5">
-                                    <div class="image-content-images h-full" data-aos="fade-in" data-aos-duration="500">
+                                    <div class="image-content-images h-full" data-aos="fade-up"
+                                        data-aos-duration="1700">
                                         <img class="rounded-md h-full object-cover" src="assets/images/single-card.webp"
                                             alt="images">
                                     </div>
                                 </div>
                                 <div class="md:col-span-7">
-                                    <div class="image-content-text-box py-8" data-aos="fade-in" data-aos-duration="500">
+                                    <div class="image-content-text-box py-8" data-aos="fade-up"
+                                        data-aos-duration="1600">
                                         <h3 class="text-2xl font-medium">A her of retired, they or it for you rather
                                             endeavours, </h3>
-                                        <p class="mt-4">Right, on there big an that's his probably human although back
+                                        <p class="mt-4" data-aos="fade-up" data-aos-duration="1700">Right, on there big
+                                            an that's his probably human although back
                                             who of reflection small the know a of the off this the of way. Principles,
                                         </p>
-                                        <p class="mt-4">A her of retired, they or it for you rather endeavours, could
+                                        <p class="mt-4" data-aos="fade-up" data-aos-duration="1600">A her of retired,
+                                            they or it for you rather endeavours, could
                                             weather. Interfaces this your to son,</p>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="entry-content  lg:mt-15 mt-8" data-aos="fade-in" data-aos-duration="500">
-                            <h2 data-aos="fade-in" data-aos-duration="500"
-                            >At peacefully reasoning our but the lowest not compared </h2>
-                            <p data-aos="fade-in" data-aos-duration="500"
-                            >Upper relations in the because proposal. Explains if a very involved. It with recently
+                        <div class="entry-content  lg:mt-15 mt-8" data-aos="fade-up" data-aos-duration="1700">
+                            <h2 data-aos="fade-up" data-aos-duration="1600">At peacefully reasoning our but the lowest
+                                not compared </h2>
+                            <p data-aos="fade-up" data-aos-duration="1700">Upper relations in the because proposal.
+                                Explains if a very involved. It with recently
                                 shall note she it the wanted differentiates the catch the volume that mathematically
                                 knowing small now, little a size one totally titled of he the made to weather.
                                 Absolutely the death, </p>
-                            <p data-aos="fade-in" data-aos-duration="500"
-                            >A her of retired, they or it for you rather endeavours, could weather. Interfaces this
+                            <p data-aos="fade-up" data-aos-duration="1600">A her of retired, they or it for you rather
+                                endeavours, could weather. Interfaces this
                                 your to son, a wasn't key by near named social the for the world that especially as
                                 policeman, text for frequency; All and uninitiated he where redesigns. </p>
 
                         </div>
 
-
                     </div>
                     <div class="lg:col-span-4">
-                        <div class="table-box border border-orange-200 p-6 rounded-md hover:shadow-sm transition duration-500 hover:border-transparent"
-                            data-aos="fade-in" data-aos-duration="500">
-                            <h6 class="text-stone-900 pb-4 uppercase font-medium"data-aos="fade-in" data-aos-duration="500"
-                            >TABLE OF CONTENTS</h6>
-                            <div class="table-item flex items-center pt-4" data-aos="fade-in" data-aos-duration="500">
+                        <div
+                            class="table-box border border-orange-200 p-6 rounded-md hover:shadow-sm transition duration-500 hover:border-transparent">
+                            <h6 class="text-stone-900 pb-4 uppercase font-medium" data-aos="fade-up"
+                                data-aos-duration="1700">TABLE OF CONTENTS</h6>
+                            <div class="table-item flex items-center pt-4" data-aos="fade-up" data-aos-duration="1600">
                                 <span class="mr-4 mt-"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -349,12 +422,12 @@
                                             fill="#5C5C5C" />
                                     </svg>
                                 </span>
-                                <a class="underline-hover" href="#" data-aos="fade-in" data-aos-duration="500">At
+                                <a class="underline-hover" href="#">At
                                     peacefully reasoning our but the lowest not
                                     compared</a>
 
                             </div>
-                            <div class="table-item flex items-center pt-4" data-aos="fade-in" data-aos-duration="500">
+                            <div class="table-item flex items-center pt-4" data-aos="fade-up" data-aos-duration="1700">
                                 <span class="mr-4 mt-"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -362,11 +435,11 @@
                                             fill="#5C5C5C" />
                                     </svg>
                                 </span>
-                                <a class="underline-hover" href="#" data-aos="fade-in" data-aos-duration="500">Upper
+                                <a class="underline-hover" href="#">Upper
                                     relations in the because proposal explains if a very involved. </a>
 
                             </div>
-                            <div class="table-item flex items-center pt-4" data-aos="fade-in" data-aos-duration="500">
+                            <div class="table-item flex items-center pt-4" data-aos="fade-up" data-aos-duration="1700">
                                 <span class="mr-4 mt-"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -374,12 +447,12 @@
                                             fill="#5C5C5C" />
                                     </svg>
                                 </span>
-                                <a class="underline-hover" href="#"data-aos="fade-in" data-aos-duration="500"
-                                >And requests the own place no the build felt
+                                <a class="underline-hover" href="#">And
+                                    requests the own place no the build felt
                                     economics</a>
 
                             </div>
-                            <div class="table-item flex items-center pt-4" data-aos="fade-in" data-aos-duration="500">
+                            <div class="table-item flex items-center pt-4" data-aos="fade-up" data-aos-duration="1700">
                                 <span class="mr-4 mt-"><svg width="14" height="10" viewBox="0 0 14 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -387,7 +460,7 @@
                                             fill="#5C5C5C" />
                                     </svg>
                                 </span>
-                                <a class="underline-hover" href="#" data-aos="fade-in" data-aos-duration="500">And
+                                <a class="underline-hover" href="#">And
                                     requests the own place no the build felt economics</a>
 
                             </div>
@@ -402,7 +475,7 @@
             <!--  ====================== Discription Area End =============================  -->
             <div class="dispus-comment lg:pt-32 pt-20">
 
-                <div class="grid md:grid-cols-2 md:gap-24 gap-12">
+                <div class="grid md:grid-cols-2 md:gap-24 gap-12" data-aos="fade-up" data-aos-duration="1700">
                     <div class="previous-button">
                         <h6 class="font-semibold uppercase">NEWER POST</h6>
                         <div class="previous-button-box flex gap-4 mt-8 group">
@@ -411,17 +484,17 @@
                                         class="rounded-md group-hover:scale-125 trasnition duration-500 max-h-28"
                                         src="assets/images/previous.webp" alt="images"></a>
                             </div>
-                            <div class="previous-text block lg:w-4/12 md:w-11/12 w-6/12" data-aos="fade-in"
-                                data-aos-duration="500">
-                                <a class="underline-hover" href="#"data-aos="fade-in" data-aos-duration="500"
-                                >Contracting boss ran him, invitation</a>
+                            <div class="previous-text block lg:w-4/12 md:w-11/12 w-6/12" data-aos="fade-up"
+                                data-aos-duration="1600">
+                                <a class="underline-hover" href="#" data-aos="fade-in"
+                                    data-aos-duration="500">Contracting boss ran him, invitation</a>
                             </div>
                         </div>
 
                     </div>
                     <div class="previous-button">
-                        <h6 class="font-semibold uppercase md:text-right"data-aos="fade-in" data-aos-duration="500"
-                        >OLDER POST</h6>
+                        <h6 class="font-semibold uppercase md:text-right" data-aos="fade-up" data-aos-duration="1700">
+                            OLDER POST</h6>
                         <div class="previous-button-box flex gap-4 mt-8 group md:justify-end">
 
                             <div class="previous-text   block lg:w-4/12 md:w-11/12 w-6/12 ">
@@ -442,15 +515,6 @@
                 <div class="dispus-comment-box pt-15 md:w-8/12 m-auto">
                     <div id="disqus_thread"></div>
                     <script>
-                        /**
-                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                        /*
-                        var disqus_config = function () {
-                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                        };
-                        */
                         (function () { // DON'T EDIT BELOW THIS LINE
                             var d = document,
                                 s = d.createElement('script');
@@ -466,22 +530,25 @@
 
             </div>
             <!--  ====================== Newsletter Area Start =============================  -->
-            <section class="newsletter-area lg:pt-30 pt-20 md:w-8/12 m-auto text-center" data-aos="fade-up" data-aos-duration="1700">
+            <section class="newsletter-area lg:pt-30 pt-20 md:w-8/12 m-auto text-center" data-aos="fade-up"
+                data-aos-duration="1700">
 
                 <div class="newsletter-left-box  lg:p-20">
-                    <h2 class="xl:text-5xl md:text-4xl  text-3xl  font-medium pt-2 text-black-10 mb-8">Join
+                    <h2 class="xl:text-5xl md:text-4xl  text-3xl  font-medium pt-2 text-black-10 mb-8"
+                        data-aos="fade-up" data-aos-duration="1700">Join
                         Our
                         Newsletter</h2>
-                    <p>Project look tickets him wanted in graduate. The behavioural been five desk learn
+                    <p data-aos="fade-up" data-aos-duration="1700">Project look tickets him wanted in graduate. The
+                        behavioural been five desk learn
                         what's
                         supposedly compute.</p>
-                    <form class="w-full pt-8">
+                    <form class="w-full pt-8" data-aos="fade-up" data-aos-duration="1700">
                         <div class="sm:flex items-center py-2">
                             <input
                                 class=" border-2 border-orange-300 rounded-full sm:rounded-tr-none sm:rounded-br-none pr-12 py-3 px-4  w-full text-gray-700  focus:outline-blue-800"
                                 type="text" placeholder="Your email" aria-label="Full name">
                             <button
-                                class="w-full sm:w-auto mt-4 sm:mt-0 flex-shrink-0 py-3 border-2 px-8 rounded-full relative sm:right-10 bg-blue-800 hover:bg-gray-200  border-blue-800 hover:border-gray-200   text-white hover:text-blue-800 font-medium transition duration-500"
+                                class="btn-md-2 w-full sm:w-auto mt-4 sm:mt-0 flex-shrink-0 py-3 border-2 px-8 rounded-full relative sm:right-10 bg-blue-800 hover:bg-gray-200  border-blue-800 hover:border-orange-300   text-white hover:text-blue-800 font-medium transition duration-500"
                                 type="button">
                                 Subscribe
                             </button>
@@ -497,14 +564,15 @@
                     class="md:grid md:grid-cols-12 gap-6 bg-blue-800 md:p-20 p-10 relative z-1 border-b border-white border-opacity-10">
                     <div class="col-span-8">
                         <div class="newsletter-bottom">
-                            <h2 class="call-to-action-title xl:text-5xl md:text-4xl  text-3xl  font-medium text-white">
+                            <h2 class="call-to-action-title xl:text-5xl md:text-4xl  text-3xl  font-medium text-white text-center md:text-start"
+                                data-aos="fade-up" data-aos-duration="1700">
                                 Trusted
                                 the planswork the go. </h2>
                         </div>
                     </div>
-                    <div class="col-span-4 text-right mt-4">
-                        <div class="subscribe-button"></div>
-                        <a class=" block md:inline-block text-center py-4 border-2 px-12 rounded-full  bg-purple-300 hover:bg-gray-200  border-purple-300 hover:border-gray-300  text-white hover:text-blue-800 font-medium transition duration-500"
+                    <div class="col-span-4 text-right mt-4" data-aos="fade-up" data-aos-duration="1600">
+
+                        <a class=" btn-md-3 block md:inline-block w-full md:w-auto text-center py-4 border px-12 rounded-full  bg-purple-300 hover:bg-transparent  border-purple-300 hover:border-white  text-white hover:text-blue-800 font-medium transition duration-500"
                             href="#">Subscribe</a>
                     </div>
                 </div>
@@ -622,24 +690,23 @@
             <!--  ====================== Footer   Area End =============================  -->
 
         </div> <!-- .nokum-right -->
-
-    </div>
-
-    <!--  ====================== Scroll Area Start =============================  -->
-    <div
-        class="scroll-top    h-12 w-12 text-center fixed bottom-10 right-10 z-50 cursor-pointer transition-all rounded-full">
+        <!--  ====================== Scroll Area Start =============================  -->
         <div
-            class="scroll-icon    transition duration-500 bg-blue-800  h-12 w-12 flex items-center justify-center rounded-full">
-            <svg class="inline-block" width="12" height="20" viewBox="0 0 12 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M6 19.3325C5.82321 19.3325 5.65367 19.2623 5.52866 19.1373C5.40366 19.0123 5.33343 18.8427 5.33343 18.6659L5.33343 2.94415L1.13935 7.13956C1.01418 7.26473 0.844425 7.33504 0.667415 7.33504C0.490406 7.33504 0.320646 7.26473 0.195481 7.13956C0.0703166 7.0144 4.17049e-09 6.84464 0 6.66763C-4.17049e-09 6.49062 0.0703166 6.32086 0.195481 6.1957L5.52807 0.86311C5.58998 0.801035 5.66354 0.751785 5.74452 0.718182C5.82551 0.684576 5.91232 0.66728 6 0.66728C6.08768 0.66728 6.17449 0.684576 6.25548 0.718182C6.33646 0.751785 6.41002 0.801035 6.47193 0.86311L11.8045 6.1957C11.9297 6.32086 12 6.49062 12 6.66763C12 6.84464 11.9297 7.0144 11.8045 7.13956C11.6794 7.26473 11.5096 7.33504 11.3326 7.33504C11.1556 7.33504 10.9858 7.26473 10.8607 7.13956L6.66657 2.94415L6.66657 18.6659C6.66657 18.8427 6.59635 19.0123 6.47134 19.1373C6.34633 19.2623 6.17679 19.3325 6 19.3325Z"
-                    fill="white" />
-            </svg>
+            class="scroll-top    h-12 w-12 text-center fixed bottom-10 right-10 z-50 cursor-pointer transition-all rounded-full">
+            <div
+                class="scroll-icon    transition duration-500 bg-blue-800  h-12 w-12 flex items-center justify-center rounded-full">
+                <svg class="inline-block" width="12" height="20" viewBox="0 0 12 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6 19.3325C5.82321 19.3325 5.65367 19.2623 5.52866 19.1373C5.40366 19.0123 5.33343 18.8427 5.33343 18.6659L5.33343 2.94415L1.13935 7.13956C1.01418 7.26473 0.844425 7.33504 0.667415 7.33504C0.490406 7.33504 0.320646 7.26473 0.195481 7.13956C0.0703166 7.0144 4.17049e-09 6.84464 0 6.66763C-4.17049e-09 6.49062 0.0703166 6.32086 0.195481 6.1957L5.52807 0.86311C5.58998 0.801035 5.66354 0.751785 5.74452 0.718182C5.82551 0.684576 5.91232 0.66728 6 0.66728C6.08768 0.66728 6.17449 0.684576 6.25548 0.718182C6.33646 0.751785 6.41002 0.801035 6.47193 0.86311L11.8045 6.1957C11.9297 6.32086 12 6.49062 12 6.66763C12 6.84464 11.9297 7.0144 11.8045 7.13956C11.6794 7.26473 11.5096 7.33504 11.3326 7.33504C11.1556 7.33504 10.9858 7.26473 10.8607 7.13956L6.66657 2.94415L6.66657 18.6659C6.66657 18.8427 6.59635 19.0123 6.47134 19.1373C6.34633 19.2623 6.17679 19.3325 6 19.3325Z"
+                        fill="white" />
+                </svg>
 
+            </div>
         </div>
-    </div>
-    <!--  ====================== Scroll Area End =============================  -->
+        <!--  ====================== Scroll Area End =============================  -->
+    </main>
+
     <!-- gulp:js -->
     <script src="assets/js/build.min.js"></script>
     <!-- endgulp -->
