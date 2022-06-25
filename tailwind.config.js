@@ -53,7 +53,7 @@ module.exports = {
 
         },
         orange: {
-          300: '#E9D5CA',
+          300: '#d1d1d1',
 
         },
         stone: {
