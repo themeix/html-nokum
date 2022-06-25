@@ -47,7 +47,11 @@
   $('.nav-button').on('click', function () {
     $('body').toggleClass('nav-open');
   });
-
+  /*
+  ------------------------  
+  Nav Search
+  --------------------------
+  */
 
   $('.nav-search, .search-close').on('click', function () {
     $('html').toggleClass('nav-search-open');
