@@ -103,7 +103,7 @@
                      </ul>
                      <div class="right-siden-menu-box hidden xl:block">
                         <ul class=" right-side-menu flex">
-                           <li class="search-bar  flex ">
+                           <li class="search-bar  flex nav-search">
                               <a class=" search-icon  py-3 px-6 rounded-full  transition duration-500 group" href="#">
                                  <span>
                                     <svg class="inline-block h-5 w-5" width="21" height="21" viewBox="0 0 21 21"
@@ -136,6 +136,89 @@
 
 
          </header>
+         <div class="fixed modal-search  overflow-y-auto top-0 w-full left-0 opacity-0 invisible h-full bg-white z-100">
+
+            <div class="modal-dialog w-full max-w-full m-0">
+                <div class="modal-content  pb-24">
+                    <div class="max-w-387.5 mx-auto px-8">
+                        <div class="container-wrapper">
+                            <div class="modal-body">
+                                <div class="headermodal-form py-8 mb-8 border-b flex justify-between items-center">
+                                    <form class="flex items-center flex-auto mr-8" action="#">
+                                        <div class="mr-8">
+                                          <span><svg class="inline-block h-5 w-5" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M20 20L15.514 15.506M18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5Z" stroke="#4D4C7D" stroke-width="2" stroke-linecap="round"></path>
+                                          </svg></span></div>
+                                        <input
+                                            class=" appearance-none rounded w-full py-2 px-3 text-black leading-tight h-20  font-medium border-0 "
+                                            type="text" placeholder="Username">
+                                    </form>
+                                    <div class="search-close cursor-pointer">
+                                        <img  src="assets/images/close-icon.svg" alt="images">
+                                    </div>
+
+                                </div>
+                                <h4 class="mb-6 text-2xl font-bold">May we suggest</h4>
+                                <div class="search-suggestions mb-8">
+                                    <a class="btn bg-lightBlue-100 leading-none rounded-sm p-3 mr-2"
+                                        href="podcast.html">Technology</a>
+                                    <a class="btn bg-lightBlue-100  leading-none rounded-sm p-3 mr-2"
+                                        href="podcast.html">Episode
+                                        10</a>
+                                    <a class="btn bg-lightBlue-100 leading-none rounded-sm p-3 mr-2"
+                                        href="podcast.html">Conversation</a>
+                                    <a class="btn bg-lightBlue-100 leading-none rounded-sm p-3"
+                                        href="podcast.html">Audio</a>
+                                </div>
+                                <h4 class="mb-6 font-bold text-2xl">Picked for you</h4>
+                                <div class="grid grid-cols-2  lg:grid-cols-3  gap-8">
+
+                                    <article class="flex p-2 bg-lightBlue-100 rounded-sm">
+                                        <img class="w-24 h-24 rounded-sm mr-5" src="assets/images/blog-post-images.webp"
+                                            alt="images">
+                                        <div class="search-block-content">
+                                            <div class="search-block-meta">
+                                                <span>Episode </span>
+                                            </div>
+                                            <h6><a href="single.html">Audio Stories Design Tips to Create Stunning
+                                                    Visuals</a></h6>
+                                        </div>
+                                    </article>
+
+
+                                    <article class="flex p-2 bg-lightBlue-100 rounded-sm">
+                                       <img class="w-24 h-24 rounded-sm mr-5" src="assets/images/blog-post-images-2.webp"
+                                       alt="images">
+                                        <div class="search-block-content">
+                                            <div class="search-block-meta">
+                                                <span>Episode </span>
+                                            </div>
+                                            <h6><a href="single.html">Audio Stories Design Tips to Create Stunning
+                                                    Visuals</a></h6>
+                                        </div>
+                                    </article>
+
+
+                                    <article class="flex p-2 bg-lightBlue-100 rounded-sm">
+                                       <img class="w-24 h-24 rounded-sm mr-5" src="assets/images/blog-post-images.webp"
+                                       alt="images">
+                                        <div class="search-block-content">
+                                            <div class="search-block-meta">
+                                                <span>Episode </span>
+                                            </div>
+                                            <h6><a href="single.html">Audio Stories Design Tips to Create Stunning
+                                                    Visuals</a></h6>
+                                        </div>
+                                    </article>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
          <!--  ====================== Mobile Header Area Start =============================  -->
 
@@ -270,8 +353,8 @@
 
             <div class="blog-post-all  explore-nokum-container">
                <div
-                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md"
-                  data-aos="fade-up" data-aos-delay="400">
+                  class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm !transition !duration-500 hover:border-transparent rounded-md"
+                 >
                   <div class="col-span-2 hidden xl:block">
                      <div class="publish-date lg:mb-8">
                         <p class="font-medium text-sm  text-purple-300">22 <span class="text-sm">Jul, 2022</span></p>
@@ -314,7 +397,7 @@
                                  </div>
                                  <div class="post-title">
                                     <h2
-                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "data-aos="fade-up" data-aos-duration="1700">
                                        <a class="underline-hover" href="single.html">Ten reasons why you are a rookie in
                                           podcast</a></h2>
                                  </div>
@@ -324,7 +407,7 @@
                                     <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
                                           src="assets/images/post-author-images.webp" alt="images"></a>
                                  </div>
-                                 <div class="post-author-bio">
+                                 <div class="post-author-bio"data-aos="fade-up" data-aos-duration="1600">
                                     <p class=" font-medium  text-stone-900 "><a class="underline-hover"
                                           href="author.html">Bianca Howe</a> </p>
                                     <p>UK, London</p>
@@ -399,13 +482,13 @@
                                  </div>
                                  <div class="post-title">
                                     <h2
-                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "data-aos="fade-up" data-aos-duration="1700">
                                        <a class="underline-hover" href="single.html">Ten reasons why you are a rookie in
                                           podcast</a>
                                     </h2>
                                  </div>
                               </div>
-                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5"data-aos="fade-up" data-aos-duration="1600">
                                  <div class="post-author-images mr-4">
                                     <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
                                           src="assets/images/post-author-images.webp" alt="images"></a>
@@ -551,12 +634,12 @@
                                  </div>
                                  <div class="post-title">
                                     <h2
-                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "data-aos="fade-up" data-aos-duration="1700">
                                        <a class="underline-hover" href="single.html">Why podcast had been so popular
                                           till now?</a></h2>
                                  </div>
                               </div>
-                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5"data-aos="fade-up" data-aos-duration="1600">
                                  <div class="post-author-images mr-4">
                                     <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
                                           src="assets/images/post-author-images.webp" alt="images"></a>
@@ -617,12 +700,12 @@
                                  </div>
                                  <div class="post-title">
                                     <h2
-                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "data-aos="fade-up" data-aos-duration="1700">
                                        <a class="underline-hover" href="single.html">At I who best to where line much
                                           safely</a></h2>
                                  </div>
                               </div>
-                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5"data-aos="fade-up" data-aos-duration="1600">
                                  <div class="post-author-images mr-4">
                                     <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
                                           src="assets/images/post-author-images.webp" alt="images"></a>
@@ -683,12 +766,12 @@
                                  </div>
                                  <div class="post-title">
                                     <h2
-                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "data-aos="fade-up" data-aos-duration="1700">
                                        <a class="underline-hover" href="single.html">7 places that you can find
                                           travel</a></h2>
                                  </div>
                               </div>
-                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5"data-aos="fade-up" data-aos-duration="1600">
                                  <div class="post-author-images mr-4">
                                     <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
                                           src="assets/images/post-author-images.webp" alt="images"></a>
@@ -749,12 +832,12 @@
                                  </div>
                                  <div class="post-title">
                                     <h2
-                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 ">
+                                       class="xl:text-5xl md:text-4xl  text-3xl font-medium lg:pt-2 pt-4 text-stone-900 "data-aos="fade-up" data-aos-duration="1700">
                                        <a class="underline-hover" href="single.html">15 tips to avoid failure in
                                           travel</a></h2>
                                  </div>
                               </div>
-                              <div class="post-bottom flex items-center lg:mt-8 mt-5">
+                              <div class="post-bottom flex items-center lg:mt-8 mt-5"data-aos="fade-up" data-aos-duration="1600">
                                  <div class="post-author-images mr-4">
                                     <a href="author.html"><img class="h-12.5 w-12.5 rounded-full"
                                           src="assets/images/post-author-images.webp" alt="images"></a>
@@ -813,9 +896,9 @@
                   <div class="newsletter-left relative lg:mt-38">
                      <div
                         class="newsletter-left-box  lg:p-20 md:before:rounded-tr-4  before:absolute before:bg-white before:h-full before:w-full before:top-0 left-0 before:-z-1">
-                        <h2 class="xl:text-5xl md:text-4xl  text-3xl  font-medium pt-2 text-black-10 mb-8" data-aos="fade-up" data-aos-delay="400">Join Our
+                        <h2 class="xl:text-5xl md:text-4xl  text-3xl  font-medium pt-2 text-black-10 mb-8" data-aos="fade-up" data-aos-duration="1700">Join Our
                            Newsletter</h2>
-                        <p>Project look tickets him wanted in graduate. The behavioural been five desk learn what's
+                        <p data-aos="fade-up" data-aos-duration="1600">Project look tickets him wanted in graduate. The behavioural been five desk learn what's
                            supposedly compute.</p>
                         <form class="w-full pt-8"data-aos="fade-up" data-aos-delay="500">
                            <div class="sm:flex items-center py-2">

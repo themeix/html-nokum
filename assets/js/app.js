@@ -49,7 +49,9 @@
   });
 
 
-
+  $('.nav-search, .search-close').on('click', function () {
+    $('html').toggleClass('nav-search-open');
+  });
 
   /*
 ------------------------  
@@ -161,5 +163,6 @@ Load More
   });
 
 }(jQuery));
+
 
 
