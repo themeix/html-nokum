@@ -1,6 +1,16 @@
 (function ($) {
   "use strict";
 
+    /*
+------------------------  
+01. Preloader
+--------------------------
+*/
+$(window).on('load', function () {
+  var preLoder = $(".preloader");
+  preLoder.fadeOut(20);
+});
+
   /*
    ------------------------  
    Body Sticky 
