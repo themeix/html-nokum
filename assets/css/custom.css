@@ -845,9 +845,7 @@ Keyframes Animation
     margin-bottom: 0;
 }
 
-.social-link li a:hover path {
-    fill: var(--blue-800);
-}
+
 
 .social-link li:nth-last-child(1) {
     margin-right: 0;
