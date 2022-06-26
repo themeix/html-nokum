@@ -1214,19 +1214,62 @@ button.mfp-close {
 }
 
 
-.linkedin:hover path{
+.linkedin:hover path {
 
-    fill:#ffffff;
-    transition: .5s;
-}
-.facebook:hover path{
-
-    fill:#ffffff;
+    fill: #ffffff;
     transition: .5s;
 }
 
-.twitter:hover path{
+.facebook:hover path {
 
-    fill:#1d9bf0;
+    fill: #ffffff;
     transition: .5s;
 }
+
+.twitter:hover path {
+
+    fill: #1d9bf0;
+    transition: .5s;
+}
+
+
+
+
+/*= input focus effects css
+=========================== */
+
+
+.effect-16~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:var(--blue-800);
+    transition: 0.4s;
+}
+
+.effect-16:focus~.focus-border,
+.has-content.effect-16~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.effect-16~label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 3px;
+
+    transition: 0.3s;
+    z-index: -1;
+ 
+}
+
+.effect-16:focus~label,
+.has-content.effect-16~label {
+    top: -12px;
+ color: var(--blue-800);
+    transition: 0.3s;
+}
+
