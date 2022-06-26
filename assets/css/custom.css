@@ -1232,11 +1232,11 @@ button.mfp-close {
     transition: .5s;
 }
 
-
-
-
-/*= input focus effects css
-=========================== */
+/*
+------------------------  
+09. Input  Css
+--------------------------
+*/
 
 
 .effect-16~.focus-border {
@@ -1255,21 +1255,5 @@ button.mfp-close {
     transition: 0.4s;
 }
 
-.effect-16~label {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 3px;
 
-    transition: 0.3s;
-    z-index: -1;
- 
-}
-
-.effect-16:focus~label,
-.has-content.effect-16~label {
-    top: -12px;
- color: var(--blue-800);
-    transition: 0.3s;
-}
 
