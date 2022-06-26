@@ -1,19 +1,36 @@
+/*
+=====================
+JS Table of Conttent 
+=====================
+  01. Preloader
+  02. Body Sticky 
+  03. Mobile Menu 
+  04. Open Menu
+  05. Popup  Search
+  06. Load More
+  07. Slider Carousel
+  08.  Current Date
+  09.   Scroll to Top
+  10.   Animation Aos
+
+*/
+
 (function ($) {
   "use strict";
 
-    /*
+  /*
 ------------------------  
 01. Preloader
 --------------------------
 */
-$(window).on('load', function () {
-  var preLoder = $(".preloader");
-  preLoder.fadeOut(20);
-});
+  $(window).on('load', function () {
+    var preLoder = $(".preloader");
+    preLoder.fadeOut(30);
+  });
 
   /*
    ------------------------  
-   Body Sticky 
+   02. Body Sticky 
    --------------------------
    */
   $(window).on('scroll', function () {
@@ -37,7 +54,7 @@ $(window).on('load', function () {
 
   /*
   ------------------------  
-  Mobile Menu 
+  03. Mobile Menu 
   --------------------------
   */
   $(".mobile-toggle").on("click", function () {
@@ -53,35 +70,47 @@ $(window).on('load', function () {
     $(this).parent().siblings(".submenu").slideToggle();
   });
 
-  /* Mobile-menu	 */
+  /*
+ ------------------------  
+ 04. Open Menu
+ --------------------------
+ */
+
   $('.nav-button').on('click', function () {
     $('body').toggleClass('nav-open');
   });
-  $('.popup-with-form').magnificPopup({
-    type: 'inline', 
-    fixedContentPos: false, 
-    alignTop : true, 
-		fixedBgPos: true,
-		overflowY: 'auto',
-		closeBtnInside: true,
-		preloader: false,
-		midClick: true, 
-		removalDelay: 300, 
-    mainClass: 'my-mfp-slide-bottom', 
-    callbacks: { 
-      open: function() {
-        $('body').addClass('my-mfp-slide-main'); 
-      },
-      close: function() { 
-        setTimeout(function() {
-          $('body').removeClass('my-mfp-slide-main');
-        }, 100) 
-      } 
-    }
-	});
+
   /*
 ------------------------  
-Load More
+05. Popup  Search
+--------------------------
+*/
+
+  $('.popup-with-form').magnificPopup({
+    type: 'inline',
+    fixedContentPos: false,
+    alignTop: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-slide-bottom',
+    callbacks: {
+      open: function () {
+        $('body').addClass('my-mfp-slide-main');
+      },
+      close: function () {
+        setTimeout(function () {
+          $('body').removeClass('my-mfp-slide-main');
+        }, 100)
+      }
+    }
+  });
+  /*
+------------------------  
+06. Load More
 --------------------------
 */
   $('.blog-post-all').infiniteScroll({
@@ -99,13 +128,16 @@ Load More
     history: false,
   });
 
-
+  /*
+------------------------  
+07. Slider Carousel
+--------------------------
+*/
   $('.post-carousel').slick({
     infinite: true,
     slidesToShow: 4,
-    autoplay:true,
+    autoplay: true,
     speed: 300,
-
 
     responsive: [
       {
@@ -137,15 +169,17 @@ Load More
   });
 
   /*
-  ------------------------  
-  Current Date
-  --------------------------
-  */
+------------------------  
+08.  Current Date
+--------------------------
+*/
   $('#spanYear').html(new Date().getFullYear());
 
-  /*=============================================
-         Scroll to Top
-  ===============================================*/
+  /*
+------------------------  
+09.   Scroll to Top
+--------------------------
+*/
 
   function scrolltop() {
 
@@ -177,6 +211,12 @@ Load More
 
   }
   scrolltop();
+
+  /*
+------------------------  
+10.   Animation Aos
+--------------------------
+*/
   AOS.init({
     offset: 50,
     delay: 200,
@@ -189,6 +229,4 @@ Load More
   });
 
 }(jQuery));
-
-
 
