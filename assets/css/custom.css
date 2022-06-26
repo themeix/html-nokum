@@ -1232,6 +1232,13 @@ button.mfp-close {
     transition: .5s;
 }
 
+
+.instagram:hover path {
+
+    fill: #b721cf;
+    transition: .5s;
+}
+
 /*
 ------------------------  
 09. Input  Css
