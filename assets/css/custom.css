@@ -1212,3 +1212,21 @@ Keyframes Animation
 button.mfp-close {
     font-size: 32px;
 }
+
+
+.linkedin:hover path{
+
+    fill:#ffffff;
+    transition: .5s;
+}
+.facebook:hover path{
+
+    fill:#ffffff;
+    transition: .5s;
+}
+
+.twitter:hover path{
+
+    fill:#1d9bf0;
+    transition: .5s;
+}
