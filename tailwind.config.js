@@ -88,6 +88,7 @@ module.exports = {
         "curved-blue-gradient": "url(/imagenes/precios/curved-blue-gradient-bg.svg)",
         "blue-cyan-gradient": "linear-gradient(90deg, #C84E89 0%, #F15F79 100%);",
         "border-gradient": "linear-gradient(90deg, #C84E89 0%, #F15F79 100%);",
+        "instagram-gradient": "linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);",
 
       },
 

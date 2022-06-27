@@ -1228,14 +1228,14 @@ button.mfp-close {
 
 .twitter:hover path {
 
-    fill: #1d9bf0;
+    fill: var(--white);
     transition: .5s;
 }
 
 
 .instagram:hover path {
 
-    fill: #b721cf;
+    fill: var(--white);
     transition: .5s;
 }
 
