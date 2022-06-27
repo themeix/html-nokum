@@ -780,6 +780,10 @@ video {
   display: none;
 }
 
+.\!hidden {
+  display: none !important;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1672,6 +1676,14 @@ video {
 
   .sm\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:\!block {
+    display: block !important;
   }
 
   .sm\:flex {
