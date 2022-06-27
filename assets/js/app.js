@@ -229,6 +229,37 @@ JS Table of Conttent
   });
 
 
+
+
+
+
+  (function($){
+  
+    //   Change the active class on the switcher
+    var price = $('.pricing-table__price');
+    var year = $("#year");
+    var month = $("#month"); 
+    
+    
+    year.on('click', function(){
+      $(this).addClass('active');
+      month.removeClass('active');    
+      price.each(function() {
+        $(this).text( $(this).data('year-price') );
+      });    
+    });
+    
+    month.on('click', function(){
+      $(this).addClass('active');
+      year.removeClass('active');
+      price.each(function() {
+        $(this).text( $(this).data('month-price') );
+      });
+    }); 
+  
+  })(jQuery);
+
+
 }(jQuery));
 
 

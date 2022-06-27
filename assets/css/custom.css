@@ -1263,4 +1263,10 @@ button.mfp-close {
 }
 
 
+.active {
+    color: var(--white);
+
+    background-color:var(--blue-800) ;
+  }
+
 
