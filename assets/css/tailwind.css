@@ -736,12 +736,12 @@ video {
   margin-right: 1rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -834,6 +834,10 @@ video {
 
 .max-h-24 {
   max-height: 6rem;
+}
+
+.max-h-40 {
+  max-height: 10rem;
 }
 
 .w-8 {
@@ -1228,10 +1232,6 @@ video {
   padding-top: 2.25rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1339,11 +1339,6 @@ video {
 .text-blue-900 {
   --tw-text-opacity: 1;
   color: rgb(54 48 98 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(173 173 173 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-600::placeholder {
@@ -1527,9 +1522,14 @@ video {
   background-color: transparent;
 }
 
-.hover\:bg-gray-300:hover {
+.hover\:bg-sky-800:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(173 173 173 / var(--tw-bg-opacity));
+  background-color: rgb(0 119 181 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 147 248 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-200:hover {
@@ -1542,14 +1542,9 @@ video {
   background-color: rgb(54 48 98 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-sky-800:hover {
+.hover\:bg-gray-300:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 119 181 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-sky-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 147 248 / var(--tw-bg-opacity));
+  background-color: rgb(173 173 173 / var(--tw-bg-opacity));
 }
 
 .hover\:text-blue-900:hover {
@@ -1595,10 +1590,6 @@ video {
 
 .focus\:outline-blue-800:focus {
   outline-color: #4D4C7D;
-}
-
-.focus\:outline-orange-300:focus {
-  outline-color: #d1d1d1;
 }
 
 .group:hover .group-hover\:scale-150 {
@@ -1796,6 +1787,11 @@ video {
     font-size: 2.5rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:before\:rounded-tr-4::before {
     content: var(--tw-content);
     border-top-right-radius: 16px;
@@ -1899,6 +1895,10 @@ video {
 
   .lg\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667%;
   }
 
   .lg\:grid-cols-3 {
