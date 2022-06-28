@@ -1,0 +1,288 @@
+.gh-content h1 {
+    font-size: 3rem;
+}
+
+.gh-content h2 {
+    font-size: 2rem;
+}
+
+
+.gh-content h3 {
+    font-size: 24px;
+}
+
+.gh-content h4 {
+    font-size: 1.5rem;
+}
+
+.gh-content h5 {
+    font-size: 1.2rem;
+}
+
+.gh-content h6 {
+    font-size: 1.4rem;
+
+}
+
+.gh-content hr {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    border-color: var(--orange-300);
+}
+
+
+.gh-content h1,
+.gh-content h2,
+.gh-content h3 {
+    line-height: 1.4;
+    margin-top: 1em;
+    margin-bottom: 18px;
+    margin-left: -1px;
+}
+
+.gh-content h4,
+.gh-content h5,
+.gh-content h6 {
+
+    line-height: 1.55;
+    margin-top: 1.2em;
+    margin-bottom: 10px;
+}
+
+.gh-content p,
+.gh-content iframe,
+.gh-content ol,
+.gh-content ul,
+.gh-content table {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.gh-content {
+    font-size: 1rem;
+    font-family: "Work Sans",sans-serif;
+
+}
+
+.gh-content p {
+    line-height: 1.62;
+    position: relative;
+}
+
+.gh-content strong {
+    font-weight: 700;
+}
+
+.gh-content img,
+.gh-content code,
+.gh-content .kg-callout-card,
+.gh-content .kg-audio-card,
+.gh-content .kg-file-card .kg-file-card-container,
+.gh-content .kg-toggle-card,
+.gh-content .kg-product-card .kg-product-card-container,
+.gh-content .kg-nft-card .kg-nft-card-container,
+.gh-content .kg-bookmark-card .kg-bookmark-container,
+.gh-content .kg-bookmark-card .kg-bookmark-container:hover {
+    border-radius: 26px;
+}
+
+.gh-content blockquote {
+    font-size:1.8rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1em;
+    border-left: 5px solid var(--blue-900);
+    line-height: 1.4;
+}
+.gh-content a {
+    transition: color .1s ease;
+    text-decoration: underline;
+}
+
+
+
+
+
+.gh-content blockquote.kg-blockquote-alt::before {
+    font-size: 200%;
+    line-height: .4;
+    display: block;
+    content: '“';
+    color:var(--blue-900);
+}
+
+.gh-content hr, .gh-content blockquote, .gh-content .kg-card.kg-header-card {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+
+.gh-content .kg-audio-card, .gh-content .kg-file-card .kg-file-card-container, .gh-content .kg-toggle-card, .gh-content .kg-product-card .kg-product-card-container, .gh-content .kg-nft-card .kg-nft-card-container, .gh-content .kg-bookmark-card .kg-bookmark-container, .gh-content .kg-bookmark-card .kg-bookmark-container:hover {
+    border: 1px solid var(--orange-300);
+    box-shadow: none;
+}
+.gh-content pre, .gh-content .kg-card {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.gh-content .kg-bookmark-card .kg-bookmark-container:hover, .gh-content .kg-file-card .kg-file-card-container:hover {
+    border: 1px solid var(--blue-800);
+
+}
+.gh-content .kg-bookmark-card .kg-bookmark-thumbnail {
+    min-width: 24%;
+    margin: 10px;
+}
+
+.gh-content .kg-audio-card .kg-audio-thumbnail, .gh-content .kg-file-card .kg-file-card-icon::before, .gh-content .kg-product-card img, .gh-content .kg-nft-card .kg-nft-image, .gh-content .kg-bookmark-card .kg-bookmark-thumbnail img {
+    border-radius: 10px;
+}
+
+.gh-content .kg-bookmark-description {
+    display: -webkit-box;
+    font-size:1rem;
+    line-height: 1.5em;
+    margin-top: 3px;
+    font-weight: 400;
+    max-height: 44px;
+    overflow-y: hidden;
+    opacity: .7;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.kg-product-card a.kg-product-card-button {
+    justify-content: center;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+
+
+    text-decoration: none;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.kg-product-card a.kg-product-card-btn-accent {
+    background: var(--blue-800)!important;
+}
+.gh-content .kg-button-card .kg-btn:hover, .gh-content .kg-product-card .kg-product-card-button:hover {
+    opacity: .8;
+}
+
+.gh-content .kg-button-card .kg-btn, .gh-content .kg-product-card .kg-product-card-button, .gh-content .kg-header-card .kg-header-card-button {
+    transition: opacity .2s ease;
+    border-radius: 100px;
+}
+
+.gh-content hr, .gh-content blockquote, .gh-content .kg-card.kg-header-card {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.kg-audio-thumbnail.placeholder {
+    background: var(--blue-800)!important;
+    border-radius: 10px;
+}
+
+.gh-content pre, .gh-content .kg-card {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.gh-content img, .gh-content code, .gh-content .kg-callout-card, .gh-content .kg-audio-card, .gh-content .kg-file-card .kg-file-card-container, .gh-content .kg-toggle-card, .gh-content .kg-product-card .kg-product-card-container, .gh-content .kg-nft-card .kg-nft-card-container, .gh-content .kg-bookmark-card .kg-bookmark-container, .gh-content .kg-bookmark-card .kg-bookmark-container:hover {
+    border-radius:10px;
+}
+
+.gh-content ul {
+    padding-left: 15px;
+    list-style: disc outside;
+}
+.gh-content li {
+    margin-bottom: 10px;
+}
+
+
+.gh-content ul li ul {
+    list-style: circle outside;
+}
+
+.gh-content ol, .gh-content ol li ol {
+    list-style: decimal outside;
+}
+
+.gh-content ol {
+    padding-left: 20px;
+}
+
+.gh-content .responsive-table {
+    overflow-x: auto;
+    word-break: normal;
+}
+
+.gh-content table {
+    font-size: 1.4rem;
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: transparent;
+}
+
+.gh-content th:first-child, .gh-content td:first-child {
+    padding-left: 10px;
+}
+.gh-content th, .gh-content td {
+    display: table-cell;
+    padding: 10px 12px;
+}
+.gh-content th {
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--blue-800);
+    font-weight: 500;
+}
+.gh-content td {
+    border-bottom: 1px solid var(--orange-300);
+    font-size: 16px;
+}
+.gh-content pre>code {
+    display: block;
+    padding: 20px 25px;
+    white-space: pre-wrap;
+}
+
+.gh-content code {
+
+    padding: 2px 5px;
+    background-color: var(--zinc-300);
+}
+
+
+.gh-content ul ul, .gh-content ul ol, .gh-content ol ol, .gh-content ol ul {
+    margin: 15px 0;
+}
+
+.gh-content blockquote.kg-blockquote-alt {
+    font-size: 48px;
+    font-weight:700;
+    font-style: normal;
+    line-height: 1.3;
+    padding: 0;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    border: 0;
+}
+
+

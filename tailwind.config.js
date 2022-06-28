@@ -72,6 +72,9 @@ module.exports = {
         black: {
           100: '#2C2828',
         },
+        zinc: {
+          300: '#efeef0',
+        },
         sky: {
           400: '#1d9bf0',
           500: '#0f93f8',

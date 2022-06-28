@@ -19,7 +19,7 @@
     './node_modules/slick-carousel/slick/slick-theme.css',
     './node_modules/aos/dist/aos.css', 
     './node_modules/magnific-popup/dist/magnific-popup.css',
-    './assets/css/custom.css'
+    './assets/css/gh.min.css',
     ];
     var JS_Files = [
     './node_modules/jquery/dist/jquery.min.js',
