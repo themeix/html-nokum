@@ -168,6 +168,53 @@ JS Table of Conttent
 
   });
 
+
+
+    /*
+------------------------  
+07. Slider Carousel
+--------------------------
+*/
+$('.home-2-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  autoplay:false,
+  speed: 300,
+  dots: true,
+  arrows:false,
+  infinite: true,
+  speed: 500,
+ 
+
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
+
+});
+
   /*
 ------------------------  
 08.  Current Date
