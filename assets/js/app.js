@@ -108,25 +108,54 @@ JS Table of Conttent
       }
     }
   });
-  /*
+
+
+
+
+
+
+
+    /*
 ------------------------  
 06. Load More
 --------------------------
 */
-  $('.blog-post-all').infiniteScroll({
-    path: function () {
-      if (this.loadCount < 4) {
-        let nextIndex = this.loadCount + 2;
-        return `explore/explore-${nextIndex}.html`;
-      }
-    },
-    append: '.blog-post-box',
-    button: '.load-more-btn',
-    checkLastPage: false,
-    scrollThreshold: false,
-    status: '.page-load-status',
-    history: false,
-  });
+$('.blog-post-all').infiniteScroll({
+  path: function () {
+    if (this.loadCount < 4) {
+      let nextIndex = this.loadCount + 2;
+      return `explore/explore-${nextIndex}.html`;
+    }
+  },
+  append: '.blog-post-box',
+  button: '.load-more-btn',
+  checkLastPage: false,
+  scrollThreshold: false,
+  status: '.page-load-status',
+  history: false,
+});
+
+    /*
+------------------------  
+06. Load More
+--------------------------
+*/
+$('.blog-post-all-two').infiniteScroll({
+  path: function () {
+    if (this.loadCount < 2) {
+      let nextIndex = this.loadCount + 2;
+      return `blog/blog-${nextIndex}.html`;
+    }
+  },
+  append: '.blog-post-box-two',
+  button: '.load-more-btn',
+  checkLastPage: false,
+  scrollThreshold: false,
+  status: '.page-load-status',
+  history: false,
+});
+
+
 
   /*
 ------------------------  
@@ -184,7 +213,8 @@ $('.home-2-slider').slick({
   arrows:false,
   infinite: true,
   speed: 500,
- 
+  fade: true,
+
 
   responsive: [
     {
@@ -279,7 +309,11 @@ $('.home-2-slider').slick({
 
 
 
-
+  /*
+------------------------  
+10.  Pricing Table
+--------------------------
+*/
 
 
   (function($){

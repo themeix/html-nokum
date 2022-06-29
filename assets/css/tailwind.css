@@ -1737,12 +1737,12 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .md\:block {
@@ -1826,12 +1826,12 @@ video {
     padding-top: 0px;
   }
 
-  .md\:pt-15 {
-    padding-top: 60px;
-  }
-
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-15 {
+    padding-top: 60px;
   }
 
   .md\:text-right {
@@ -1951,6 +1951,10 @@ video {
 
   .lg\:max-h-159\.5 {
     max-height: 638px;
+  }
+
+  .lg\:min-h-159\.5 {
+    min-height: 638px;
   }
 
   .lg\:w-auto {
