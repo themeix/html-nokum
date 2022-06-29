@@ -139,31 +139,60 @@
                         <div class="flex-grow xl:flex lg:items-center lg:w-auto">
                             <ul
                                 class="toggle-menu-class dropdown-menu justify-start bg-white lg:bg-transparent  shadow lg:shadow-none absolute xl:relative inset-x-0 hidden xl:flex xl:flex-grow items-center mt-10 xl:mt-0 mobile-hover">
-                                <li class="relative  lg:mr-10">
-                                    <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                        href="index.html">
+
+                                <li class="relative dropdown lg:mr-10 pb-5">
+                                    <a class=" arrow flex items-center text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                                        href="#">
                                         Home
+                                        <span class="hidden lg:block  ml-2">
+                                            <svg width="14" height="11" viewBox="0 0 11 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.25 0.9L5.5 4.15L8.75 0.9L10.05 1.55L5.5 6.1L0.95 1.55L2.25 0.9Z"
+                                                    fill="#c1c1c1"></path>
+                                            </svg>
+                                        </span>
+                                        <span
+                                            class="leading-6 text-2xl text-center  absolute right-5   block lg:hidden toggle">+</span>
                                     </a>
+
+                                    <ul
+                                        class="hidden mt-2 lg:block bg-white  lg:absolute top-full lg:shadow lg:w-48 px-5 submenu lg:border-t-2 border-blue-800">
+                                        <li class="pt-5"><a
+                                                class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                                href="index.html">Home v1 </a></li>
+                                        <li class="pt-5"><a
+                                                class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                                href="index-v2.html">Home v2</a></li>
+                                    </ul>
+
                                 </li>
-                                <li class="relative  lg:mr-10">
+
+                                <li class="relative  lg:mr-10 pb-5">
                                     <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                         href="about.html">
                                         About
                                     </a>
                                 </li>
-                                <li class="relative  lg:mr-10">
+                                <li class="relative  lg:mr-10 pb-5">
                                     <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                         href="author.html">
                                         Authors
                                     </a>
                                 </li>
-                                <li class="relative  lg:mr-10">
+                                <li class="relative  lg:mr-10 pb-5">
                                     <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                         href="tags.html">
                                         Tags
                                     </a>
                                 </li>
-                                <li class="relative  ">
+                                <li class="relative  lg:mr-10 pb-5">
+                                    <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                                        href="style-guide.html">
+                                        Style Guide
+                                    </a>
+                                </li>
+                                <li class="relative  pb-5">
                                     <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                         href="contact.html">
                                         Contact
@@ -242,15 +271,36 @@
                 <!--navbar end-->
 
                 <div class="fixed-top fixed top-0 right-0 left-0 z-999 main-menu w-full h-full  opacity-0 invisible">
-                    <div class="flex  h-full p-5 px-8 items-start pt-28">
+                    <div class=" h-full p-5 px-8  pt-28">
 
                         <ul class="nav">
-                            <li class="relative nav-item ">
-                                <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                    href="index.html">
+                            <li class="relative dropdown">
+                                <a class=" arrow flex items-center text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                                    href="#">
                                     Home
+                                    <span class="hidden lg:block  ml-2">
+                                        <svg width="14" height="11" viewBox="0 0 11 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.25 0.9L5.5 4.15L8.75 0.9L10.05 1.55L5.5 6.1L0.95 1.55L2.25 0.9Z"
+                                                fill="#c1c1c1"></path>
+                                        </svg>
+                                    </span>
+                                    <span
+                                        class="leading-6 text-2xl text-center  absolute right-5   block lg:hidden toggle">+</span>
                                 </a>
+
+                                <ul
+                                    class="hidden mt-2 lg:block bg-white  lg:absolute top-full lg:shadow lg:w-48 px-5 submenu lg:border-t-2 border-blue-800">
+                                    <li class="pt-5"><a
+                                            class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                            href="index.html">Home v1 </a></li>
+                                    <li class="pt-5"><a
+                                            class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                            href="index-v2.html">Home v2</a></li>
+                                </ul>
+
                             </li>
+
                             <li class="relative nav-item mt-5">
                                 <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                     href="about.html">
@@ -271,6 +321,12 @@
                             </li>
                             <li class="relative nav-item mt-5">
                                 <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                                    href="style-guide.html">
+                                    Style Guide
+                                </a>
+                            </li>
+                            <li class="relative nav-item mt-5">
+                                <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                     href="contact.html">
                                     Contact
                                 </a>
@@ -284,7 +340,6 @@
             </header>
 
             <!--  ====================== Mobile Header Area End =============================  -->
-
             <!--  ====================== Contact Area Start =============================  -->
 
             <section class="contact-area xl:pt-48 pt-40">
