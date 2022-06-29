@@ -140,12 +140,35 @@
                         <div class="flex-grow xl:flex lg:items-center lg:w-auto">
                             <ul
                                 class="toggle-menu-class dropdown-menu justify-start bg-white lg:bg-transparent  shadow lg:shadow-none absolute xl:relative inset-x-0 hidden xl:flex xl:flex-grow items-center mt-10 xl:mt-0 mobile-hover">
-                                <li class="relative  lg:mr-10">
-                                    <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                        href="index.html">
+
+                                <li class="relative dropdown lg:mr-10">
+                                    <a class=" arrow flex items-center text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                                        href="#">
                                         Home
+                                        <span class="hidden lg:block  ml-2">
+                                            <svg width="14" height="11" viewBox="0 0 11 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M2.25 0.9L5.5 4.15L8.75 0.9L10.05 1.55L5.5 6.1L0.95 1.55L2.25 0.9Z"
+                                                    fill="#c1c1c1"></path>
+                                            </svg>
+                                        </span>
+                                        <span
+                                            class="leading-6 text-2xl text-center  absolute right-5   block lg:hidden toggle">+</span>
                                     </a>
+
+                                    <ul
+                                        class="hidden mt-2 lg:block bg-white  lg:absolute top-full lg:shadow lg:w-48 px-5 submenu lg:border-t-2 border-blue-800">
+                                        <li class="pt-5"><a
+                                                class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                                href="index.html">Home v1 </a></li>
+                                        <li class="pt-5"><a
+                                                class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                                href="index-v2.html">Home v2</a></li>
+                                    </ul>
+
                                 </li>
+
                                 <li class="relative  lg:mr-10">
                                     <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                         href="about.html">
@@ -243,15 +266,36 @@
                 <!--navbar end-->
 
                 <div class="fixed-top fixed top-0 right-0 left-0 z-999 main-menu w-full h-full  opacity-0 invisible">
-                    <div class="flex  h-full p-5 px-8 items-start pt-28">
+                    <div class=" h-full p-5 px-8  pt-28">
 
                         <ul class="nav">
-                            <li class="relative nav-item ">
-                                <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
-                                    href="index.html">
+                            <li class="relative dropdown">
+                                <a class=" arrow flex items-center text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
+                                    href="#">
                                     Home
+                                    <span class="hidden lg:block  ml-2">
+                                        <svg width="14" height="11" viewBox="0 0 11 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.25 0.9L5.5 4.15L8.75 0.9L10.05 1.55L5.5 6.1L0.95 1.55L2.25 0.9Z"
+                                                fill="#c1c1c1"></path>
+                                        </svg>
+                                    </span>
+                                    <span
+                                        class="leading-6 text-2xl text-center  absolute right-5   block lg:hidden toggle">+</span>
                                 </a>
+
+                                <ul
+                                    class="hidden mt-2 lg:block bg-white  lg:absolute top-full lg:shadow lg:w-48 px-5 submenu lg:border-t-2 border-blue-800">
+                                    <li class="pt-5"><a
+                                            class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                            href="index.html">Home v1 </a></li>
+                                    <li class="pt-5"><a
+                                            class=" leading-none flex items-center whitespace-nowrap text-coolGray-600 font-normal transition duration-500 hover:text-blue-900"
+                                            href="index-v2.html">Home v2</a></li>
+                                </ul>
+
                             </li>
+
                             <li class="relative nav-item mt-5">
                                 <a class="  text-base text-gray-100 hover:text-blue-900 transition duration-500 font-medium"
                                     href="about.html">
@@ -291,7 +335,7 @@
                 <div class="home-2-slider">
 
                     <div class="lg:!grid lg:grid-cols-12 items-center">
-                        <div class="md:col-span-4 lg:order-last" ddata-aos ="fade-up" data-aos-duration="1700">
+                        <div class="md:col-span-4 lg:order-last" data-aos="fade-up" data-aos-duration="1700">
                             <div class="banner-right mb-6 lg:mb-0">
                                 <img class="h-79 lg:h-full lg:min-h-159.5  rounded-md w-full object-cover -z-1 relative"
                                     src="assets/images/home-slider-1.webp" alt="images">
@@ -300,7 +344,7 @@
                         <div class="col-span-8">
                             <div class="banner-left-box  relative">
                                 <div class="banner-left-item  before:absolute before:bg-white before:h-full before:w-110 before:top-0 before:left-0 before:-z-1 lg:p-8 before:rounded-md"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <div class="badge-box flex gap-4 mb-5">
                                         <span class="font-medium">
                                             Lifestyle
@@ -315,17 +359,17 @@
                                             </span>Featured</p>
                                     </div>
                                     <h1 class="banner-heading font-medium leading-snug xl:text-5xl lg:text-4xl text-3xl  mb-2"
-                                        ddata-aos ="fade-up" data-aos-duration="1700">
+                                        data-aos="fade-up" data-aos-duration="1700">
                                         What do people misunderstand about you most
                                     </h1>
-                                    <p class="text-lg" ddata-aos ="fade-up" data-aos-duration="1700">Of the me the
+                                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1700">Of the me the
                                         failures
                                         brown the orthographic to of and so getting
                                         couldn't but though precipitate, named your affects from then but to gloomy it
                                         occasion the alphabet little the it ran the projected
                                     </p>
                                     <div class="banner-info lg:mt-20 mt-10 border-t inline-block border-orange-300 pt-4"
-                                        ddata-aos ="fade-up" data-aos-duration="1700">
+                                        data-aos="fade-up" data-aos-duration="1700">
                                         <p>by <a class="underline-hover text-blue-900 font-semibold" href="#">Shamar
                                                 Wooten</a> in <a class="underline-hover text-blue-900 font-semibold"
                                                 href="#">Travel</a></p>
@@ -338,7 +382,7 @@
                         </div>
                     </div>
                     <div class="lg:!grid lg:grid-cols-12 items-center">
-                        <div class="md:col-span-4 lg:order-last" ddata-aos ="fade-up" data-aos-duration="1700">
+                        <div class="md:col-span-4 lg:order-last" data-aos="fade-up" data-aos-duration="1700">
                             <div class="banner-right mb-6 lg:mb-0">
                                 <img class="h-79 lg:h-full lg:min-h-159.5  rounded-md w-full object-cover -z-1 relative"
                                     src="assets/images/home-slider-2.webp" alt="images">
@@ -347,7 +391,7 @@
                         <div class="col-span-8">
                             <div class="banner-left-box  relative">
                                 <div class="banner-left-item  before:absolute before:bg-white before:h-full before:w-110 before:top-0 before:left-0 before:-z-1 lg:p-8 before:rounded-md"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <div class="badge-box flex gap-4 mb-5">
                                         <span class="font-medium">
                                             Lifestyle
@@ -362,17 +406,17 @@
                                             </span>Featured</p>
                                     </div>
                                     <h1 class="banner-heading font-medium leading-snug xl:text-5xl lg:text-4xl text-3xl  mb-2"
-                                        ddata-aos ="fade-up" data-aos-duration="1700">
+                                        data-aos="fade-up" data-aos-duration="1700">
                                         Are you looking for inspiration for podcast
                                     </h1>
-                                    <p class="text-lg" ddata-aos ="fade-up" data-aos-duration="1700">Of the me the
+                                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1700">Of the me the
                                         failures
                                         brown the orthographic to of and so getting
                                         couldn't but though precipitate, named your affects from then but to gloomy it
                                         occasion the alphabet little the it ran the projected
                                     </p>
                                     <div class="banner-info lg:mt-20 mt-10 border-t inline-block border-orange-300 pt-4"
-                                        ddata-aos ="fade-up" data-aos-duration="1700">
+                                        data-aos="fade-up" data-aos-duration="1700">
                                         <p>by <a class="underline-hover text-blue-900 font-semibold" href="#">Shamar
                                                 Wooten</a> in <a class="underline-hover text-blue-900 font-semibold"
                                                 href="#">Travel</a></p>
@@ -386,7 +430,7 @@
                     </div>
 
                     <div class="lg:!grid lg:grid-cols-12 items-center">
-                        <div class="md:col-span-4 lg:order-last" ddata-aos ="fade-up" data-aos-duration="1700">
+                        <div class="md:col-span-4 lg:order-last" data-aos="fade-up" data-aos-duration="1700">
                             <div class="banner-right mb-6 lg:mb-0">
                                 <img class="h-79 lg:h-full lg:min-h-159.5  rounded-md w-full object-cover -z-1 relative"
                                     src="assets/images/single-blog-post-images-2.webp" alt="images">
@@ -395,7 +439,7 @@
                         <div class="col-span-8">
                             <div class="banner-left-box  relative">
                                 <div class="banner-left-item  before:absolute before:bg-white before:h-full before:w-110 before:top-0 before:left-0 before:-z-1 lg:p-8 before:rounded-md"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <div class="badge-box flex gap-4 mb-5">
                                         <span class="font-medium">
                                             Lifestyle
@@ -410,17 +454,17 @@
                                             </span>Featured</p>
                                     </div>
                                     <h1 class="banner-heading font-medium leading-snug xl:text-5xl lg:text-4xl text-3xl  mb-2"
-                                        ddata-aos ="fade-up" data-aos-duration="1700">
-                                        The Design Your Thinking Podcast is probably 
+                                        data-aos="fade-up" data-aos-duration="1700">
+                                        The Design Your Thinking Podcast is probably
                                     </h1>
-                                    <p class="text-lg" ddata-aos ="fade-up" data-aos-duration="1700">Of the me the
+                                    <p class="text-lg" data-aos="fade-up" data-aos-duration="1700">Of the me the
                                         failures
                                         brown the orthographic to of and so getting
                                         couldn't but though precipitate, named your affects from then but to gloomy it
                                         occasion the alphabet little the it ran the projected
                                     </p>
                                     <div class="banner-info lg:mt-20 mt-10 border-t inline-block border-orange-300 pt-4"
-                                        ddata-aos ="fade-up" data-aos-duration="1700">
+                                        data-aos="fade-up" data-aos-duration="1700">
                                         <p>by <a class="underline-hover text-blue-900 font-semibold" href="#">Shamar
                                                 Wooten</a> in <a class="underline-hover text-blue-900 font-semibold"
                                                 href="#">Travel</a></p>
@@ -432,10 +476,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
 
                 </div>
 
@@ -445,9 +485,10 @@
             <!--  ====================== Blog Post Area Start =============================  -->
 
             <section class="blog-post-area lg:pt-30 pt-20">
-                    <div class="blog-post-all-two grid  lg:grid-cols-2 gap-8">
+                <div class="blog-post-all-two grid  lg:grid-cols-2 gap-8">
+                    <div data-aos="fade-up" data-aos-duration="900">
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="900">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -455,7 +496,7 @@
                                         src="assets/images/home-2-single-img-1.webp" alt="image">
                                     <div
                                         class="badge-lock absolute top-5 left-5 flex items-center justify-center bg-white w-8 h-8 rounded-full">
-                                        <svg idth="10" height="12" viewBox="0 0 10 12" fill="none"
+                                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M0 6L1 5H9L10 6V11L9 12H1L0 11V6ZM1 6V11H9V6H1ZM8 5V3C8 2.20435 7.68393 1.44129 7.12132 0.87868C6.55871 0.316071 5.79565 0 5 0C4.20435 0 3.44129 0.316071 2.87868 0.87868C2.31607 1.44129 2 2.20435 2 3V5H3V3C3 2.46957 3.21071 1.96086 3.58579 1.58579C3.96086 1.21071 4.46957 1 5 1C5.53043 1 6.03914 1.21071 6.41421 1.58579C6.78929 1.96086 7 2.46957 7 3V5H8Z"
@@ -485,7 +526,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">Ten reasons why you are a rookie in
                                         podcast</a></h2>
                             </div>
@@ -503,9 +544,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1700">
 
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="1700">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -534,7 +577,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">Depending on your niche and the kind
                                         of guest</a></h2>
                             </div>
@@ -552,9 +595,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="900">
 
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="900">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -580,7 +626,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">What do people misunderstand about you
                                     </a></h2>
                             </div>
@@ -598,9 +644,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="1700">
 
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="1700">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -629,7 +678,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">Are you looking for inspiration for
                                         podcast</a></h2>
                             </div>
@@ -647,9 +696,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="900">
 
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="900">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -657,7 +708,7 @@
                                         src="assets/images/home-2-single-img-5.webp" alt="image">
                                     <div
                                         class="badge-lock absolute top-5 left-5 flex items-center justify-center bg-white w-8 h-8 rounded-full">
-                                        <svg idth="10" height="12" viewBox="0 0 10 12" fill="none"
+                                        <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M0 6L1 5H9L10 6V11L9 12H1L0 11V6ZM1 6V11H9V6H1ZM8 5V3C8 2.20435 7.68393 1.44129 7.12132 0.87868C6.55871 0.316071 5.79565 0 5 0C4.20435 0 3.44129 0.316071 2.87868 0.87868C2.31607 1.44129 2 2.20435 2 3V5H3V3C3 2.46957 3.21071 1.96086 3.58579 1.58579C3.96086 1.21071 4.46957 1 5 1C5.53043 1 6.03914 1.21071 6.41421 1.58579C6.78929 1.96086 7 2.46957 7 3V5H8Z"
@@ -687,7 +738,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">Ten reasons why you are a rookie in
                                         podcast</a></h2>
                             </div>
@@ -705,9 +756,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1700">
 
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="1700">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -736,7 +789,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">What are three movies you'd recommend
                                         to my audience</a></h2>
                             </div>
@@ -754,9 +807,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="900">
 
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="900">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -785,7 +840,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">TOne of the biggest reasons this
                                         happens </a></h2>
                             </div>
@@ -803,8 +858,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="1700">
+
                         <div
-                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4" data-aos ="fade-up" data-aos-duration="1700">
+                            class="blog-item border border-orange-300 hover:border-blue-800 transition duration-500 group p-8 rounded-4">
                             <div class="blog-item-top">
                                 <div class="blog-item-images-box relative rounded-md overflow-hidden">
 
@@ -833,7 +892,7 @@
                             </div>
                             <div class="post-title pt-4">
                                 <h2 class="xl:text-5xl md:text-4xl text-3xl font-medium text-stone-900 aos-init aos-animate"
-                                    ddata-aos ="fade-up" data-aos-duration="1700">
+                                    data-aos="fade-up" data-aos-duration="1700">
                                     <a class="underline-hover" href="single.html">What are three movies you'd recommend
                                         to my audience</a></h2>
                             </div>
@@ -852,6 +911,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
                 <div class="blog-post-button text-center aos-init aos-animate md:pt-20 pt-10" data-aos="fade-up"
                     data-aos-delay="400">
@@ -876,7 +936,7 @@
                         behavioural been five desk learn
                         what's
                         supposedly compute.</p>
-                    <form class="w-full pt-8" ddata-aos ="fade-up" data-aos-duration="1700">
+                    <form class="w-full pt-8" data-aos="fade-up" data-aos-duration="1700">
                         <div class="sm:flex items-center py-2">
                             <input
                                 class=" border-2 border-orange-300 rounded-full sm:rounded-tr-none sm:rounded-br-none pr-12 py-3 px-4  w-full text-gray-700  focus:outline-blue-800"
@@ -899,7 +959,7 @@
                     <div class="col-span-8">
                         <div class="newsletter-bottom">
                             <h2 class="call-to-action-title xl:text-5xl md:text-4xl  text-3xl  font-medium text-white text-center md:text-start"
-                                ddata-aos ="fade-up" data-aos-duration="1700">
+                                data-aos="fade-up" data-aos-duration="1700">
                                 Trusted
                                 the planswork the go. </h2>
                         </div>

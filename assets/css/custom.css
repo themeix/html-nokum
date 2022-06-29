@@ -703,11 +703,11 @@ Keyframes Animation
 }
 
 .dropdown-menu a:hover path {
-    fill: #007FB3;
+    fill: var(--blue-800)
 }
 
 .dropdown a:hover path {
-    fill: #007FB3;
+    fill: var(--blue-800);
 }
 
 .submenu li:last-child {
