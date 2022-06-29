@@ -299,6 +299,22 @@
 }
 
 
+.gh-content .kg-bookmark-card .kg-bookmark-title {
+    font-size: 1.6rem;
+  
+}
+
+.kg-bookmark-metadata {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+
 
 
 
