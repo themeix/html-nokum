@@ -191,23 +191,25 @@ $('.home-2-slider').slick({
       breakpoint: 1280,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: true,
+        arrows:false,
       }
     },
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 2
+        dots: false,
+        arrows:false,
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        dots: false,
+        arrows:false,
       }
     }
 
