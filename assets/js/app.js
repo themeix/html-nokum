@@ -308,7 +308,6 @@ $('.home-2-slider').slick({
   });
 
 
-
   /*
 ------------------------  
 10.  Pricing Table
