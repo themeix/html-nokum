@@ -344,13 +344,13 @@
 
                 <div class="lg:grid lg:grid-cols-12">
                     <div class="md:col-span-5 lg:order-last">
-                        <div class="banner-right mb-6 lg:mb-0 h-full" data-aos="fade-up" data-aos-duration="1700">
+                        <div class="banner-right mb-12  lg:mb-0 h-full" data-aos="fade-up" data-aos-duration="1700">
                             <img class=" lg:h-full  rounded-md w-full object-cover -z-1 relative"
                                 src="assets/images/hero-author.webp" alt="images">
                         </div>
                     </div>
                     <div class="col-span-7">
-                        <div class="banner-left-box  relative lg:my-16 mt-12 " data-aos="fade-up"
+                        <div class="banner-left-box  relative lg:my-16 " data-aos="fade-up"
                             data-aos-duration="1600">
                             <div
                                 class="author-profile bg-white shadow-sm lg:shadow-none rounded-md lg:rounded-none p-8  text-center lg:text-left before:absolute before:bg-white before:h-full before:w-110 before:top-0 before:left-0 before:-z-1 lg:p-8 lg:pr-0 before:rounded-md">
@@ -359,19 +359,23 @@
                                     <div class="lg:grid lg:grid-cols-12 gap-8 items-center">
                                         <div class="col-span-3 ">
                                             <div class="author-images mb-4 lg:mb-0">
-                                                <a href="#"> <img
+                                                 <img
                                                         class="h-32 object-cover rounded-md m-auto md:inline-block"
-                                                        src="assets/images/author-1.webp" alt="images"></a>
+                                                        src="assets/images/author-1.webp" alt="images">
 
                                             </div>
 
                                         </div>
                                         <div class="col-span-9 ">
                                             <div class="author-info" data-aos="fade-up" data-aos-duration="1700">
-                                                <h4 class="text-2xl font-bold"><a class="underline-hover"
-                                                        href="#">Wade Warren</a></h4>
+                                                <div class="author-name flex items-center justify-center md:justify-start">
+                                                    <h4 class="text-2xl font-bold mr-2">Wade Warren</h4>
+                                                        <li class=" inline-block"><p class="flex items-center"
+                                                            > <span class="text-sm">(5 Posts)</span></p></li>
+                                                </div>
+                                               
                                                 <div
-                                                    class="author-location flex items-center justify-center lg:justify-start mt-3">
+                                                    class="author-location flex items-center justify-center lg:justify-start">
                                                     <span class="inline-block"><svg width="14" height="17"
                                                             viewBox="0 0 14 17" fill="none"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +391,7 @@
                                                     <span class="ml-2">Allentown, New Mexico</span>
 
                                                 </div>
-                                                <div class="social-link mt-4">
+                                                <div class="social-link mt-4 border-t border-orange-300 pt-4">
                                                     <ul>
                                                         <li class="inline-block group"><a href="#"><svg width="9" height="14"
                                                                     viewBox="0 0 9 14" fill="none"
@@ -410,16 +414,7 @@
                                                                         d="M4.8885 0.042C5.63496 0.00763635 5.87296 0 7.77441 0C9.67587 0 9.91387 0.00827272 10.6597 0.042C11.4055 0.0757273 11.9146 0.194727 12.3601 0.367182C12.8265 0.543455 13.2497 0.819 13.5997 1.17536C13.956 1.52473 14.231 1.94727 14.4066 2.41436C14.5797 2.85982 14.6981 3.36891 14.7324 4.11345C14.7668 4.86118 14.7744 5.09918 14.7744 7C14.7744 8.90145 14.7661 9.13945 14.7324 9.88591C14.6987 10.6305 14.5797 11.1395 14.4066 11.585C14.231 12.0522 13.9556 12.4754 13.5997 12.8253C13.2497 13.1816 12.8265 13.4565 12.3601 13.6322C11.9146 13.8053 11.4055 13.9236 10.661 13.958C9.91387 13.9924 9.67587 14 7.77441 14C5.87296 14 5.63496 13.9917 4.8885 13.958C4.14396 13.9243 3.63487 13.8053 3.18941 13.6322C2.72227 13.4565 2.29903 13.1812 1.94914 12.8253C1.59302 12.4757 1.31743 12.0527 1.1416 11.5856C0.969141 11.1402 0.850778 10.6311 0.816414 9.88655C0.78205 9.13882 0.774414 8.90082 0.774414 7C0.774414 5.09855 0.782687 4.86055 0.816414 4.11473C0.850141 3.36891 0.969141 2.85982 1.1416 2.41436C1.31769 1.94732 1.59349 1.52429 1.94978 1.17473C2.29917 0.818683 2.72199 0.5431 3.18878 0.367182C3.63423 0.194727 4.14396 0.0763636 4.8885 0.042ZM10.6031 1.302C9.86487 1.26827 9.64341 1.26127 7.77441 1.26127C5.90541 1.26127 5.68396 1.26827 4.94578 1.302C4.26296 1.33318 3.8926 1.44709 3.64569 1.54318C3.31923 1.67045 3.08569 1.82127 2.84069 2.06627C2.60844 2.29221 2.42971 2.56727 2.3176 2.87127C2.2215 3.11818 2.1076 3.48855 2.07641 4.17136C2.04269 4.90955 2.03569 5.131 2.03569 7C2.03569 8.869 2.04269 9.09045 2.07641 9.82864C2.1076 10.5115 2.2215 10.8818 2.3176 11.1287C2.4296 11.4323 2.60841 11.7078 2.84069 11.9337C3.0666 12.166 3.34214 12.3448 3.64569 12.4568C3.8926 12.5529 4.26296 12.6668 4.94578 12.698C5.68396 12.7317 5.90478 12.7387 7.77441 12.7387C9.64405 12.7387 9.86487 12.7317 10.6031 12.698C11.2859 12.6668 11.6562 12.5529 11.9031 12.4568C12.2296 12.3295 12.4631 12.1787 12.7081 11.9337C12.9404 11.7078 13.1192 11.4323 13.2312 11.1287C13.3273 10.8818 13.4412 10.5115 13.4724 9.82864C13.5061 9.09045 13.5131 8.869 13.5131 7C13.5131 5.131 13.5061 4.90955 13.4724 4.17136C13.4412 3.48855 13.3273 3.11818 13.2312 2.87127C13.104 2.54482 12.9531 2.31127 12.7081 2.06627C12.4822 1.83405 12.2071 1.65532 11.9031 1.54318C11.6562 1.44709 11.2859 1.33318 10.6031 1.302ZM6.88032 9.15791C7.37965 9.36576 7.93565 9.39382 8.45337 9.23728C8.97108 9.08074 9.41839 8.74931 9.71889 8.29961C10.0194 7.84991 10.1544 7.30983 10.101 6.77161C10.0475 6.2334 9.80887 5.73044 9.42578 5.34864C9.18156 5.10458 8.88628 4.9177 8.56117 4.80146C8.23607 4.68522 7.88923 4.6425 7.54564 4.67639C7.20204 4.71028 6.87024 4.81993 6.57411 4.99745C6.27798 5.17496 6.02489 5.41593 5.83306 5.703C5.64123 5.99006 5.51544 6.31609 5.46474 6.65761C5.41404 6.99913 5.43969 7.34764 5.53985 7.67806C5.64 8.00847 5.81217 8.31257 6.04396 8.56846C6.27575 8.82435 6.56139 9.02566 6.88032 9.15791ZM5.23023 4.45582C5.56434 4.12171 5.96098 3.85668 6.39751 3.67587C6.83404 3.49505 7.30192 3.40198 7.77441 3.40198C8.24691 3.40198 8.71478 3.49505 9.15131 3.67587C9.58785 3.85668 9.98449 4.12171 10.3186 4.45582C10.6527 4.78992 10.9177 5.18657 11.0985 5.6231C11.2794 6.05963 11.3724 6.5275 11.3724 7C11.3724 7.4725 11.2794 7.94037 11.0985 8.3769C10.9177 8.81343 10.6527 9.21008 10.3186 9.54418C9.64384 10.2189 8.72867 10.598 7.77441 10.598C6.82016 10.598 5.90499 10.2189 5.23023 9.54418C4.55547 8.86942 4.1764 7.95425 4.1764 7C4.1764 6.04575 4.55547 5.13058 5.23023 4.45582ZM12.1704 3.93782C12.2532 3.85972 12.3195 3.7658 12.3653 3.66162C12.4112 3.55744 12.4357 3.44513 12.4373 3.33132C12.439 3.21751 12.4178 3.10453 12.375 2.99906C12.3322 2.89359 12.2687 2.79778 12.1882 2.7173C12.1077 2.63682 12.0119 2.5733 11.9064 2.53051C11.801 2.48772 11.688 2.46653 11.5742 2.46819C11.4604 2.46985 11.3481 2.49433 11.2439 2.54017C11.1397 2.58602 11.0458 2.6523 10.9677 2.73509C10.8158 2.89611 10.7326 3.10999 10.7359 3.33132C10.7391 3.55265 10.8284 3.76401 10.985 3.92054C11.1415 4.07706 11.3529 4.16642 11.5742 4.16964C11.7955 4.17287 12.0094 4.08971 12.1704 3.93782Z"
                                                                         fill="#8E8E8E" />
                                                                 </svg></a></li>
-                                                        <li class="ml-4 inline-block"><a class="flex items-center"
-                                                                href="#"><svg width="13" height="14" viewBox="0 0 13 14"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M8.77432 12.59L7.47933 11.295L6.77434 12L8.77432 14L12.7743 10L12.0693 9.29506L8.77432 12.59Z"
-                                                                        fill="#8E8E8E" />
-                                                                    <path
-                                                                        d="M5.27436 13H1.7744V1.00016H5.77435V4.00012C5.77514 4.26509 5.88075 4.51898 6.06812 4.70635C6.25548 4.89371 6.50937 4.99932 6.77434 5.00011H9.7743V8.00007H10.7743V4.00012C10.7761 3.93441 10.7636 3.8691 10.7377 3.80868C10.7118 3.74826 10.6731 3.69417 10.6243 3.65013L7.12434 0.150168C7.08032 0.101341 7.02623 0.0626445 6.96581 0.0367481C6.90538 0.0108518 6.84006 -0.00162789 6.77434 0.000170018H1.7744C1.50943 0.000961372 1.25554 0.106571 1.06818 0.293934C0.880815 0.481297 0.775205 0.735188 0.774414 1.00016V13C0.775205 13.265 0.880815 13.5189 1.06818 13.7062C1.25554 13.8936 1.50943 13.9992 1.7744 14H5.27436V13ZM6.77434 1.20016L9.57431 4.00012H6.77434V1.20016Z"
-                                                                        fill="#8E8E8E" />
-                                                                </svg><span class="ml-2">5 Posts</span></a></li>
+                                                        
                                                     </ul>
                                                 </div>
 
@@ -470,7 +465,7 @@
 
                 <div class="blog-post-all  explore-nokum-container">
                     <div
-                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md">
+                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 ">
                         <div class="col-span-2 hidden xl:block" data-aos="fade-up" data-aos-duration="1700">
                             <div class="publish-date lg:mb-8">
                                 <p class="font-medium text-sm  text-purple-300">22 <span class="text-sm">Jul,
@@ -541,7 +536,7 @@
                         </div>
                     </div>
                     <div
-                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7  ">
                         <div class="col-span-2 hidden xl:block" data-aos="fade-up" data-aos-duration="1700">
                             <div class="publish-date lg:mb-8">
                                 <p class="font-medium text-sm  text-purple-300">22 <span class="text-sm">Jul,
@@ -556,7 +551,7 @@
                                         class="blog-post-images-box relative overflow-hidden rounded-md lg:inline-block w-full">
                                         <a href="single.html"><img
                                                 class=" w-full h-79  md:h-50.5 object-cover rounded-md transition duration-500  group-hover:scale-125"
-                                                src="assets/images/blog-post-images.webp" alt="images"></a>
+                                                src="assets/images/blog-post-images-1-1.webp" alt="images"></a>
                                         <div class="badge-lock arif-test absolute bottom-0 p-8 md-min-768:hidden ">
                                             <p class="font-medium flex items-center text-purple-300 md:hidden">
                                                 <span
@@ -635,7 +630,7 @@
                         </div>
                     </div>
                     <div
-                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7  ">
                         <div class="col-span-2 hidden xl:block" data-aos="fade-up" data-aos-duration="1700">
                             <div class="publish-date lg:mb-8 mt-2">
                                 <p class="font-medium text-sm  text-purple-300">16 <span class="text-sm">Jul,
@@ -691,7 +686,7 @@
                         </div>
                     </div>
                     <div
-                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md">
+                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 ">
                         <div class="col-span-2 hidden xl:block" data-aos="fade-up" data-aos-duration="1700">
                             <div class="publish-date  pt-2">
                                 <p class="font-medium text-sm  text-purple-300">11<span class="text-sm">Jul, 2022</span>
@@ -705,7 +700,7 @@
                                         class="blog-post-images-box relative overflow-hidden rounded-md lg:inline-block w-full">
                                         <a href="single.html"><img
                                                 class=" w-full h-79  md:h-50.5 object-cover rounded-md transition duration-500  group-hover:scale-125"
-                                                src="assets/images/blog-post-images.webp" alt="images"></a>
+                                                src="assets/images/blog-post-images-2-2.webp" alt="images"></a>
                                         <div class="badge-lock arif-test absolute bottom-0 p-8 md-min-768:hidden ">
                                             <p class="font-medium flex items-center text-purple-300 md:hidden">
                                                 <span
@@ -767,7 +762,7 @@
                         </div>
                     </div>
                     <div
-                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md ">
+                        class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7  ">
                         <div class="col-span-2 hidden xl:block">
                             <div class="publish-date  pt-2" data-aos="fade-up" data-aos-duration="1700">
                                 <p class="font-medium text-sm  text-purple-300">29 <span class="text-sm">May,
@@ -805,7 +800,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md"
+                    <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 "
                         data-aos="fade-in" data-aos-duration="500">
                         <div class="col-span-2 hidden xl:block">
                             <div class="publish-date  pt-2" data-aos="fade-up" data-aos-duration="1700">
@@ -861,7 +856,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7 hover:shadow-sm transition duration-500 hover:border-transparent rounded-md "
+                    <div class="blog-post-item xl:grid xl:grid-cols-12 border-b border-orange-300 lg:p-10 p-7 pb-10 lg:mb-10  mb-7  "
                         data-aos="fade-in" data-aos-duration="500">
                         <div class="col-span-2 hidden xl:block" data-aos="fade-up" data-aos-duration="1700">
                             <div class="publish-date  pt-2">
@@ -902,6 +897,9 @@
                     </div>
 
                 </div>
+                <div class="blog-post-button text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                    <a class=" load-more-btn btn-md transition font-medium duration-500 inline-block py-4 px-8 bg-white hover:bg-blue-900 text-blue-900 hover:text-white border border-orange-300 hover:border-blue-900 rounded-full " href="#">Load More</a>
+                 </div>
 
             </section>
             <!--  ====================== Blog Post Area End =============================  -->
