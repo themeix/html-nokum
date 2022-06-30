@@ -2,16 +2,18 @@
 =====================
 JS Table of Conttent 
 =====================
-  01. Preloader
-  02. Body Sticky 
-  03. Mobile Menu 
-  04. Open Menu
-  05. Popup  Search
-  06. Load More
-  07. Slider Carousel
-  08.  Current Date
-  09.   Scroll to Top
-  10.   Animation Aos
+01. Body Sticky 
+02. Mobile Menu 
+03. Open Menu
+04. Popup  Search
+05. Load More
+06. Load More
+07. Slider Carousel
+08. Slider Carousel
+09. Current Date
+10. Scroll to Top
+11. Animation Aos
+12. Pricing Table
 
 */
 
@@ -20,7 +22,7 @@ JS Table of Conttent
 
   /*
    ------------------------  
-   02. Body Sticky 
+   01. Body Sticky 
    --------------------------
    */
   $(window).on('scroll', function () {
@@ -44,7 +46,7 @@ JS Table of Conttent
 
   /*
   ------------------------  
-  03. Mobile Menu 
+  02. Mobile Menu 
   --------------------------
   */
   $(".mobile-toggle").on("click", function () {
@@ -62,7 +64,7 @@ JS Table of Conttent
 
   /*
  ------------------------  
- 04. Open Menu
+ 03. Open Menu
  --------------------------
  */
 
@@ -72,7 +74,7 @@ JS Table of Conttent
 
   /*
 ------------------------  
-05. Popup  Search
+04. Popup  Search
 --------------------------
 */
 
@@ -99,53 +101,45 @@ JS Table of Conttent
     }
   });
 
+  /*
+------------------------  
+05. Load More
+--------------------------
+*/
+  $('.blog-post-all').infiniteScroll({
+    path: function () {
+      if (this.loadCount < 4) {
+        let nextIndex = this.loadCount + 2;
+        return `explore/explore-${nextIndex}.html`;
+      }
+    },
+    append: '.blog-post-box',
+    button: '.load-more-btn',
+    checkLastPage: false,
+    scrollThreshold: false,
+    status: '.page-load-status',
+    history: false,
+  });
 
-
-
-
-
-
-    /*
+  /*
 ------------------------  
 06. Load More
 --------------------------
 */
-$('.blog-post-all').infiniteScroll({
-  path: function () {
-    if (this.loadCount < 4) {
-      let nextIndex = this.loadCount + 2;
-      return `explore/explore-${nextIndex}.html`;
-    }
-  },
-  append: '.blog-post-box',
-  button: '.load-more-btn',
-  checkLastPage: false,
-  scrollThreshold: false,
-  status: '.page-load-status',
-  history: false,
-});
-
-    /*
-------------------------  
-06. Load More
---------------------------
-*/
-$('.blog-post-all-two').infiniteScroll({
-  path: function () {
-    if (this.loadCount < 2) {
-      let nextIndex = this.loadCount + 2;
-      return `blog/blog-${nextIndex}.html`;
-    }
-  },
-  append: '.blog-post-box-two',
-  button: '.load-more-btn',
-  checkLastPage: false,
-  scrollThreshold: false,
-  status: '.page-load-status',
-  history: false,
-});
-
-
+  $('.blog-post-all-two').infiniteScroll({
+    path: function () {
+      if (this.loadCount < 2) {
+        let nextIndex = this.loadCount + 2;
+        return `blog/blog-${nextIndex}.html`;
+      }
+    },
+    append: '.blog-post-box-two',
+    button: '.load-more-btn',
+    checkLastPage: false,
+    scrollThreshold: false,
+    status: '.page-load-status',
+    history: false,
+  });
 
   /*
 ------------------------  
@@ -158,8 +152,7 @@ $('.blog-post-all-two').infiniteScroll({
     autoplay: true,
     speed: 300,
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1280,
         settings: {
           slidesToShow: 3,
@@ -187,66 +180,62 @@ $('.blog-post-all-two').infiniteScroll({
 
   });
 
-
-
-    /*
+  /*
 ------------------------  
-07. Slider Carousel
+08. Slider Carousel
 --------------------------
 */
-$('.home-2-slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  autoplay:false,
-  speed: 300,
-  dots: true,
-  arrows:false,
-  infinite: true,
-  speed: 500,
-  fade: true,
+  $('.home-2-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    autoplay: false,
+    speed: 300,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
 
-
-  responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 1,
-        infinite: true,
-        dots: true,
-        arrows:false,
+    responsive: [{
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+          arrows: false,
+        }
       }
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        dots: false,
-        arrows:false,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        dots: false,
-        arrows:false,
-      }
-    }
 
-  ]
+    ]
 
-});
+  });
 
   /*
 ------------------------  
-08.  Current Date
+09.  Current Date
 --------------------------
 */
   $('#spanYear').html(new Date().getFullYear());
 
   /*
 ------------------------  
-09.   Scroll to Top
+10.   Scroll to Top
 --------------------------
 */
 
@@ -283,7 +272,7 @@ $('.home-2-slider').slick({
 
   /*
 ------------------------  
-10.   Animation Aos
+11.   Animation Aos
 --------------------------
 */
   AOS.init({
@@ -297,44 +286,35 @@ $('.home-2-slider').slick({
 
   });
 
-
   /*
 ------------------------  
-10.  Pricing Table
+12.  Pricing Table
 --------------------------
 */
 
+  (function ($) {
 
-  (function($){
-  
     //   Change the active class on the switcher
     var price = $('.pricing-table__price');
     var year = $("#year");
-    var month = $("#month"); 
-    
-    
-    year.on('click', function(){
+    var month = $("#month");
+
+    year.on('click', function () {
       $(this).addClass('active');
-      month.removeClass('active');    
-      price.each(function() {
-        $(this).text( $(this).data('year-price') );
-      });    
+      month.removeClass('active');
+      price.each(function () {
+        $(this).text($(this).data('year-price'));
+      });
     });
-    
-    month.on('click', function(){
+
+    month.on('click', function () {
       $(this).addClass('active');
       year.removeClass('active');
-      price.each(function() {
-        $(this).text( $(this).data('month-price') );
+      price.each(function () {
+        $(this).text($(this).data('month-price'));
       });
-    }); 
-  
+    });
+
   })(jQuery);
 
-
 }(jQuery));
-
-
-
-
-

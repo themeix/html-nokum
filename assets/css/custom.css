@@ -2,15 +2,23 @@
 =====================
 CSS Table of Conttent 
 =====================
- 01. Preloader Css
- 02. Entry Content Css
- 03. Menu Css
- 04. Underline  Css
- 05. Nav  Css
- 06. Slider  Css
- 07. Btn  Css
- 08. Search Css
 
+ 01. All Variable
+ 02. eyframes Animation
+ 03. Entry Content Css
+ 04. Menu Css
+ 05. Underline  Css
+ 06. Nav  Css
+ 07. Slider  Css
+ 08. Btn  Css
+ 09. Search Css
+ 10. Input  Css
+*/
+
+/*
+------------------------
+01. All Variable
+--------------------------
 */
 
 :root {
@@ -54,7 +62,7 @@ body {
 
 /*
 ------------------------
-Keyframes Animation
+02. eyframes Animation
 --------------------------
 */
 @keyframes fadein {
@@ -113,7 +121,7 @@ Keyframes Animation
 
 /*
 ------------------------  
-02. Entry Content Css
+03. Entry Content Css
 --------------------------
 */
 .entry-content hr {
@@ -272,11 +280,6 @@ Keyframes Animation
 
 @media (min-width: 1280px) {
 
-    /*
-------------------------  
-02. Entry Content Css
---------------------------
-*/
     .entry-content hr {
         padding-bottom: 16px;
     }
@@ -435,11 +438,6 @@ Keyframes Animation
 
 @media (min-width: 1024px) {
 
-    /*
-------------------------  
-02. Entry Content Css
---------------------------
-*/
     .entry-content hr {
         padding-bottom: 16px;
     }
@@ -598,7 +596,7 @@ Keyframes Animation
 
 /*
 ------------------------
- 03. Menu Css
+ 04. Menu Css
 --------------------------
 */
 .mobile-toggle {
@@ -820,15 +818,13 @@ Keyframes Animation
     margin-bottom: 0;
 }
 
-
-
 .social-link li:nth-last-child(1) {
     margin-right: 0;
 }
 
 /*
 ------------------------  
-04. Underline  Css
+05. Underline  Css
 --------------------------
 */
 
@@ -847,7 +843,7 @@ Keyframes Animation
 
 /*
 ------------------------  
-05. Nav  Css
+06. Nav  Css
 --------------------------
 */
 
@@ -976,7 +972,7 @@ Keyframes Animation
 
 /*
 ------------------------  
-06. Slider  Css
+07. Slider  Css
 --------------------------
 */
 
@@ -995,7 +991,7 @@ Keyframes Animation
 
 /*
 ------------------------  
-07. Btn  Css
+08. Btn  Css
 --------------------------
 */
 .btn-md {
@@ -1109,7 +1105,7 @@ Keyframes Animation
 
 /*
 ------------------------  
-08. Search Css
+09. Search Css
 --------------------------
 */
 .my-mfp-slide-main {
@@ -1188,7 +1184,6 @@ button.mfp-close {
     font-size: 32px;
 }
 
-
 .linkedin:hover path {
 
     fill: #ffffff;
@@ -1207,7 +1202,6 @@ button.mfp-close {
     transition: .5s;
 }
 
-
 .instagram:hover path {
 
     fill: var(--white);
@@ -1216,10 +1210,9 @@ button.mfp-close {
 
 /*
 ------------------------  
-09. Input  Css
+10. Input  Css
 --------------------------
 */
-
 
 .effect-16~.focus-border {
     position: absolute;
@@ -1237,59 +1230,49 @@ button.mfp-close {
     transition: 0.4s;
 }
 
-
 .active {
     color: var(--white);
 
     background-color: var(--blue-800);
 }
 
-
-
-
-
-	
 .home-2-slider .slick-dots li {
-			margin: 0 0.25rem;
-            background:var(--zinc-300) ;
-            border-radius: 100px;
-		}
-	
-		.home-2-slider button {
-			display: block;
-			width: 1rem;
-			height: 1rem;
-			padding: 0;
-			
-			border: none;
-			border-radius: 100%;
-			background-color: var(--stone-900);
-			
-			text-indent: -9999px;
-		}
-	
-		.home-2-slider li.slick-active button {
-			background-color: var(--blue-900);
-		}
-	
+    margin: 0 0.25rem;
+    background: var(--zinc-300);
+    border-radius: 100px;
+}
 
-        .home-2-slider .slick-dots {
-            display: flex;
-            justify-content: right;
-            margin: 0;
-            list-style-type: none;
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            background-color:white;
-            width: 124px;
-            justify-content: space-between;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 20px;
-            padding-left: 20px;
-            border-radius: 50px;
-        }
+.home-2-slider button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
 
+    border: none;
+    border-radius: 100%;
+    background-color: var(--stone-900);
 
- 
+    text-indent: -9999px;
+}
+
+.home-2-slider li.slick-active button {
+    background-color: var(--blue-900);
+}
+
+.home-2-slider .slick-dots {
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: white;
+    width: 124px;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 50px;
+}
