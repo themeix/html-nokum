@@ -741,6 +741,10 @@ video {
   display: flex;
 }
 
+.\!flex {
+  display: flex !important;
+}
+
 .table {
   display: table;
 }
@@ -1673,6 +1677,14 @@ video {
 
 .group:hover .group-hover\:\!fill-sky-600 {
   fill: #1da1f2 !important;
+}
+
+.group:hover .group-hover\:fill-gray-900 {
+  fill: #111827;
+}
+
+.group:hover .group-hover\:fill-blue-800 {
+  fill: #4D4C7D;
 }
 
 .group:hover .group-hover\:\!stroke-red-600 {
