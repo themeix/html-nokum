@@ -19,16 +19,6 @@ JS Table of Conttent
   "use strict";
 
   /*
-------------------------  
-01. Preloader
---------------------------
-*/
-  $(window).on('load', function () {
-    var preLoder = $(".preloader");
-    preLoder.fadeOut(30);
-  });
-
-  /*
    ------------------------  
    02. Body Sticky 
    --------------------------
