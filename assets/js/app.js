@@ -38,11 +38,22 @@ JS Table of Conttent
     }
   });
 
+    /*
+  ------------------------  
+  02. Sticky Header
+  --------------------------
+  */
+  $(window).on('scroll', function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+      $(".header-top").addClass("header-top-sticky");
+    } else {
+      $(".header-top").removeClass("header-top-sticky");
+    }
+  });
+
   /*  Active Class*/
-  $('.nokum-menu-icon').on('click', function () {
-    $(this).toggleClass("close-button")
-    $(".header-area ").toggleClass('header-sticky');
-  })
+ 
 
   /*
   ------------------------  
